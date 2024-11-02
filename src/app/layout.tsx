@@ -1,9 +1,9 @@
+import Footer from "@/components/Layout/Footer";
+import Header from "@/components/Layout/Header";
+import { SectionMarquee } from "@/components/Layout/SectionMarquee";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
-import { SectionMarquee } from "@/components/Layout/SectionMarquee";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -44,8 +44,8 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <SectionMarquee />
         <Footer />
+        <SectionMarquee />
       </body>
     </html>
   );
