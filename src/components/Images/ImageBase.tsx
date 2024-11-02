@@ -7,6 +7,8 @@ import getTicketImg from "@/assets/images/get-ticket-img.png";
 import landingLogo from "@/assets/images/landing-logo.png";
 import ticket from "@/assets/images/ticket.png";
 import ssidLogo from "@/assets/images/ssid-logo.png";
+import homeBanner from "@/assets/images/home-banner.png";
+
 
 export type IconProps = React.SVGProps<SVGSVGElement>;
 
@@ -62,3 +64,8 @@ const Ticket: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
   <Image alt="logo" src={ticket} {...props} />
 );
 ImageBase.Ticket = Ticket;
+
+const HomeBanner: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={homeBanner} {...props} />
+);
+ImageBase.HomeBanner = HomeBanner;

@@ -1,4 +1,6 @@
 import { formatWithCommas } from "@/utils";
+import HomeBanner from "@/assets/images/home-banner.png";
+import Image from "next/image";
 
 function CategoryTag({
   name,
@@ -49,7 +51,15 @@ export default function HomeSection1() {
           <CategoryTag backgroundColor="#fff" name="Game" />
         </div>
       </div>
-      <div className="w-full aspect-[4] max-[768px]:aspect-square bg-[blue] mt-8"></div>
+      <div className="w-full aspect-[3] max-[768px]:aspect-square mt-8 relative">
+        <Image
+          src={HomeBanner.src}
+          fill
+          alt="home-banner"
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </div>
       <div className="w-full flex flex-wrap">
         <SectionStatItem amount={15000} title="Attendees" />
         <SectionStatItem amount={500} title="Companies" />

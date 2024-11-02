@@ -10,18 +10,18 @@ export const navs: NavItem[] = [
   },
   {
     label: "Speakers",
-    href: "speakers",
+    href: "#1",
   },
   {
     label: "Agenda",
-    href: "agenda",
+    href: "#2",
   },
   {
     label: "Partner",
-    href: "/partner",
+    href: "#3",
   },
   {
     label: "News",
-    href: "/news",
+    href: "#4",
   },
 ];

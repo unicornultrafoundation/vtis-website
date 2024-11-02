@@ -54,7 +54,7 @@ const Column = ({
 
 export default function HomeSection4() {
   return (
-    <div className="w-full flex relative">
+    <div className="w-full flex relative mb-24">
       <div className="font-neueMed text-[64px] px-14 leading-[64px] absolute pt-8">
         Vietnam Tech <br /> Impact Summit <br /> Spekers
       </div>
