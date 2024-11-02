@@ -1,24 +1,4 @@
-function Block({
-  title,
-  description,
-  backgroundColor,
-}: {
-  title: string;
-  description: string;
-  backgroundColor: string;
-}) {
-  return (
-    <div
-      style={{
-        backgroundColor: backgroundColor,
-      }}
-      className="w-[50%] aspect-[720/500] flex flex-col p-10 gap-5 pr-24"
-    >
-      <div className="w-full font-neueMed text-[40px]">{title}</div>
-      <div className="w-full font-neueMed text-[24px]">{description}</div>
-    </div>
-  );
-}
+import Image from "next/image";
 
 const getSquareBGByIndex = (index: number) => {
   switch (index) {
@@ -36,10 +16,46 @@ const getSquareBGByIndex = (index: number) => {
   }
 };
 
+const Column = ({
+  items,
+  className,
+  colIndex,
+}: {
+  items: { name: string; title: string; companyName: string }[];
+  className: string;
+  colIndex: number;
+}) => {
+  return (
+    <div className={`${className} flex flex-col w-[16.667%]`}>
+      {items.map((item, i) => (
+        <div
+          key={i}
+          className="w-[100%] border-solid border-[0.5px] border-[#D9D9D9] p-4 flex flex-col gap-1 items-start justify-start"
+        >
+          <div className="w-[100%] aspect-[1/1.05] relative">
+            <Image
+              src={`/images/persons/person-${colIndex * 4 + i + 1}.png`}
+              fill
+              objectFit="cover"
+              objectPosition="center"
+              alt="person-image"
+            />
+          </div>
+          <div className="mt-3 font-neueMed text-[20px]">{item.name}</div>
+          <div className="font-neueMed text-[16px]">{item.title}</div>
+          <div className="font-neueMed text-[14px] border-solid border-[1px] border-black p-1 mt-1">
+            {item.companyName}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 export default function HomeSection4() {
   return (
     <div className="w-full flex relative">
-      <div className="font-neueMed text-[64px] px-14 leading-[64px] absolute">
+      <div className="font-neueMed text-[64px] px-14 leading-[64px] absolute pt-8">
         Vietnam Tech <br /> Impact Summit <br /> Spekers
       </div>
       <div className="w-[30%] aspect-square bg-[red] flex flex-wrap max-[768px]:w-[50%] absolute right-0">
@@ -55,14 +71,164 @@ export default function HomeSection4() {
             />
           ))}
       </div>
-      <div className="w-full bg-[yellow] z-[10]">
-        <div className="grid grid-cols-6 gap-4">
-          {Array(24).fill("").map((_, index) => (
-            <div
-              key={index}
-              className="bg-[red] aspect-[1/1.4]"
-            />
-          ))}
+      <div className="w-full z-[5] px-14 pt-10">
+        <div className="w-full flex justify-between mt-[1vh] max-[1500px]:mt-[3.5vh] max-[1300px]:mt-[5vh] max-[1180px]:mt-[6.5vh]">
+          <Column
+            colIndex={0}
+            className="pt-[15%]"
+            items={[
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+            ]}
+          />
+          <Column
+            colIndex={1}
+            className="pt-[22%]"
+            items={[
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+            ]}
+          />
+          <Column
+            colIndex={2}
+            className="pt-[12%]"
+            items={[
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+            ]}
+          />
+          <Column
+            colIndex={3}
+            className="pt-[5%]"
+            items={[
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+            ]}
+          />
+          <Column
+            colIndex={4}
+            className="pt-[35%]"
+            items={[
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+            ]}
+          />
+          <Column
+            colIndex={5}
+            className="pt-[40%] "
+            items={[
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+              {
+                companyName: "SSI Digital",
+                name: "Mr Mai Huy Tuan",
+                title: "CEO",
+              },
+            ]}
+          />
         </div>
       </div>
     </div>

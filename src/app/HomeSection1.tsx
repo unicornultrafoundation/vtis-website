@@ -19,20 +19,20 @@ function CategoryTag({
   );
 }
 
-function SectionStatItem({title, amount}: {title: string, amount: number}) {
+function SectionStatItem({ title, amount }: { title: string; amount: number }) {
   return (
     <div className="w-[25%] max-[768px]:w-[50%] py-[40px] flex flex-col items-center justify-center">
-          <div className="font-neueMed text-[56px]">{formatWithCommas(amount)}</div>
-          <div className="font-neueMed text-[24px]">{title}</div>
-          </div>
-  )
+      <div className="font-neueMed text-[56px]">{formatWithCommas(amount)}</div>
+      <div className="font-neueMed text-[24px]">{title}</div>
+    </div>
+  );
 }
 
 export default function HomeSection1() {
   return (
     <div className="w-full flex flex-col">
-      <div className="w-full flex px-5 items-end max-[768px]:flex-col max-[768px]:gap-8">
-        <div className="w-[60%] h-full flex flex-col gap-4 pt-5 max-[768px]:w-full">
+      <div className="w-full flex px-8 items-end max-[768px]:flex-col max-[768px]:gap-8">
+        <div className="w-[60%] h-full flex flex-col gap-4 pt-10 max-[768px]:w-full">
           <div className="w-full font-neueMed text-[20px]">
             3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM{" "}
           </div>
@@ -51,11 +51,11 @@ export default function HomeSection1() {
       </div>
       <div className="w-full aspect-[4] max-[768px]:aspect-square bg-[blue] mt-8"></div>
       <div className="w-full flex flex-wrap">
-        <SectionStatItem amount={15000} title="Attendees"/>
-        <SectionStatItem amount={500} title="Companies"/>
-        <SectionStatItem amount={350} title="Speakers"/>
-        <SectionStatItem amount={65} title="Countries"/>
-        </div>
+        <SectionStatItem amount={15000} title="Attendees" />
+        <SectionStatItem amount={500} title="Companies" />
+        <SectionStatItem amount={350} title="Speakers" />
+        <SectionStatItem amount={65} title="Countries" />
+      </div>
     </div>
   );
 }

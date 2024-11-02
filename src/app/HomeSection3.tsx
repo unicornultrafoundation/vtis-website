@@ -12,7 +12,7 @@ function Block({
       style={{
         backgroundColor: backgroundColor,
       }}
-      className="w-[50%] aspect-[720/500] flex flex-col p-10 gap-5 pr-24"
+      className="w-[50%] aspect-[720/500] flex flex-col p-10 gap-5 pr-24 max-[600px]:w-full"
     >
       <div className="w-full font-neueMed text-[40px]">{title}</div>
       <div className="w-full font-neueMed text-[24px]">{description}</div>

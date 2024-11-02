@@ -4,6 +4,7 @@ import React from "react";
 import footerImg from "@/assets/images/footer-image.png";
 import getTicketImg from "@/assets/images/get-ticket-img.png";
 import landingLogo from "@/assets/images/landing-logo.png";
+import ticket from "@/assets/images/ticket.png";
 
 export type IconProps = React.SVGProps<SVGSVGElement>;
 
@@ -39,3 +40,8 @@ const FooterImage: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
 FooterImage.displayName = "ImageBase.FooterImage";
 // Attach LandingLogo to ImageBase
 ImageBase.FooterImage = FooterImage;
+
+const Ticket: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={ticket} {...props} />
+);
+ImageBase.Ticket = Ticket;
