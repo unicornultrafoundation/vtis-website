@@ -2,12 +2,11 @@
 import ImageBase from "@/components/Images/ImageBase";
 import { navs } from "@/config/nav";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Header() {
-  const pathname = usePathname();
-  const [activeTab, setActiveTab] = useState(pathname);
+  //   const pathname = usePathname();
+  const [activeTab, setActiveTab] = useState("");
   return (
     <header className="sticky top-0 mt-0 items-center justify-between w-full h-14 bg-[#000000] text-white z-50">
       <div className="w-full h-full p-1 flex justify-between items-center">
