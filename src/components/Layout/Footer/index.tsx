@@ -1,12 +1,12 @@
-export default function Footer() {
-    return (
-        <header 
-        style={{
-            background: 'linear-gradient(180deg, rgba(40, 210, 220, 0) 0%, #28D2DC 100%)'
+import ImageBase from "@/components/Images/ImageBase";
+import Link from "next/link";
 
-        }}
-        className="items-center justify-between w-full h-[540px] text-black mb-[80px]">
-        Footer
-        </header>
-    );
+export default function Footer() {
+  return (
+    <footer className="bg-[#000000] w-full items-center justify-between h-[540px] text-black mb-[80px]">
+      <Link href="/">
+        <ImageBase.LandingLogo />
+      </Link>
+    </footer>
+  );
 }
