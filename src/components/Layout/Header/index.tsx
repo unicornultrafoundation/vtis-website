@@ -9,7 +9,7 @@ export default function Header() {
   const pathname = usePathname();
   const [activeTab, setActiveTab] = useState(pathname);
   return (
-    <header className="sticky top-0 mt-0 items-center justify-between w-full h-14 bg-[#000000] text-white">
+    <header className="sticky top-0 mt-0 items-center justify-between w-full h-14 bg-[#000000] text-white z-50">
       <div className="w-full h-full p-1 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="pl-5">

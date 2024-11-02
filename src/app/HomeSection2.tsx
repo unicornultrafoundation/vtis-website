@@ -1,3 +1,4 @@
+import ImageBase from "@/components/Images/ImageBase";
 import { formatWithCommas } from "@/utils";
 
 function CategoryTag({
@@ -28,32 +29,38 @@ function SectionStatItem({ title, amount }: { title: string; amount: number }) {
   );
 }
 
-export default function HomeSection2() {
-  const getSquareBGByIndex = (index: number) => {
-    switch (index) {
-      case 0:
-      case 1:
-      case 3:
-      case 5:
-      case 7:
-        return "#000000";
-      case 2:
-      case 4:
-      case 6:
-        return "#ffffff";
-      default:
-        return "#28D2DC";
-    }
-  };
+const getSquareBGByIndex = (index: number) => {
+  switch (index) {
+    case 0:
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+      return "#000000";
+    case 2:
+    case 4:
+    case 6:
+      return "#ffffff";
+    default:
+      return "#28D2DC";
+  }
+};
 
+export default function HomeSection2() {
   return (
     <div className="w-full flex bg-[#000000] max-[768px]:flex-col pt-16">
-      <div className="w-[50%] max-[768px]:w-full flex flex-col items-start justify-start px-10 gap-1">
+      <div className="w-[50%] max-[768px]:w-full flex flex-col items-start justify-start px-14 gap-10">
         <div className="px-1 py-1 text-[white] border-solid border-[2px] border-[white] font-neueMed text-[20px]">
           VTIS
         </div>
         <div className="px-1 py-1 text-[white] font-neueMed text-[28px]">
         Vietnam Tech Impact Summit
+        </div>
+        <div className="flex gap-3 mt-4">
+          <button className="bg-gray-800 p-4 text-white">Partner with Us</button>
+          <button>
+            <ImageBase.GetTicketImg />
+          </button>
         </div>
  
       </div>
