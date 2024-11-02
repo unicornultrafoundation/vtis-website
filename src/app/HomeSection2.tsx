@@ -47,14 +47,18 @@ export default function HomeSection2() {
   };
 
   return (
-    <div className="w-full flex bg-[#000000] max-[768px]:flex-col">
-      <div className="w-[50%] max-[768px]:w-full flex flex-col">
-        <div className="w-full">
+    <div className="w-full flex bg-[#000000] max-[768px]:flex-col pt-16">
+      <div className="w-[50%] max-[768px]:w-full flex flex-col items-start justify-start px-10 gap-1">
+        <div className="px-1 py-1 text-[white] border-solid border-[2px] border-[white] font-neueMed text-[20px]">
           VTIS
         </div>
+        <div className="px-1 py-1 text-[white] font-neueMed text-[28px]">
+        Vietnam Tech Impact Summit
+        </div>
+ 
       </div>
       <div className="w-[50%] max-[768px]:w-full">
-        <div className="font-neueMed text-[28px] text-[white] pt-16 pb-24 pl-2 pr-52 flex flex-col max-[768px]:pr-10 max-[768px]:pl-10">
+        <div className="font-neueMed text-[28px] text-[white] pb-24 pl-2 pr-52 flex flex-col max-[768px]:pr-10 max-[768px]:pl-10">
           Vietnam Tech Impact Expo (VNTIE) is an annual event that brings
           together leading innovators, experts, and enthusiasts in the field of
           digital asset and technology development. Hosted in Vietnam, VNTIE

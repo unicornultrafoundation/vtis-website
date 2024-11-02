@@ -1,32 +1,24 @@
-
-function Block({ title, description, backgroundColor }: { title: string; description: string, backgroundColor: string  }) {
-  return (
-<div>
-  </div>
-)
+function Block({
+  title,
+  description,
+  backgroundColor,
+}: {
+  title: string;
+  description: string;
+  backgroundColor: string;
+}) {
+  return <div 
+  style={{
+    backgroundColor: backgroundColor,
+  }}
+  className="w-[50%] aspect-[720/604]"></div>;
 }
 
 export default function HomeSection3() {
-  const getSquareBGByIndex = (index: number) => {
-    switch (index) {
-      case 0:
-      case 1:
-      case 3:
-      case 5:
-      case 7:
-        return "#000000";
-      case 2:
-      case 4:
-      case 6:
-        return "#ffffff";
-      default:
-        return "#28D2DC";
-    }
-  };
-
-  return (
-    <div className="w-full flex flex-wrap">
-      
-    </div>
-  );
+  return <div className="w-full flex flex-row flex-wrap">
+    <Block title="Block 1" description="Description 1" backgroundColor="#28D2DC" />
+    <Block title="Block 2" description="Description 2" backgroundColor="#fff" />
+    <Block title="Block 3" description="Description 3" backgroundColor="#fff" />
+    <Block title="Block 4" description="Description 4" backgroundColor="#28D2DC" />
+  </div>;
 }

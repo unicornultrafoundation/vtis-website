@@ -15,7 +15,13 @@ const config: Config = {
       fontFamily: {
         neueBold: "var(--font-neue-bold)",
         neueMed: "var(--font-neue-med)",
-      }
+      },
+      screens: {
+        mobile: '430px',
+        tablet: '768px',
+        laptop: '1280px',
+        desktop: '1512px',
+      },
     },
   },
   plugins: [],
