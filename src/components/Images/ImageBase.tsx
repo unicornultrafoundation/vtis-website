@@ -1,6 +1,7 @@
 import Image, { ImageProps } from "next/image";
 import React from "react";
 
+import footerImg from "@/assets/images/footer-image.png";
 import getTicketImg from "@/assets/images/get-ticket-img.png";
 import landingLogo from "@/assets/images/landing-logo.png";
 
@@ -30,3 +31,11 @@ const GetTicketImg: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
 GetTicketImg.displayName = "ImageBase.GetTicketImg";
 // Attach LandingLogo to ImageBase
 ImageBase.GetTicketImg = GetTicketImg;
+
+const FooterImage: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={footerImg} {...props} />
+);
+// Add displayName to LandingLogo
+FooterImage.displayName = "ImageBase.FooterImage";
+// Attach LandingLogo to ImageBase
+ImageBase.FooterImage = FooterImage;

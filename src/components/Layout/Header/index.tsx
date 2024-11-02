@@ -13,7 +13,7 @@ export default function Header() {
       <div className="w-full h-full p-1 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="pl-5">
-          <ImageBase.LandingLogo />
+          <ImageBase.LandingLogo width={135} height={21} />
         </Link>
 
         {/* Nav Menu */}
