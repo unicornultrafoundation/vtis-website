@@ -15,6 +15,17 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const ppNeueBold = localFont({
+  src: "./fonts/pp-neue-montreal/ppneuemontreal-bold.woff",
+  variable: "--font-neue-bold",
+  weight: "700",
+});
+
+const ppNeueMed= localFont({
+  src: "./fonts/pp-neue-montreal/ppneuemontreal-medium.woff",
+  variable: "--font-neue-med",
+  weight: "700",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ppNeueBold.variable} ${ppNeueMed.variable} antialiased`}
       >
         <Header />
         {children}
