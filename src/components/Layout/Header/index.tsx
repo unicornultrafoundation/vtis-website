@@ -40,29 +40,31 @@ export default function Header() {
           </div>
 
           {/* Action Button */}
-          <div className="hidden tablet:flex gap-1">
-            <button className="bg-gray-800 p-4">Partner with Us</button>
-            <button>
+          <div className="flex items-center gap-1">
+            <button className="hidden laptop:block bg-gray-800 p-4">
+              Partner with Us
+            </button>
+            <button className="w-[143px] h-[40px]">
               <ImageBase.GetTicketImg />
             </button>
-          </div>
-          {/* Menu Bar Mobile */}
-          <div className="tablet:hidden z-50">
-            {isOpenMobileMenu ? (
-              <ImageBase.SidebarMenuIcon
-                className="size-8 z-20"
-                onClick={() => {
-                  setIsOpenMobileMenu(false);
-                }}
-              />
-            ) : (
-              <ImageBase.SidebarMenuIcon
-                className="z-20 size-8"
-                onClick={() => {
-                  setIsOpenMobileMenu(true);
-                }}
-              />
-            )}
+            {/* Menu Bar Mobile */}
+            <div className="laptop:hidden z-50">
+              {isOpenMobileMenu ? (
+                <ImageBase.SidebarMenuIcon
+                  className="size-8 z-20"
+                  onClick={() => {
+                    setIsOpenMobileMenu(false);
+                  }}
+                />
+              ) : (
+                <ImageBase.SidebarMenuIcon
+                  className="z-20 size-8"
+                  onClick={() => {
+                    setIsOpenMobileMenu(true);
+                  }}
+                />
+              )}
+            </div>
           </div>
         </div>
       </header>

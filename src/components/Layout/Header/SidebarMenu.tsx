@@ -16,7 +16,7 @@ const SideBarMenu: FC<Props> = (props) => {
   return (
     <div
       className={classNames(
-        "fixed top-0 left-0 w-full h-full z-[35] bg-transparent",
+        "fixed top-0 right-0 w-full pt-4 h-full z-[35] bg-transparent",
         isOpen ? "translate-x-0" : "-translate-x-full",
         "shadow-lg transform transition-transform duration-300 ease-in-out",
         "flex flex-col items-center"

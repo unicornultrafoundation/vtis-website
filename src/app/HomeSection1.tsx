@@ -23,9 +23,9 @@ function CategoryTag({
 
 function SectionStatItem({ title, amount }: { title: string; amount: number }) {
   return (
-    <div className="w-[25%] max-[768px]:w-[50%] py-[40px] flex flex-col items-center justify-center">
-      <div className="font-neueMed text-[56px]">{formatWithCommas(amount)}</div>
-      <div className="font-neueMed text-[24px]">{title}</div>
+    <div className="w-[25%] max-[768px]:w-[50%] py-[40px] max-[768px]:py-[25px] flex flex-col items-center justify-center max-[768px]:items-start px-7">
+      <div className="font-neueMed text-[56px] max-[768px]:text-[40px]">{formatWithCommas(amount)}</div>
+      <div className="font-neueMed text-[24px] max-[768px]:text-[20px]">{title}</div>
     </div>
   );
 }
@@ -35,23 +35,23 @@ export default function HomeSection1() {
     <div className="w-full flex flex-col">
       <div className="w-full flex px-8 items-end max-[768px]:flex-col max-[768px]:gap-8">
         <div className="w-[60%] h-full flex flex-col gap-4 pt-10 max-[768px]:w-full">
-          <div className="w-full font-neueMed text-[20px]">
+          <div className="w-full font-neueMed text-[20px] max-[768px]:text-[16px]">
             3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM{" "}
           </div>
-          <div className="w-full font-medium font-neueMed text-[88px] leading-[88px]">
+          <div className="w-full font-medium font-neueMed text-[88px] max-[768px]:text-[40px] max-[768px]:leading-[40px] leading-[88px]">
             Vietnam Tech
             <br />
             Impact Summit 2024
           </div>
         </div>
-        <div className="flex-1 flex gap-3 justify-end px-5 max-[768px]:w-full max-[768px]:justify-start max-[768px]:px-0">
+        <div className="flex-1 flex flex-wrap gap-3 justify-end px-5 max-[768px]:w-full max-[768px]:justify-start max-[768px]:px-0">
           <CategoryTag backgroundColor="#28D2DC" name="AI" />
           <CategoryTag backgroundColor="#7DC846" name="Blockchain" />
           <CategoryTag backgroundColor="#AA82FF" name="Fintech" />
           <CategoryTag backgroundColor="#fff" name="Game" />
         </div>
       </div>
-      <div className="w-full aspect-[3] max-[768px]:aspect-square mt-8 relative">
+      <div className="w-full aspect-[3] max-[768px]:aspect-[375/240] mt-8 relative">
         <Image
           src={HomeBanner.src}
           fill
