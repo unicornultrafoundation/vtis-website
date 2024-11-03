@@ -20,14 +20,14 @@ const getSquareBGByIndex = (index: number) => {
 export default function HomeSection2() {
   return (
     <div className="w-full flex bg-[#000000] max-[768px]:flex-col pt-16">
-      <div className="w-[50%] max-[768px]:w-full max-[768px]:pb-10 flex flex-col items-start justify-start px-14 gap-10">
+      <div className="w-[50%] max-[768px]:w-full max-[768px]:pb-10 flex flex-col items-start justify-start px-14 gap-2 max-[768px]:px-10">
         <div className="px-1 py-1 text-[white] border-solid border-[2px] border-[white] font-neueMed text-[20px]">
           VTIS
         </div>
         <div className="px-1 py-1 text-[white] font-neueMed text-[28px]">
           Vietnam Tech Impact Summit
         </div>
-        <div className="flex gap-3 mt-4">
+        <div className="flex gap-3 mt-1">
           <button className="bg-gray-800 p-4 text-white">
             Partner with Us
           </button>
@@ -37,7 +37,7 @@ export default function HomeSection2() {
         </div>
       </div>
       <div className="w-[50%] max-[768px]:w-full">
-        <div className="font-neueMed text-[28px] text-[white] pb-24 pl-2 max-w-[650px] pr-10 max-[768px]:pl-10">
+        <div className="font-neueMed text-[28px] max-[768px]:text-[24px] text-[white] pb-24 pl-2 max-w-[650px] pr-10 max-[768px]:pl-10">
           <span className="text-[#28D2DC]">
             Vietnam Tech Impact Expo (VNTIE)
           </span>
@@ -48,7 +48,7 @@ export default function HomeSection2() {
           aspect of shaping the future of technology.
         </div>
         <div className="w-full flex justify-end">
-          <div className="w-[30%] aspect-square bg-[red] flex flex-wrap max-[768px]:w-[50%]">
+          <div className="w-[30%] aspect-square flex flex-wrap max-[768px]:w-[50%]">
             {Array(9)
               .fill("")
               .map((_, index) => (

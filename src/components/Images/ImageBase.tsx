@@ -9,7 +9,6 @@ import ticket from "@/assets/images/ticket.png";
 import ssidLogo from "@/assets/images/ssid-logo.png";
 import homeBanner from "@/assets/images/home-banner.png";
 
-
 export type IconProps = React.SVGProps<SVGSVGElement>;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

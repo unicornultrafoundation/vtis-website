@@ -1,3 +1,7 @@
+"use client";
+
+import useIsMobile from "@/hooks/useIsMobile";
+
 function Block({
   title,
   description,
@@ -12,15 +16,17 @@ function Block({
       style={{
         backgroundColor: backgroundColor,
       }}
-      className="w-[50%] aspect-[720/500] flex flex-col p-10 gap-5 pr-24 max-[600px]:w-full"
+      className="w-[50%] aspect-[720/500] flex flex-col pl-10 py-10 max-[768px]:pt-5 gap-5 pr-24 max-[600px]:w-full"
     >
-      <div className="w-full font-neueMed text-[40px]">{title}</div>
-      <div className="w-full font-neueMed text-[24px]">{description}</div>
+      <div className="w-full font-neueMed text-[40px] max-[768px]:text-[32px]">{title}</div>
+      <div className="w-full font-neueMed text-[24px] max-[768px]:text-[20px]">{description}</div>
     </div>
   );
 }
 
 export default function HomeSection3() {
+  const isMobile = useIsMobile(768);
+
   return (
     <div className="w-full flex flex-row flex-wrap">
       <Block
@@ -36,12 +42,12 @@ export default function HomeSection3() {
       <Block
         title="Blockchain"
         description="Uncover how blockchain is revolutionizing industries of finance, supply chain, gaming and decentralized applications. Learn from experts to unveil the boundless possibilities of blockchain technology"
-        backgroundColor="#fff"
+        backgroundColor={isMobile ? "#28D2DC" : "#fff"}
       />
       <Block
         title="Game"
         description="Uncover how blockchain is revolutionizing industries of finance, supply chain, gaming and decentralized applications. Learn from experts to unveil the boundless possibilities of blockchain technology"
-        backgroundColor="#28D2DC"
+        backgroundColor={isMobile ? "#fff" : "#28D2DC"}
       />
     </div>
   );
