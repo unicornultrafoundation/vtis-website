@@ -30,7 +30,7 @@ const SideBarMenu: FC<Props> = (props) => {
         <div className="w-full h-full bg-[#000000] flex flex-col justify-center items-center gap-4 p-8">
           {/* Content Top */}
 
-          <ul className="h-full overflow-scroll text-sm w-full mt-6">
+          <ul className="h-full text-sm w-full mt-6">
             {navs.map((item, index) => (
               <li key={index} className="w-full p-4 ">
                 <div className="w-full flex justify-center items-center gap-4">
