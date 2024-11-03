@@ -31,7 +31,7 @@ const Column = ({
 }) => {
   return (
     <div
-      className={`${className} flex flex-col w-[16.66%] box-border max-[768px]:w-[50%] max-[768px]:mt-[0px] max-[410px]:mt-[30px]`}
+      className={`${className} flex flex-col w-[16.66%] box-border max-[768px]:w-[50%] max-[768px]:mt-[0px] max-[415px]:mt-[30px]`}
     >
       {items.map((item, i) => (
         <div
@@ -62,7 +62,7 @@ export default function HomeSection4() {
 
   return (
     <div className="w-full flex relative mb-24 max-[768px]:mb-[150px]">
-      <div className="font-neueMed text-[64px] w-[80%] max-[450px]:w-[60%] max-[768px]:text-[27px] max-[768px]:leading-[36px] px-14 max-[768px]:px-7 leading-[64px] absolute pt-8 max-[768px]:text-[50px]">
+      <div className="font-neueMed text-[64px] w-[80%] max-[768px]:w-[60%] max-[768px]:text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-7 leading-[64px] absolute pt-8 max-[415px]:pt-0 max-[768px]:text-[50px]">
         {isMobile ? (
           <>Vietnam Tech Impact Summit Spekers</>
         ) : (
@@ -256,7 +256,7 @@ export default function HomeSection4() {
                 backgroundPosition: "center",
                 pointerEvents: "none",
               }}
-              className="w-full flex items-end py-10 justify-center absolute -bottom-[150px]"
+              className="w-full flex items-end py-5 justify-center absolute -bottom-[150px]"
             >
               <button className="pointer-events-auto font-neueMed text-[16px] py-[12px] px-[24px] border-solid border-[1px] border-black">
                 View all

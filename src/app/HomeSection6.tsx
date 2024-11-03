@@ -16,7 +16,7 @@ const TierParners = ({
   return (
     <div className="w-full flex flex-col">
       {tier && (
-        <div className="w-full font-neueMed text-[32px] text-[#fff] mt-10 mb-5">
+        <div className="w-full font-neueMed text-[32px] max-[768px]:text-[18px] text-[#fff] mt-10 mb-5">
           {tier}
         </div>
       )}
@@ -49,7 +49,7 @@ const HomeSection6 = () => {
     <div className="bg-[#000000] flex flex-col gap-8 px-12 max-[768px]:px-0 py-[72px] pb-96">
       {/* {partners} */}
       <div className="w-full flex flex-col px-5">
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
           Strategic partners
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-16">
@@ -64,7 +64,7 @@ const HomeSection6 = () => {
               })}
           />
         </div>
-        <div className="w-full font-neueMed text-[48px] text-[#fff]">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] max-[768px]:text-[24px]">
           Key partners
         </div>
         <div className="w-full flex flex-col flex-wrap gap-10 mb-16">
@@ -113,7 +113,7 @@ const HomeSection6 = () => {
               })}
           />
         </div>
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
           Government Partner
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-16">
@@ -128,7 +128,7 @@ const HomeSection6 = () => {
               })}
           />
         </div>
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
           Media
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-16">
@@ -143,7 +143,7 @@ const HomeSection6 = () => {
               })}
           />
         </div>
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
           Community Partners
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-16">
@@ -158,7 +158,7 @@ const HomeSection6 = () => {
               })}
           />
         </div>
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
           Participating Companies
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-16">
