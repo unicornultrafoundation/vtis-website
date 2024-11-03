@@ -6,6 +6,9 @@ const HomeSection5 = () => {
       {/* Header */}
       <div className="w-full flex flex-col justify-center items-center">
         <ImageBase.SSIDLogo />
+        <p className="bg-white px-4 py-1 text-2xl tablet:text-[40px] mb-6">
+          Host & Organizer
+        </p>
         <p className="laptop:w-[1061px] text-[32px] tablet:text-5xl text-white text-center ">
           Founded in 2022, <span className="text-red-600 pr-2">SSID</span>
           specializes in researching and developing technological initiatives
@@ -28,7 +31,7 @@ const HomeSection5 = () => {
         </div>
         {/* 02 */}
         <div className="w-full flex gap-3 tablet:gap-0 flex-wrap tablet:flex-nowrap justify-between items-center pt-4 pb-12 border-y border-[#333333]">
-          <p className="text-white text-base">2</p>
+          <p className="text-white text-base">02</p>
           <p className="p-1 border text-white text-xl">Mission</p>
           <p className="w-[480px] text-white text-xl font-medium">
             SSID is innovating to provide top-tier technological solutions,
@@ -40,7 +43,8 @@ const HomeSection5 = () => {
       </div>
       {/* Footer */}
       <div className="w-full mt-12 flex flex-col gap-6 justify-center items-center">
-        <ImageBase.FPTLogo />
+        <ImageBase.FPTLogo width={80} />
+        <p className="bg-white px-4 py-1 text-3xl">Host</p>
         <p className="laptop:w-[1061px] text-white text-3xl tablet:text-5xl text-center">
           <span className="text-[#51B748]">FPT</span>—Vietnam&apos;s largest IT
           services group and the worldwide&apos;s 7th largest group in tech

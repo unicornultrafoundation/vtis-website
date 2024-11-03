@@ -1,6 +1,7 @@
 import Image, { ImageProps } from "next/image";
 import React from "react";
 
+import closeIcon from "@/assets/images/close-icon.png";
 import footerImg from "@/assets/images/footer-image.png";
 import fptLogo from "@/assets/images/fpt-logo.png";
 import getTicketImg from "@/assets/images/get-ticket-img.png";
@@ -22,6 +23,7 @@ const imageComponents = [
   { name: "FPTLogo", src: fptLogo },
   { name: "FooterImage", src: footerImg },
   { name: "SidebarMenuIcon", src: sidebarMenuIcon },
+  { name: "CloseIcon", src: closeIcon },
 ];
 
 imageComponents.forEach(({ name, src }) => {
@@ -75,3 +77,8 @@ const SidebarMenuIcon: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
   <Image alt="logo" src={sidebarMenuIcon} {...props} />
 );
 ImageBase.SidebarMenuIcon = SidebarMenuIcon;
+
+const CloseIcon: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={closeIcon} {...props} />
+);
+ImageBase.CloseIcon = CloseIcon;

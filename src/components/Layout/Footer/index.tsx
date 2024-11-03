@@ -10,7 +10,7 @@ export default function Footer() {
   const pathname = usePathname();
   const [activeTab, setActiveTab] = useState(pathname);
   return (
-    <footer className=" relative w-full p-8 mb-[80px] bg-gradient-to-t from-[#28D2DC] to-black">
+    <footer className=" relative w-full p-8 tablet:mb-[80px] bg-gradient-to-t from-[#28D2DC] to-black">
       <ImageBase.FooterImage className="absolute right-0 bottom-0" />
       <div className="w-full h-full flex flex-col justify-between">
         {/* Top */}
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
           <div className="tablet:flex gap-10  ">
             {/* Nav Menu */}
-            <div className="w-full flex tablet:flex-col gap-6">
+            <div className="w-full flex tablet:flex-col gap-3 tablet:gap-6">
               {navs.map((nav, index) => (
                 <div key={index}>
                   <Link
@@ -51,7 +51,7 @@ export default function Footer() {
               ))}
             </div>
             {/* Social */}
-            <div className="flex tablet:flex-col gap-6 pl-10 pt-6 tablet:pt-0">
+            <div className="flex tablet:flex-col gap-3 tablet:gap-6 tablet:pl-10 pt-6 tablet:pt-0">
               {social.map((nav, index) => (
                 <div key={index}>
                   <Link href={nav.href} className="cursor-pointer">
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
         </div>
         {/* Bottom */}
-        <div className="py-10 tablet:py-[100px] w-full h-full flex justify-center items-end">
+        <div className="mb-6 py-10 tablet:py-[100px] w-full h-full flex justify-center items-end">
           <p className="text-2xl tablet:text-5xl text-gray-300  tablet:w-[1200px] text-center">
             Asia Blockchain Summit brings together the companies and people
             shaping the blockchain industry.
