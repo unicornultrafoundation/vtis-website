@@ -4,11 +4,11 @@ import React from "react";
 import footerImg from "@/assets/images/footer-image.png";
 import fptLogo from "@/assets/images/fpt-logo.png";
 import getTicketImg from "@/assets/images/get-ticket-img.png";
-import landingLogo from "@/assets/images/landing-logo.png";
-import ticket from "@/assets/images/ticket.png";
-import ssidLogo from "@/assets/images/ssid-logo.png";
 import homeBanner from "@/assets/images/home-banner.png";
-
+import landingLogo from "@/assets/images/landing-logo.png";
+import sidebarMenuIcon from "@/assets/images/sidebar-menu-icon.png";
+import ssidLogo from "@/assets/images/ssid-logo.png";
+import ticket from "@/assets/images/ticket.png";
 
 export type IconProps = React.SVGProps<SVGSVGElement>;
 
@@ -21,6 +21,7 @@ const imageComponents = [
   { name: "SSIDLogo", src: ssidLogo },
   { name: "FPTLogo", src: fptLogo },
   { name: "FooterImage", src: footerImg },
+  { name: "SidebarMenuIcon", src: sidebarMenuIcon },
 ];
 
 imageComponents.forEach(({ name, src }) => {
@@ -69,3 +70,8 @@ const HomeBanner: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
   <Image alt="logo" src={homeBanner} {...props} />
 );
 ImageBase.HomeBanner = HomeBanner;
+
+const SidebarMenuIcon: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={sidebarMenuIcon} {...props} />
+);
+ImageBase.SidebarMenuIcon = SidebarMenuIcon;

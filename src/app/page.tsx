@@ -7,7 +7,7 @@ import HomeSection6 from "./HomeSection6";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[white] text-black top-14">
+    <div className=" min-h-screen bg-[white] text-black top-14">
       <HomeSection1 />
       <HomeSection2 />
       <HomeSection3 />
