@@ -62,7 +62,7 @@ export default function HomeSection4() {
 
   return (
     <div className="w-full flex relative mb-24 max-[768px]:mb-[150px]">
-      <div className="font-neueMed text-[64px] w-[80%] max-[768px]:w-[60%] max-[768px]:text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-7 leading-[64px] absolute pt-8 max-[415px]:pt-0 max-[768px]:text-[50px]">
+      <div className="font-neueMed text-[64px] w-[80%] max-[768px]:w-[60%] max-[768px]:text-[26px] max-[768px]:leading-[36px] px-14 max-[768px]:px-7 leading-[64px] absolute pt-8 max-[415px]:pt-0 max-[768px]:text-[50px]">
         {isMobile ? (
           <>Vietnam Tech Impact Summit Spekers</>
         ) : (
