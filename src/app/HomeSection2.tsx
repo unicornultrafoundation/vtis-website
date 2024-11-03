@@ -1,4 +1,5 @@
-import ImageBase from "@/components/Images/ImageBase";
+import TicketImage from "@/assets/images/get-ticket-img.png";
+import Image from "next/image";
 
 const getSquareBGByIndex = (index: number) => {
   switch (index) {
@@ -28,11 +29,11 @@ export default function HomeSection2() {
           Vietnam Tech Impact Summit
         </div>
         <div className="flex gap-3 mt-1">
-          <button className="bg-gray-800 p-4 text-white">
+          <button className="bg-gray-800 p-5 text-white h-[48px] max-[768px]:w-[50%] flex items-center justify-center font-neueMed text-[16px] text-ellipsis overflow-hidden">
             Partner with Us
           </button>
-          <button>
-            <ImageBase.GetTicketImg />
+          <button className="relative w-[157px] h-[48px] max-[768px]:w-[50%] min-w-[157px]">
+            <Image src={TicketImage.src} fill className="object-cover object-center" alt='ticket-image'/>
           </button>
         </div>
       </div>
