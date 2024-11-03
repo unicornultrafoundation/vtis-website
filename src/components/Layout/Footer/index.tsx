@@ -29,9 +29,9 @@ export default function Footer() {
               Contact Us
             </button>
           </div>
-          <div className="tablet:flex gap-10  ">
+          <div className="flex w-full tablet:w-auto justify-between tablet:gap-10  ">
             {/* Nav Menu */}
-            <div className="w-full flex tablet:flex-col gap-3 tablet:gap-6">
+            <div className="w-full flex flex-col gap-6">
               {navs.map((nav, index) => (
                 <div key={index}>
                   <Link
@@ -51,7 +51,7 @@ export default function Footer() {
               ))}
             </div>
             {/* Social */}
-            <div className="flex tablet:flex-col gap-3 tablet:gap-6 tablet:pl-10 pt-6 tablet:pt-0">
+            <div className="flex flex-col gap-6 tablet:pl-10">
               {social.map((nav, index) => (
                 <div key={index}>
                   <Link href={nav.href} className="cursor-pointer">
@@ -60,6 +60,12 @@ export default function Footer() {
                 </div>
               ))}
             </div>
+            <button
+              className="tablet:hidden w-full flex justify-end"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <ImageBase.ArrowUpIcon width={40} height={40} />
+            </button>
           </div>
         </div>
         {/* Bottom */}
