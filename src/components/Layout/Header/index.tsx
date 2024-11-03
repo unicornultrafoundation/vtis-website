@@ -50,7 +50,7 @@ export default function Header() {
             {/* Menu Bar Mobile */}
             <div className="laptop:hidden z-50">
               {isOpenMobileMenu ? (
-                <ImageBase.SidebarMenuIcon
+                <ImageBase.CloseIcon
                   className="size-8 z-20"
                   onClick={() => {
                     setIsOpenMobileMenu(false);
