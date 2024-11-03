@@ -14,21 +14,24 @@ export default function Footer() {
       <ImageBase.FooterImage className="absolute right-0 bottom-0" />
       <div className="w-full h-full flex flex-col justify-between">
         {/* Top */}
-        <div className="w-full h-full flex justify-between items-start">
-          <Link href="/" className="w-[300px] h-10">
+        <div className="w-full h-full flex flex-col gap-6 tablet:flex-row justify-center tablet:justify-between items-start">
+          <Link
+            href="/"
+            className="w-full flex justify-center tablet:w-[300px] laptop:w-auto h-10"
+          >
             <ImageBase.LandingLogo width={300} height={10} />
           </Link>
-          <div className="w-[456px] flex flex-col gap-4 justify-center items-center text-center">
-            <h2 className="text-[64px] font-medium bg-gradient-to-r from-[#28D2DC] to-[#FFFFFF] bg-clip-text text-transparent">
+          <div className="tablet:w-[456px] flex flex-col gap-4 justify-center items-center text-center">
+            <h2 className="text-[40px] tablet:text-[64px] font-medium bg-gradient-to-r from-[#28D2DC] to-[#FFFFFF] bg-clip-text text-transparent">
               Shaping the future, together
             </h2>
             <button className=" px-8 py-4 text-xl bg-[#28D2DC] text-black">
               Contact Us
             </button>
           </div>
-          <div className="flex gap-10">
+          <div className="tablet:flex gap-10  ">
             {/* Nav Menu */}
-            <div className="flex flex-col gap-6">
+            <div className="w-full flex tablet:flex-col gap-6">
               {navs.map((nav, index) => (
                 <div key={index}>
                   <Link
@@ -48,7 +51,7 @@ export default function Footer() {
               ))}
             </div>
             {/* Social */}
-            <div className="flex flex-col gap-6 pl-10">
+            <div className="flex tablet:flex-col gap-6 pl-10 pt-6 tablet:pt-0">
               {social.map((nav, index) => (
                 <div key={index}>
                   <Link href={nav.href} className="cursor-pointer">
@@ -60,8 +63,8 @@ export default function Footer() {
           </div>
         </div>
         {/* Bottom */}
-        <div className="py-[100px] w-full h-full flex justify-center items-end">
-          <p className="text-5xl text-gray-300  w-[1200px] text-center">
+        <div className="py-10 tablet:py-[100px] w-full h-full flex justify-center items-end">
+          <p className="text-2xl tablet:text-5xl text-gray-300  tablet:w-[1200px] text-center">
             Asia Blockchain Summit brings together the companies and people
             shaping the blockchain industry.
           </p>
