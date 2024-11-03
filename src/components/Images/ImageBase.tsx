@@ -1,6 +1,7 @@
 import Image, { ImageProps } from "next/image";
 import React from "react";
 
+import arrowUpIcon from "@/assets/images/arrow-up-icon.png";
 import closeIcon from "@/assets/images/close-icon.png";
 import footerImg from "@/assets/images/footer-image.png";
 import fptLogo from "@/assets/images/fpt-logo.png";
@@ -24,6 +25,7 @@ const imageComponents = [
   { name: "FooterImage", src: footerImg },
   { name: "SidebarMenuIcon", src: sidebarMenuIcon },
   { name: "CloseIcon", src: closeIcon },
+  { name: "ArrowUpIcon", src: arrowUpIcon },
 ];
 
 imageComponents.forEach(({ name, src }) => {
@@ -82,3 +84,8 @@ const CloseIcon: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
   <Image alt="logo" src={closeIcon} {...props} />
 );
 ImageBase.CloseIcon = CloseIcon;
+
+const ArrowUpIcon: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={arrowUpIcon} {...props} />
+);
+ImageBase.ArrowUpIcon = ArrowUpIcon;
