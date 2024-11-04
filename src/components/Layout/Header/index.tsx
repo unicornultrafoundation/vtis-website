@@ -11,15 +11,19 @@ export default function Header() {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
   return (
     <>
-      <header className="sticky top-0 mt-0 items-center justify-between w-full h-14 bg-[#000000] text-white z-50">
-        <div className="w-full h-full p-1 flex justify-between items-center">
+      <header className="sticky top-0 mt-0 items-center justify-between w-full bg-[#000000] text-white z-50">
+        <div className="w-full h-full p-2 tablet:p-1 flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="pl-5">
-            <ImageBase.LandingLogo width={135} height={21} />
+          <Link href="/" className="pl-3">
+            <ImageBase.LandingLogo
+              width={135}
+              height={21}
+              className="object-cover object-center"
+            />
           </Link>
 
           {/* Nav Menu */}
-          <div className="hidden tablet:flex gap-6">
+          <div className="hidden tablet:flex gap-8">
             {navs.map((nav, index) => (
               <div key={index}>
                 <Link
@@ -40,12 +44,12 @@ export default function Header() {
           </div>
 
           {/* Action Button */}
-          <div className="flex items-center gap-1">
-            <button className="hidden laptop:block bg-gray-800 p-4">
+          <div className="flex items-center gap-2 tablet:gap-1">
+            <button className=" hidden laptop:inline-block bg-gray-800 px-6 py-4">
               Partner with Us
             </button>
-            <button className="w-[143px] h-[40px]">
-              <ImageBase.GetTicketImg />
+            <button className="">
+              <ImageBase.GetTicketImg className="w-[160px] h-[56px]" />
             </button>
             {/* Menu Bar Mobile */}
             <div className="laptop:hidden z-50">

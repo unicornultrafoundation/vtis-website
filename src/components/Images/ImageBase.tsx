@@ -11,6 +11,11 @@ import landingLogo from "@/assets/images/landing-logo.png";
 import sidebarMenuIcon from "@/assets/images/sidebar-menu-icon.png";
 import ssidLogo from "@/assets/images/ssid-logo.png";
 import ticket from "@/assets/images/ticket.png";
+import section2Img from "@/assets/svg/section2-img.svg";
+import aiImg from "@/assets/svg/section3-ai-img.svg";
+import blockchainImg from "@/assets/svg/section3-blockchain-img.svg";
+import fintechImg from "@/assets/svg/section3-fintech-img.svg";
+import gameImg from "@/assets/svg/section3-game-img.svg";
 
 export type IconProps = React.SVGProps<SVGSVGElement>;
 
@@ -26,6 +31,11 @@ const imageComponents = [
   { name: "SidebarMenuIcon", src: sidebarMenuIcon },
   { name: "CloseIcon", src: closeIcon },
   { name: "ArrowUpIcon", src: arrowUpIcon },
+  { name: "Section2Img", src: section2Img },
+  { name: "AIImg", src: aiImg },
+  { name: "FintechImg", src: fintechImg },
+  { name: "BlockchainImg", src: blockchainImg },
+  { name: "GameImg", src: gameImg },
 ];
 
 imageComponents.forEach(({ name, src }) => {
@@ -89,3 +99,28 @@ const ArrowUpIcon: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
   <Image alt="logo" src={arrowUpIcon} {...props} />
 );
 ImageBase.ArrowUpIcon = ArrowUpIcon;
+
+const Section2Img: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={section2Img} {...props} />
+);
+ImageBase.Section2Img = Section2Img;
+
+const AIImg: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={aiImg} {...props} />
+);
+ImageBase.AIImg = AIImg;
+
+const FintechImg: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={fintechImg} {...props} />
+);
+ImageBase.FintechImg = FintechImg;
+
+const BlockchainImg: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={blockchainImg} {...props} />
+);
+ImageBase.BlockchainImg = BlockchainImg;
+
+const GameImg: React.FC<Omit<ImageProps, "src" | "alt">> = (props) => (
+  <Image alt="logo" src={gameImg} {...props} />
+);
+ImageBase.GameImg = GameImg;

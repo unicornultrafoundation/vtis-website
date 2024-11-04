@@ -1,25 +1,33 @@
 "use client";
 
+import ImageBase from "@/components/Images/ImageBase";
 import useIsMobile from "@/hooks/useIsMobile";
 
 function Block({
   title,
   description,
   backgroundColor,
+  img,
 }: {
   title: string;
   description: string;
   backgroundColor: string;
+  img: React.ReactNode;
 }) {
   return (
     <div
       style={{
         backgroundColor: backgroundColor,
       }}
-      className="w-[50%] aspect-[720/500] flex flex-col pl-10 py-10 max-[768px]:pt-5 gap-5 pr-24 max-[600px]:w-full"
+      className="w-full tablet:w-[50%] tablet:h-[740px] flex flex-col px-4 tablet:pl-10 tablet:py-10 max-[768px]:py-6 gap-5 tablet:pr-24 justify-between "
     >
-      <div className="w-full font-neueMed text-[40px] max-[768px]:text-[32px]">{title}</div>
-      <div className="w-full font-neueMed text-[24px] max-[768px]:text-[20px]">{description}</div>
+      <div className="w-full tablet:max-w-[600px] font-neueMed text-[40px] max-[768px]:text-[32px]">
+        {title}
+        <div className="w-full font-neueMed text-[24px] max-[768px]:text-[20px] mt-4">
+          {description}
+        </div>
+      </div>
+      <div className="h-full flex items-end">{img}</div>
     </div>
   );
 }
@@ -33,21 +41,25 @@ export default function HomeSection3() {
         title="AI"
         description="Discover AI’s transformative power across gaming, blockchain, and beyond. Delving into AI’s potential in evolving business & daily life, offering valuable insights for both enthusiasts and newcomers into its limitless future."
         backgroundColor="#28D2DC"
+        img={<ImageBase.AIImg />}
       />
       <Block
         title="Fintech"
         description="Explore how tech advancements are driving disruption and fueling fintech growth. Gain insights into their impact on financial services, new business models, and regulations."
         backgroundColor="#fff"
+        img={<ImageBase.FintechImg />}
       />
       <Block
         title="Blockchain"
         description="Uncover how blockchain is revolutionizing industries of finance, supply chain, gaming and decentralized applications. Learn from experts to unveil the boundless possibilities of blockchain technology"
         backgroundColor={isMobile ? "#28D2DC" : "#fff"}
+        img={<ImageBase.BlockchainImg />}
       />
       <Block
         title="Game"
         description="Uncover how blockchain is revolutionizing industries of finance, supply chain, gaming and decentralized applications. Learn from experts to unveil the boundless possibilities of blockchain technology"
         backgroundColor={isMobile ? "#fff" : "#28D2DC"}
+        img={<ImageBase.GameImg />}
       />
     </div>
   );

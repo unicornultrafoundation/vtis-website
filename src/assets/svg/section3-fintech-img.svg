@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="196" viewBox="0 0 200 196" fill="none">
+  <path d="M21.8281 82.6909L26.706 87.5612V143.562L21.166 149.102V157.153" stroke="black" stroke-miterlimit="10" />
+  <path d="M49.9419 82.6909L45.064 87.5612V143.562L50.6115 149.102V157.153" stroke="black" stroke-miterlimit="10" />
+  <path d="M86.1025 82.6909L90.9804 87.5612V143.562L85.4404 149.102V157.153" stroke="black" stroke-miterlimit="10" />
+  <path d="M114.213 82.6909L109.335 87.5612V143.562L114.875 149.102V157.153" stroke="black" stroke-miterlimit="10" />
+  <path d="M150.949 82.6909L155.827 87.5612V143.562L150.287 149.102V157.153" stroke="black" stroke-miterlimit="10" />
+  <path d="M179.059 82.6909L174.181 87.5612V143.562L179.721 149.102V157.153" stroke="black" stroke-miterlimit="10" />
+  <path d="M190.562 54.9152H9.12842V69.8305H190.562V54.9152Z" stroke="black" stroke-miterlimit="10" />
+  <path d="M197.549 179.99H2.14307V195.164H197.549V179.99Z" stroke="black" stroke-miterlimit="10" />
+  <path
+    d="M16.2222 46.9323V46.7192C16.2222 43.7666 17.8887 41.0727 20.5217 39.7486L96.331 1.70696C98.5378 0.595924 101.148 0.603534 103.355 1.72218L179.499 40.3269C182.117 41.6586 183.768 44.3449 183.768 47.2823V48.9945"
+    stroke="black" stroke-miterlimit="10" />
+  <path
+    d="M100.729 39.2462C106.112 39.2462 110.477 34.8818 110.477 29.498C110.477 24.1142 106.112 19.7498 100.729 19.7498C95.3449 19.7498 90.9805 24.1142 90.9805 29.498C90.9805 34.8818 95.3449 39.2462 100.729 39.2462Z"
+    stroke="black" stroke-miterlimit="10" />
+  <path d="M9.12842 165.631H190.562" stroke="black" stroke-miterlimit="10" />
+</svg>

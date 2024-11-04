@@ -1,8 +1,8 @@
 "use client";
 
+import mask from "@/assets/images/mask.png";
 import useIsMobile from "@/hooks/useIsMobile";
 import Image from "next/image";
-import mask from "@/assets/images/mask.png";
 import { useState } from "react";
 
 const getSquareBGByIndex = (index: number) => {
@@ -60,11 +60,11 @@ const Column = ({
 
 export default function HomeSection4() {
   const isMobile = useIsMobile(768);
-  const [isViewAll, setViewAll] = useState(false)
+  const [isViewAll, setViewAll] = useState(false);
 
   return (
-    <div className="w-full flex relative mb-24 max-[768px]:mb-[150px]">
-      <div className="font-neueMed text-[64px] w-[80%] max-[768px]:w-[60%] max-[768px]:!text-[26px] max-[768px]:leading-[36px] px-14 max-[768px]:px-7 leading-[64px] absolute pt-8 max-[415px]:pt-0">
+    <div className="w-full flex relative mb-[73px] max-[768px]:mb-0">
+      <div className="z-30 font-neueMed text-[64px] tablet:w-[80%] w-full h-[72px] max-[768px]:!text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-4 py-6 leading-[64px] absolute pt-8 max-[415px]:pt-6">
         {isMobile ? (
           <>Vietnam Tech Impact Summit Spekers</>
         ) : (
@@ -73,7 +73,7 @@ export default function HomeSection4() {
           </>
         )}
       </div>
-      <div className="w-[30%] aspect-square bg-[red] flex flex-wrap max-[768px]:w-[33%] absolute right-0">
+      <div className="w-[25%] aspect-square flex flex-wrap max-[768px]:w-[33%] absolute right-0 z-10">
         {Array(9)
           .fill("")
           .map((_, index) => (
@@ -86,7 +86,7 @@ export default function HomeSection4() {
             />
           ))}
       </div>
-      <div className="w-full z-[5] px-14 pt-10 max-[768px]:px-0 relative">
+      <div className="w-full z-[5] px-6 py-8 max-[768px]:px-0 relative">
         <div className="w-full flex justify-between flex-wrap mt-[1vh] max-[1500px]:mt-[3.5vh] max-[1300px]:mt-[5vh] max-[1180px]:mt-[6.5vh]">
           <Column
             colIndex={0}
@@ -249,132 +249,132 @@ export default function HomeSection4() {
               />
             </>
           )}
-            {isMobile && (
-              isViewAll? 
-            <>
-              {" "}
-              <Column
-                colIndex={2}
-                className="!-mt-[7.1%]"
-                items={[
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                ]}
-              />
-              <Column
-                colIndex={3}
-                className="!pt-[-1%]"
-                items={[
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                ]}
-              />
-              <Column
-                colIndex={4}
-                className="!-mt-[7.2%]"
-                items={[
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                ]}
-              />
-              <Column
-                colIndex={5}
-                className="!-mt-[0.1%]"
-                items={[
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                  },
-                ]}
-              />
-            </>
-            :null
-          )}
+          {isMobile &&
+            (isViewAll ? (
+              <>
+                {" "}
+                <Column
+                  colIndex={2}
+                  className="!-mt-[7.1%]"
+                  items={[
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                  ]}
+                />
+                <Column
+                  colIndex={3}
+                  className="!pt-[-1%]"
+                  items={[
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                  ]}
+                />
+                <Column
+                  colIndex={4}
+                  className="!-mt-[7.2%]"
+                  items={[
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                  ]}
+                />
+                <Column
+                  colIndex={5}
+                  className="!-mt-[0.1%]"
+                  items={[
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                    {
+                      companyName: "SSI Digital",
+                      name: "Mr Mai Huy Tuan",
+                      title: "CEO",
+                    },
+                  ]}
+                />
+              </>
+            ) : null)}
           {isMobile && (
             <div
               style={{
                 height: "500px",
-                backgroundImage: !isViewAll ? `url(${mask.src})` : 'none', 
+                backgroundImage: !isViewAll ? `url(${mask.src})` : "none",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 pointerEvents: "none",
               }}
-              className="w-full flex items-end py-5 justify-center absolute -bottom-[150px]"
+              className="w-full flex items-end py-5 justify-center absolute -bottom-[60px]"
             >
-              <button 
-              onClick={() => setViewAll(!isViewAll)}
-              className="pointer-events-auto font-neueMed text-[16px] py-[12px] px-[24px] border-solid border-[1px] border-black">
-               {!isViewAll ? `View all` : `Hide`}
+              <button
+                onClick={() => setViewAll(!isViewAll)}
+                className="pointer-events-auto font-neueMed text-[16px] py-[12px] px-[24px] border-solid border-[1px] border-black"
+              >
+                {!isViewAll ? `View all` : `Hide`}
               </button>
             </div>
           )}

@@ -16,7 +16,7 @@ const TierParners = ({
   return (
     <div className="w-full flex flex-col">
       {tier && (
-        <div className="w-full font-neueMed text-[32px] max-[768px]:text-[18px] text-[#fff] mt-10 mb-5">
+        <div className="w-full font-neueMed text-[32px] max-[768px]:text-[18px] text-[#fff] mt-12 mb-4">
           {tier}
         </div>
       )}
@@ -46,13 +46,13 @@ const TierParners = ({
 
 const HomeSection6 = () => {
   return (
-    <div className="bg-[#000000] flex flex-col gap-8 px-12 max-[768px]:px-0 py-[72px] pb-50">
+    <div className="bg-[#000000] flex flex-col gap-8 px-12 max-[768px]:px-0 py-[80px] pb-50">
       {/* {partners} */}
       <div className="w-full flex flex-col px-5">
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-8 max-[768px]:text-[24px]">
           Strategic partners
         </div>
-        <div className="w-full flex flex-wrap gap-[5px] mb-16">
+        <div className="w-full flex flex-wrap gap-[5px] mb-20">
           <TierParners
             partners={Array(5)
               .fill("")
