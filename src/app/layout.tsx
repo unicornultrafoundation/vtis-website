@@ -21,7 +21,7 @@ const ppNeueBold = localFont({
   weight: "700",
 });
 
-const ppNeueMed= localFont({
+const ppNeueMed = localFont({
   src: "./fonts/pp-neue-montreal/ppneuemontreal-medium.woff",
   variable: "--font-neue-med",
   weight: "700",

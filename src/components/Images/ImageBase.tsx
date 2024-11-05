@@ -5,7 +5,6 @@ import arrowUpIcon from "@/assets/images/arrow-up-icon.png";
 import closeIcon from "@/assets/images/close-icon.png";
 import footerImg from "@/assets/images/footer-image.png";
 import fptLogo from "@/assets/images/fpt-logo.png";
-import getTicketImg from "@/assets/images/get-ticket-img.png";
 import homeBanner from "@/assets/images/home-banner.png";
 import landingLogo from "@/assets/images/landing-logo.png";
 import sidebarMenuIcon from "@/assets/images/sidebar-menu-icon.png";
@@ -16,6 +15,7 @@ import aiImg from "@/assets/svg/section3-ai-img.svg";
 import blockchainImg from "@/assets/svg/section3-blockchain-img.svg";
 import fintechImg from "@/assets/svg/section3-fintech-img.svg";
 import gameImg from "@/assets/svg/section3-game-img.svg";
+import getTicketImg from "@/assets/svg/ticket-logo.svg";
 
 export type IconProps = React.SVGProps<SVGSVGElement>;
 

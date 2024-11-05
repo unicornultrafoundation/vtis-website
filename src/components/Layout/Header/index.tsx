@@ -16,7 +16,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="pl-3">
             <ImageBase.LandingLogo
-              width={135}
+              width={117}
               height={21}
               className="object-cover object-center"
             />
@@ -28,7 +28,7 @@ export default function Header() {
               <div key={index}>
                 <Link
                   href={nav.href}
-                  className="cursor-pointer"
+                  className="cursor-pointer font-neueMed text-sm text-[15px]"
                   onClick={() => setActiveTab(nav.href)}
                 >
                   <p
@@ -45,11 +45,24 @@ export default function Header() {
 
           {/* Action Button */}
           <div className="flex items-center gap-2 tablet:gap-1">
-            <button className=" hidden laptop:inline-block bg-gray-800 px-6 py-4">
+            <button className=" h-12 hidden laptop:flex bg-[#ffffff26] px-6 py-4 text-center laptop:items-center">
               Partner with Us
             </button>
-            <button className="">
-              <ImageBase.GetTicketImg className="w-[160px] h-[56px]" />
+            <button className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
+              <ImageBase.GetTicketImg
+                fill-color="#000"
+                className={`w-auto h-[48px]`}
+              />
+              <div
+                className="absolute inset-y-0 left-5 text-black group-hover:-translate-y-[2.7rem] transition-all duration-500 ease-in-out flex flex-col items-center gap-5 top-3"
+                // style={{
+                //   transition: "transform .35s,opacity .35s",
+                //   transitionTimingFunction: "cubic-bezier(.66,0,.34,1)",
+                // }}
+              >
+                <div>Get Ticket</div>
+                <div>Get Ticket</div>
+              </div>
             </button>
             {/* Menu Bar Mobile */}
             <div className="laptop:hidden z-50">

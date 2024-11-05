@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import HomeBanner from "@/assets/images/home-banner.png";
 import { formatWithCommas } from "@/utils";
@@ -29,7 +29,7 @@ function SectionStatItem({ title, amount }: { title: string; amount: number }) {
     isCounting: true,
     end: amount,
     duration: 5,
-  })
+  });
   return (
     <div className="w-[25%] max-[768px]:w-[50%] py-6 tablet:py-10 flex flex-col items-center justify-center max-[768px]:items-start px-4">
       <div className="font-neueMed text-[56px] max-[768px]:text-[40px]">
@@ -68,8 +68,9 @@ export default function HomeSection1() {
           src={HomeBanner.src}
           fill
           alt="home-banner"
-          objectFit="cover"
-          objectPosition="center"
+          // objectFit="cover"
+          // objectPosition="center"
+          className="object-cover object-center"
         />
       </div>
       <div className="w-full flex flex-wrap">

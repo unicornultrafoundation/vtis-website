@@ -15,7 +15,7 @@ const TierParners = ({
   return (
     <div className="w-full flex flex-col">
       {tier && (
-        <div className="w-full font-neueMed text-[32px] max-[768px]:text-[18px] text-[#fff] mt-12 mb-4">
+        <div className="w-full font-neueMed text-[32px] max-[768px]:text-[18px] text-[#fff] mt-8 mb-4">
           {tier}
         </div>
       )}
@@ -23,7 +23,7 @@ const TierParners = ({
         {partners.map((p, pIndex) => (
           <div
             key={pIndex}
-            className="w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 aspect-video max-[768px]:aspect-[118/88] p-[5px] max-[768px]:p-[2px]"
+            className="w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 aspect-video max-[768px]:aspect-[118/88] p-[2px] max-[768px]:p-[2px]"
           >
             <div className="bg-[rgba(255,255,255,0.05)] w-full h-full flex items-center justify-center">
               <div className="relative w-[50%] aspect-video max-[768px]:w-[65%]">
@@ -31,8 +31,9 @@ const TierParners = ({
                   src={`/images/${p.logo}`}
                   fill
                   alt="parner-logo"
-                  objectPosition="center"
-                  objectFit="contain"
+                  // objectPosition="center"
+                  // objectFit="contain"
+                  className="object-contain object-center"
                 />
               </div>
             </div>

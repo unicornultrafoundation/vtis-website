@@ -1,6 +1,4 @@
-import TicketImage from "@/assets/images/get-ticket-img.png";
 import ImageBase from "@/components/Images/ImageBase";
-import Image from "next/image";
 
 // const getSquareBGByIndex = (index: number) => {
 //   switch (index) {
@@ -34,13 +32,21 @@ export default function HomeSection2() {
             <button className="bg-gray-800 p-5 text-white h-[48px] max-[768px]:w-[50%] flex items-center justify-center font-neueMed text-[16px] text-ellipsis overflow-hidden">
               Partner with Us
             </button>
-            <button className="relative w-[157px] h-[48px] max-[768px]:w-[50%] min-w-[157px]">
-              <Image
-                src={TicketImage.src}
-                fill
-                className="object-cover object-center"
-                alt="ticket-image"
+            <button className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
+              <ImageBase.GetTicketImg
+                fill-color="#000"
+                className={`w-auto h-[48px]`}
               />
+              <div
+                className="absolute inset-y-0 left-5 text-black group-hover:-translate-y-[2.7rem] transition-all duration-500 ease-in-out flex flex-col items-center gap-5 top-3"
+                // style={{
+                //   transition: "transform .35s,opacity .35s",
+                //   transitionTimingFunction: "cubic-bezier(.66,0,.34,1)",
+                // }}
+              >
+                <div>Get Ticket</div>
+                <div>Get Ticket</div>
+              </div>
             </button>
           </div>
         </div>
