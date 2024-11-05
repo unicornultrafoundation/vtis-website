@@ -31,8 +31,9 @@ const TierParners = ({
                   src={`/images/${p.logo}`}
                   fill
                   alt="parner-logo"
-                  objectPosition="center"
-                  objectFit="contain"
+                  // objectPosition="center"
+                  // objectFit="contain"
+                  className="object-contain object-center"
                 />
               </div>
             </div>

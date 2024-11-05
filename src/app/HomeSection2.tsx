@@ -34,7 +34,7 @@ export default function HomeSection2() {
             </button>
             <button className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
               <ImageBase.GetTicketImg
-                fillColor="#000"
+                fill-color="#000"
                 className={`w-auto h-[48px]`}
               />
               <div

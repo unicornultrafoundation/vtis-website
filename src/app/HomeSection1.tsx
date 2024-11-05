@@ -68,8 +68,9 @@ export default function HomeSection1() {
           src={HomeBanner.src}
           fill
           alt="home-banner"
-          objectFit="cover"
-          objectPosition="center"
+          // objectFit="cover"
+          // objectPosition="center"
+          className="object-cover object-center"
         />
       </div>
       <div className="w-full flex flex-wrap">
