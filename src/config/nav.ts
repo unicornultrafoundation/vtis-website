@@ -14,7 +14,7 @@ export const navs: NavItem[] = [
   },
   {
     label: "Agenda",
-    href: "#2",
+    href: "agenda",
   },
   {
     label: "Partner",
