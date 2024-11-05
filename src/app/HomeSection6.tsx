@@ -1,4 +1,3 @@
-import PartnerSampleLogo from "@/assets/images/parner-sample-logo.png";
 import Image from "next/image";
 
 type Partner = {
@@ -21,7 +20,7 @@ const TierParners = ({
         </div>
       )}
       <div className="w-full flex flex-wrap">
-        {partners.map((_, pIndex) => (
+        {partners.map((p, pIndex) => (
           <div
             key={pIndex}
             className="w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 aspect-video max-[768px]:aspect-[118/88] p-[5px] max-[768px]:p-[2px]"
@@ -29,7 +28,7 @@ const TierParners = ({
             <div className="bg-[rgba(255,255,255,0.05)] w-full h-full flex items-center justify-center">
               <div className="relative w-[50%] aspect-video max-[768px]:w-[65%]">
                 <Image
-                  src={PartnerSampleLogo.src}
+                  src={`/images/${p.logo}`}
                   fill
                   alt="parner-logo"
                   objectPosition="center"
@@ -59,7 +58,7 @@ const HomeSection6 = () => {
               .map((_, i) => {
                 return {
                   name: "Parner " + i,
-                  logo: "",
+                  logo: `stategic-partners/partner-${i}.png`,
                 };
               })}
           />
@@ -75,7 +74,7 @@ const HomeSection6 = () => {
               .map((_, i) => {
                 return {
                   name: "Parner " + i,
-                  logo: "",
+                  logo: `title/partner-${i}.png`,
                 };
               })}
           />
@@ -86,7 +85,7 @@ const HomeSection6 = () => {
               .map((_, i) => {
                 return {
                   name: "Parner " + i,
-                  logo: "",
+                  logo: `plat/partner-${i}.png`,
                 };
               })}
           />
@@ -97,7 +96,7 @@ const HomeSection6 = () => {
               .map((_, i) => {
                 return {
                   name: "Parner " + i,
-                  logo: "",
+                  logo: `gold/partner-${i}.png`,
                 };
               })}
           />
@@ -108,7 +107,7 @@ const HomeSection6 = () => {
               .map((_, i) => {
                 return {
                   name: "Parner " + i,
-                  logo: "",
+                  logo: `silver/partner-${i}.png`,
                 };
               })}
           />
@@ -123,12 +122,12 @@ const HomeSection6 = () => {
               .map((_, i) => {
                 return {
                   name: "Parner " + i,
-                  logo: "",
+                  logo: `gov/partner-${i}.png`,
                 };
               })}
           />
         </div>
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
+        {/* <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
           Media
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-16">
@@ -172,7 +171,7 @@ const HomeSection6 = () => {
                 };
               })}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

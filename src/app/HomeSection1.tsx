@@ -1,6 +1,9 @@
+'use client';
+
 import HomeBanner from "@/assets/images/home-banner.png";
 import { formatWithCommas } from "@/utils";
 import Image from "next/image";
+import { useCountUp } from "use-count-up";
 
 function CategoryTag({
   name,
@@ -22,10 +25,15 @@ function CategoryTag({
 }
 
 function SectionStatItem({ title, amount }: { title: string; amount: number }) {
+  const { value } = useCountUp({
+    isCounting: true,
+    end: amount,
+    duration: 5,
+  })
   return (
     <div className="w-[25%] max-[768px]:w-[50%] py-6 tablet:py-10 flex flex-col items-center justify-center max-[768px]:items-start px-4">
       <div className="font-neueMed text-[56px] max-[768px]:text-[40px]">
-        {formatWithCommas(amount)}
+        {formatWithCommas(Number(value?.toString()))}
       </div>
       <div className="font-neueMed text-[24px] max-[768px]:text-[20px]">
         {title}

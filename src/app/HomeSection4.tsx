@@ -63,7 +63,7 @@ export default function HomeSection4() {
   const [isViewAll, setViewAll] = useState(false);
 
   return (
-    <div className="w-full flex relative mb-[73px] max-[768px]:mb-0">
+    <div className="w-full flex relative mb-[73px] max-[768px]:mb-20">
       <div className="z-30 font-neueMed text-[64px] tablet:w-[80%] w-full h-[72px] max-[768px]:!text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-4 py-6 leading-[64px] absolute pt-8 max-[415px]:pt-6">
         {isMobile ? (
           <>Vietnam Tech Impact Summit Spekers</>
