@@ -62,20 +62,6 @@ export default function HomeSection4() {
   const isMobile = useIsMobile(768);
   const [isViewAll, setViewAll] = useState(false);
 
-  // const [speakers, setSpeakers] = useState<Speaker[]>([]);
-
-  // const getSpeakers = async () => {
-  //   try {
-  //     const response = await axios.get("/api/speakers");
-  //     const speakers = response.data.data as Speaker[];
-  //     setSpeakers(speakers);
-  //   } catch (err) {}
-  // };
-
-  // useEffect(() => {
-  //   getSpeakers();
-  // }, []);
-
   return (
     <div className="w-full flex relative mb-[73px] max-[768px]:mb-20">
       <div className="z-30 font-neueMed text-[64px] tablet:w-[80%] w-full h-[72px] max-[768px]:!text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-4 py-6 leading-[64px] absolute pt-8 max-[415px]:pt-6">
