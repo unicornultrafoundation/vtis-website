@@ -14,7 +14,7 @@ export default function Header() {
       <header className="sticky top-0 mt-0 items-center justify-between w-full bg-[#000000] text-white z-50">
         <div className="w-full h-full p-2 tablet:p-1 flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="pl-3">
+          <Link href="/" className="pl-3 flex-1">
             <ImageBase.LandingLogo className="w-[117px] h-[21px] fullscreen:w-[355px] fullscreen:h-[56px]" />
           </Link>
 
@@ -28,7 +28,7 @@ export default function Header() {
                   onClick={() => setActiveTab(nav.href)}
                 >
                   <p
-                    className={`${
+                    className={`hover:text-white transition-all ${
                       activeTab === nav.href ? "text-white" : "text-gray-400"
                     }`}
                   >
@@ -40,7 +40,7 @@ export default function Header() {
           </div>
 
           {/* Action Button */}
-          <div className="flex items-center gap-2 tablet:gap-1">
+          <div className="flex flex-1 justify-end items-center gap-2 tablet:gap-1">
             <button className=" h-12 fullscreen:w-[410px] fullscreen:h-[128px] hidden laptop:flex bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center laptop:hover:bg-white laptop:hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8">
               Partner with Us
             </button>
