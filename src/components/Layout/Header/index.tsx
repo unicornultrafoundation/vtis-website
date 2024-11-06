@@ -45,7 +45,7 @@ export default function Header() {
 
           {/* Action Button */}
           <div className="flex items-center gap-2 tablet:gap-1">
-            <button className=" h-12 hidden laptop:flex bg-[#ffffff26] px-6 py-4 text-center laptop:items-center">
+            <button className=" h-12 hidden laptop:flex bg-[#ffffff26] px-6 py-4 text-center laptop:items-center laptop:hover:bg-white laptop:hover:text-black transition duration-500">
               Partner with Us
             </button>
             <button className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
