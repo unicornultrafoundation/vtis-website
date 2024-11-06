@@ -1,7 +1,6 @@
 "use client";
 
 import mask from "@/assets/images/mask.png";
-import ImageBase from "@/components/Images/ImageBase";
 import useIsMobile from "@/hooks/useIsMobile";
 import Image from "next/image";
 import landingLogo from "@/assets/images/landing-logo.png";
@@ -42,14 +41,14 @@ const speakersData = [
   },
   {
     Name: "Dr Olinga Taeed",
-    Title: "First Blockchain Profesor, Advisor for China Gov for Blockchain",
+    Title: "Blockchain Profesor, Advisor - China Gov",
     image:
       "https://drive.google.com/file/d/1vR7-ei3TMLS22y-nNntBh41v45eYEeII/view?usp=drive_link",
     Status: "",
   },
   {
     Name: "Loi Luu",
-    Title: "Founder Kyber",
+    Title: "Founder - Kyber",
     image:
       "https://drive.google.com/file/d/1FNfr0jw31czMXrGF-Fwkb_ckgi38jp1s/view?usp=drive_link",
     Status: "",
@@ -139,7 +138,7 @@ const speakersData = [
   },
   {
     Name: "Binh Tran",
-    Title: "Partner. AVV ventures",
+    Title: "Partner - AVV ventures",
     image:
       "https://drive.google.com/file/d/1YYTmZsHcfWyv8rZ0nlG36BFn5pva83BE/view?usp=drive_link",
     Status: "",
@@ -203,7 +202,6 @@ const getSquareBGByIndex = (index: number) => {
 const Column = ({
   items,
   className,
-  colIndex,
 }: {
   items: { name: string; title: string; companyName: string; index: number }[];
   className: string;
@@ -219,10 +217,12 @@ const Column = ({
           className="w-[100%] border-solid border-[0.5px] border-[#D9D9D9] p-4 fullscreen:p-[26px] flex flex-col gap-1 fullscreen:gap-[10px] items-start justify-start"
         >
           <div className="w-[100%] aspect-[1/1.05] relative flex justify-center">
-            {item.index !== 5 && item.index !== 10 ? (
+            {item.index !== 4 && item.index !== 9 ? (
               <div className="w-[210px] h-[237px] overflow-hidden relative">
                 <Image
-                  src={`/images/speakers/${item.index}.png`}
+                  src={`/images/speakers/${
+                    item.index >= 3 ? item.index + 1 : item.index
+                  }.png`}
                   fill
                   className="object-cover object-center animated-card-image absolute left-0 top-0"
                   alt="person-image"
@@ -240,13 +240,24 @@ const Column = ({
             )}
           </div>
           <div className="animated-text mt-3 font-neueMed text-[20px] fullscreen:text-5xl fullscreen:text-[53px]">
-            {speakersData[item.index - 1].Name}
+            {
+              speakersData[item.index >= 3 ? item.index + 1 - 1 : item.index - 1]
+                .Name
+            }
           </div>
           <div className="animated-text animated-text-delay-0.2s font-neueMed text-[16px] fullscreen:text-4xl fullscreen:text-[42px]">
-            {speakersData[item.index - 1].Title.split("-")[0]}
+            {
+              speakersData[
+                item.index >= 3 ? item.index + 1 - 1 : item.index -1
+              ].Title.split("-")[0]
+            }
           </div>
           <div className="animated-text animated-text-delay-0.4s font-neueMed text-[14px] fullscreen:text-[37px] border-solid border-[1px] border-black px-1 fullscreen:px-[10px] mt-1 fullscreen:mb-[37px]">
-            {speakersData[item.index - 1].Title.split("-")[1]}
+            {
+              speakersData[
+                item.index >= 3 ? item.index + 1 - 1 : item.index - 1
+              ].Title.split("-")[1]
+            }
           </div>
         </div>
       ))}
@@ -262,7 +273,7 @@ export default function HomeSection4() {
     <div className="w-full flex relative mb-[73px] max-[768px]:mb-20">
       <div className="animated-text z-30 font-neueMed text-[64px] fullscreen:text-[170px] fullscreen:leading-[192px] tablet:w-[80%] w-full h-[72px] max-[768px]:!text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-4 py-6 leading-[64px] absolute pt-8 fullscreen:pt-[85px] max-[415px]:pt-6">
         {isMobile ? (
-          <>Vietnam Tech Impact Summit Speakers</>
+          <>Vietnam Tech Impact <br/>Summit Speakers</>
         ) : (
           <>
             Vietnam Tech <br /> Impact Summit <br /> Speakers
@@ -408,7 +419,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={4}
-                className="pt-[35%] fullscreen:pt-[20%]"
+                className="pt-[35%] tablet:pt-[26%] fullscreen:pt-[20%]"
                 items={[
                   {
                     companyName: "SSI Digital",
@@ -428,17 +439,17 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 18,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 20,
-                  },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 20,
+                  // },
                 ]}
               />
               <Column
                 colIndex={5}
-                className="pt-[40%] fullscreen:pt-[26%] "
+                className="pt-[40%] tablet:pt-[34%] fullscreen:pt-[26%] "
                 items={[
                   {
                     companyName: "SSI Digital",
@@ -456,8 +467,14 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 23,
+                    index: 20,
                   },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 23,
+                  // },
                   // {
                   //   companyName: "SSI Digital",
                   //   name: "Mr Mai Huy Tuan",
@@ -616,12 +633,12 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 21,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 23,
-                  },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 23,
+                  // },
                 ]}
               />
               <Column
