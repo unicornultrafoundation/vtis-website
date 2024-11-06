@@ -22,14 +22,14 @@ export default function HomeSection2() {
     <>
       <div className="relative w-full flex bg-[#000000] max-[768px]:flex-col pt-6 tablet:pt-14 tablet:pb-0 px-4 tablet:px-6 overflow-hidden ">
         <div className="w-[50%] max-[768px]:w-full max-[768px]:pb-8 flex flex-col items-start justify-start max-[768px]:px-0">
-          <div className="px-1 py-1 text-[white] border-solid border-[2px] border-[white] font-neueMed text-[20px]">
+          <div className="px-1 text-[white] border-solid border border-[white] font-neueMed text-[20px] mb-[5px]">
             VTIS
           </div>
-          <div className=" w-[249px] tablet:w-full text-[white] font-neueMed text-[28px] pb-4 ">
+          <div className=" w-[249px] tablet:w-full text-[white] font-neueMed text-[28px] pb-4">
             Vietnam Tech Impact Summit
           </div>
           <div className="flex gap-2 tablet:gap-3">
-            <button className="bg-gray-800 p-5 text-white h-[48px] max-[768px]:w-[50%] flex items-center justify-center font-neueMed text-[16px] text-ellipsis overflow-hidden">
+            <button className="bg-[#ffffff26] p-5 text-white h-[48px] max-[768px]:w-[50%] flex items-center justify-center font-neueMed text-[16px] text-ellipsis overflow-hidden laptop:hover:bg-white laptop:hover:text-black transition duration-500">
               Partner with Us
             </button>
             <button className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
