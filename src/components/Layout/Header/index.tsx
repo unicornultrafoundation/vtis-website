@@ -75,7 +75,7 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <SideBarMenu isOpen={isOpenMobileMenu} />
+      <SideBarMenu isOpen={isOpenMobileMenu}  onClose={()=> setIsOpenMobileMenu(false)} />
     </>
   );
 }
