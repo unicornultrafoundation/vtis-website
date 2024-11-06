@@ -37,7 +37,7 @@ const Column = ({
       {items.map((item, i) => (
         <div
           key={i}
-          className="w-[100%] border-solid border-[0.5px] border-[#D9D9D9] p-4 flex flex-col gap-1 items-start justify-start"
+          className="w-[100%] border-solid border-[0.5px] border-[#D9D9D9] p-4 fullscreen:p-[26px] flex flex-col gap-1 fullscreen:gap-[10px] items-start justify-start"
         >
           <div className="w-[100%] aspect-[1/1.05] relative">
             <Image
@@ -47,9 +47,13 @@ const Column = ({
               alt="person-image"
             />
           </div>
-          <div className="mt-3 font-neueMed text-[20px]">{item.name}</div>
-          <div className="font-neueMed text-[16px]">{item.title}</div>
-          <div className="font-neueMed text-[14px] border-solid border-[1px] border-black p-1 mt-1">
+          <div className="mt-3 font-neueMed text-[20px] fullscreen:text-5xl fullscreen:text-[53px]">
+            {item.name}
+          </div>
+          <div className="font-neueMed text-[16px] fullscreen:text-4xl fullscreen:text-[42px]">
+            {item.title}
+          </div>
+          <div className="font-neueMed text-[14px] fullscreen:text-[37px] border-solid border-[1px] border-black px-1 fullscreen:px-[10px] mt-1 fullscreen:mb-[37px]">
             {item.companyName}
           </div>
         </div>
@@ -64,12 +68,12 @@ export default function HomeSection4() {
 
   return (
     <div className="w-full flex relative mb-[73px] max-[768px]:mb-20">
-      <div className="z-30 font-neueMed text-[64px] tablet:w-[80%] w-full h-[72px] max-[768px]:!text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-4 py-6 leading-[64px] absolute pt-8 max-[415px]:pt-6">
+      <div className="z-30 font-neueMed text-[64px] fullscreen:text-[170px] fullscreen:leading-[192px] tablet:w-[80%] w-full h-[72px] max-[768px]:!text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-4 py-6 leading-[64px] absolute pt-8 fullscreen:pt-[85px] max-[415px]:pt-6">
         {isMobile ? (
-          <>Vietnam Tech Impact Summit Spekers</>
+          <>Vietnam Tech Impact Summit Speakers</>
         ) : (
           <>
-            Vietnam Tech <br /> Impact Summit <br /> Spekers
+            Vietnam Tech <br /> Impact Summit <br /> Speakers
           </>
         )}
       </div>
@@ -86,7 +90,7 @@ export default function HomeSection4() {
             />
           ))}
       </div>
-      <div className="w-full z-[5] px-6 py-8 max-[768px]:px-0 relative">
+      <div className="w-full z-[5] px-6 py-8 max-[768px]:px-0 relative fullscreen:mt-[260px]">
         <div className="w-full flex justify-between flex-wrap mt-[1vh] max-[1500px]:mt-[3.5vh] max-[1300px]:mt-[5vh] max-[1180px]:mt-[6.5vh]">
           <Column
             colIndex={0}
@@ -116,7 +120,7 @@ export default function HomeSection4() {
           />
           <Column
             colIndex={1}
-            className="pt-[22%]"
+            className="pt-[50%] tablet:pt-[22%]"
             items={[
               {
                 companyName: "SSI Digital",
@@ -171,7 +175,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={3}
-                className="pt-[5%]"
+                className="pt-[5%] fullscreen:pt-0"
                 items={[
                   {
                     companyName: "SSI Digital",
@@ -197,7 +201,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={4}
-                className="pt-[35%]"
+                className="pt-[35%] fullscreen:pt-[20%]"
                 items={[
                   {
                     companyName: "SSI Digital",
@@ -223,7 +227,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={5}
-                className="pt-[40%] "
+                className="pt-[40%] fullscreen:pt-[26%] "
                 items={[
                   {
                     companyName: "SSI Digital",
