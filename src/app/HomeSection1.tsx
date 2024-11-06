@@ -17,7 +17,7 @@ function CategoryTag({
       style={{
         backgroundColor: backgroundColor,
       }}
-      className="py-3 tablet:py-4 fullscreen:py-[42.67px]  px-[24px] fullscreen:px-16 rounded-[90px] font-neueMed border-solid border-[1px] border-black uppercase text-[16px] fullscreen:text-[42.6px]"
+      className="py-3 tablet:py-4 fullscreen:py-[42.67px] px-[24px] fullscreen:px-16 rounded-[90px] font-neueMed border-solid border-[1px] border-black uppercase text-[16px] fullscreen:text-[42.6px]"
     >
       {name}
     </div>

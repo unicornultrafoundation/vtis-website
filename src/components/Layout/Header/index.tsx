@@ -47,9 +47,9 @@ export default function Header() {
             <button className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
               <ImageBase.GetTicketImg
                 fill-color="#000"
-                className={`w-auto h-[48px] fullscreen:h-[128px]`}
+                className={`w-auto tablet:h-[48px] fullscreen:h-[128px]`}
               />
-              <div className="absolute inset-y-0 left-5 text-black group-hover:-translate-y-[2.7rem] transition-all duration-500 ease-in-out flex flex-col items-center gap-5 top-3 fullscreen:top-8 fullscreen:text-[43px] font-neueMed fullscreen:group-hover:-translate-y-[6rem] fullscreen:left-12">
+              <div className="absolute inset-y-0 left-4 tablet:left-5 text-black group-hover:-translate-y-[2.7rem] transition-all duration-500 ease-in-out flex flex-col items-center gap-5 top-2 tablet:top-3 fullscreen:top-8 fullscreen:text-[43px] font-neueMed fullscreen:group-hover:-translate-y-[6rem] fullscreen:left-12">
                 <div>Get Ticket</div>
                 <div>Get Ticket</div>
               </div>
