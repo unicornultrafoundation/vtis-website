@@ -46,7 +46,7 @@ const TierParners = ({
 
 const HomeSection6 = () => {
   return (
-    <div className="bg-[#000000] flex flex-col gap-8 px-12 max-[768px]:px-0 py-[80px] pb-50">
+    <div className="bg-[#000000] flex flex-col gap-8 px-12 max-[768px]:px-0 py-[80px] fullscreen:pt-[213px] fullscreen:pb-[407px] pb-50">
       {/* {partners} */}
       <div className="w-full flex flex-col px-5">
         <div className="w-full font-neueMed text-[48px] text-[#fff] mb-8 fullscreen:mb-[85px] max-[768px]:text-[24px] fullscreen:text-[128px]">
