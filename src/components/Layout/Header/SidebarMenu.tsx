@@ -1,17 +1,21 @@
 import { navs } from "@/config/nav";
 import classNames from "classnames";
-import { FC } from "react";
+import { FC, useState } from "react";
+import Link from "next/link";
 
 interface Props {
   isOpen: boolean;
+  onClose: () => void;
 }
 
 const SideBarMenu: FC<Props> = (props) => {
-  const { isOpen } = props;
+  const { isOpen,onClose } = props;
+  const [activeTab, setActiveTab] = useState("");
 
-  // function toggleMobileMenu() {
-  //   throw new Error('Function not implemented.');
-  // }
+  const handleActiveTab = (href: string) => {
+    setActiveTab(href);
+    onClose();
+  }
 
   return (
     <>
@@ -33,11 +37,18 @@ const SideBarMenu: FC<Props> = (props) => {
           <ul className="h-full text-sm w-full mt-6">
             {navs.map((item, index) => (
               <li key={index} className="w-full p-4 ">
-                <div className="w-full flex justify-center items-center gap-4">
-                  <h2 className="w-full font-clashDisplay font-semibold text-xl text-center">
+                <Link
+                  href={item.href}
+                  onClick={()=>handleActiveTab(item.href)}
+                    className="w-full flex justify-center items-center gap-4 cursor-pointer font-neueMed text-sm text-[15px] fullscreen:text-4xl fullscreen:text-[40px]">
+                  <p
+                      className={`hover:text-white transition-all w-full font-clashDisplay font-semibold text-xl text-center ${
+                          activeTab === item.href ? "text-white decoration-1 underline" : "text-gray-400"
+                      }`}
+                  >
                     {item.label}
-                  </h2>
-                </div>
+                  </p>
+                </Link>
               </li>
             ))}
           </ul>

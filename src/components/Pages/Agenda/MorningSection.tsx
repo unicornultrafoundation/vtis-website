@@ -110,30 +110,32 @@ export default function MorningSection({activeTab}:Props) {
 
   }, [activeTab, listSpeakerMorning, listSpeakerMorning2]);
 
+
+
   return (
 
       <div
           className='h-full w-full text-white flex flex-col tablet:flex-row tablet:justify-between py-8 tablet:py-0'>
-        <p className='font-neueMed text-[20px] tablet:text-[40px] tablet:max-w-[250px] leading-[28px] tablet:leading-[48px] opacity-[0.4]'>
+        <p className='font-neueMed text-[20px] tablet:text-[40px] fullscreen:text-[106px] tablet:max-w-[250px] fullscreen:max-w-[666px] leading-[28px] tablet:leading-[48px] fullscreen:leading-[128px] opacity-[0.4]'>
           Morning Session: Fintech & AI
         </p>
         <hr className='w-full h-[1px] block tablet:hidden border-[#333] mb-6 mt-5'/>
 
         {/* Hovered Image - displayed only if hoveredImage is set */}
         {hoveredImageMorning && (
-            <div className="hidden tablet:block absolute left-[250px] opacity-100 transition-opacity duration-300">
+            <div className="hidden tablet:block absolute left-[300px] fullscreen:left-[650px] opacity-100 transition-opacity duration-300">
               <Image
                   src={hoveredImageMorning}
                   alt="Speaker"
-                  width={240}
-                  height={328}
-                  className="object-left"
+                  width={240} // Default width
+                  height={328} // Default height
+                  className="object-left fullscreen:w-[640px] fullscreen:h-[874px]"
               />
             </div>
         )}
 
         {/* Timeline Items */}
-        <div className="flex flex-col max-w-full tablet:max-w-[921px] w-full">
+        <div className="flex flex-col max-w-full tablet:max-w-[921px] fullscreen:max-w-[2456px] w-full">
           {listData.map((speaker, index) => (
               <div
                   key={index}
@@ -141,9 +143,9 @@ export default function MorningSection({activeTab}:Props) {
                   onMouseEnter={() => setHoveredImageMorning(speaker.image)}  // Set image on hover
                   onMouseLeave={() => setHoveredImageMorning(null)}           // Clear image on leave
               >
-                <div className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2">
-                  <p className="tablet:max-w-[50%] max-w-[116px] w-full">{speaker.time}</p>
-                  <p className="tablet:w-[50%] w-full">{speaker.description}</p>
+                <div className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2 fullscreen:py-[64px] fullscreen:text-[48px] font-neueMed">
+                  <p className=" w-full tablet:max-w-[353px] fullscreen:max-w-[941px] max-w-[116px] ">{speaker.time}</p>
+                  <p className="w-full">{speaker.description}</p>
                 </div>
                 {index !== listData.length - 1 && (
                     <hr className="w-full h-[1px] border-[#333]"/>
