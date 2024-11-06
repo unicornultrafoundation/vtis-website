@@ -217,10 +217,12 @@ const Column = ({
           className="w-[100%] border-solid border-[0.5px] border-[#D9D9D9] p-4 fullscreen:p-[26px] flex flex-col gap-1 fullscreen:gap-[10px] items-start justify-start"
         >
           <div className="w-[100%] aspect-[1/1.05] relative flex justify-center">
-            {item.index !== 5 && item.index !== 10 ? (
+            {item.index !== 4 && item.index !== 9 ? (
               <div className="w-[210px] h-[237px]">
                 <Image
-                  src={`/images/speakers/${item.index}.png`}
+                  src={`/images/speakers/${
+                    item.index >= 3 ? item.index + 1 : item.index
+                  }.png`}
                   fill
                   className="object-cover object-center"
                   alt="person-image"
@@ -238,13 +240,24 @@ const Column = ({
             )}
           </div>
           <div className="mt-3 font-neueMed text-[20px] fullscreen:text-5xl fullscreen:text-[53px]">
-            {speakersData[item.index - 1].Name}
+            {
+              speakersData[item.index >= 3 ? item.index + 1 - 1 : item.index - 1]
+                .Name
+            }
           </div>
           <div className="font-neueMed text-[16px] fullscreen:text-4xl fullscreen:text-[42px]">
-            {speakersData[item.index - 1].Title.split("-")[0]}
+            {
+              speakersData[
+                item.index >= 3 ? item.index + 1 - 1 : item.index -1 
+              ].Title.split("-")[0]
+            }
           </div>
           <div className="font-neueMed text-[14px] fullscreen:text-[37px] border-solid border-[1px] border-black px-1 fullscreen:px-[10px] mt-1 fullscreen:mb-[37px]">
-            {speakersData[item.index - 1].Title.split("-")[1]}
+            {
+              speakersData[
+                item.index >= 3 ? item.index + 1 - 1 : item.index - 1
+              ].Title.split("-")[1]
+            }
           </div>
         </div>
       ))}
@@ -426,12 +439,12 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 18,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 20,
-                  },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 20,
+                  // },
                 ]}
               />
               <Column
@@ -454,8 +467,14 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 23,
+                    index: 20,
                   },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 23,
+                  // },
                   // {
                   //   companyName: "SSI Digital",
                   //   name: "Mr Mai Huy Tuan",
@@ -614,12 +633,12 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 21,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 23,
-                  },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 23,
+                  // },
                 ]}
               />
               <Column
