@@ -10,25 +10,6 @@ import { useEffect } from 'react'
 
 export default function Home() {
   useEffect(() => {
-    // const observer = new IntersectionObserver(
-    //   ([entry]) => {
-    //     if (entry.isIntersecting) {
-    //       entry.target.classList.remove("opacity-0");
-    //
-    //       for (const c of entry.target.classList) {
-    //         if (String(c).includes('animated-text-delay')) {
-    //           const classBuffer = String(c).split('-')
-    //           const delay = classBuffer[classBuffer.length - 1]
-    //           entry.target.style.animationDelay = delay
-    //         }
-    //       }
-    //       entry.target.classList.add("animate-[slide-in-up_1s_ease_forwards]")
-    //       observer.unobserve(entry.target); // Unobserve to trigger only once
-    //     }
-    //   },
-    //   { threshold: 0.1 }
-    // );
-
     const observers = []
     const elements = document.getElementsByClassName("animated-text")
     // console.log(elements)
@@ -50,6 +31,28 @@ export default function Home() {
         { threshold: 0.5 }
       );
       el.classList.add("opacity-0")
+      observer.observe(el)
+      observers.push(observer)
+    }
+
+    return () => observers.forEach(o => o.disconnect());
+  }, []);
+
+  useEffect(() => {
+    const observers = []
+    const elements = document.getElementsByClassName("animated-card-image")
+    // console.log(elements)
+    for (const el of elements) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-[card-image-animation_1s_ease_forwards]")
+            observer.unobserve(entry.target); // Unobserve to trigger only once
+          }
+        },
+        { threshold: 0.1 }
+      );
+      el.classList.add("scale-125")
       observer.observe(el)
       observers.push(observer)
     }

@@ -220,32 +220,32 @@ const Column = ({
         >
           <div className="w-[100%] aspect-[1/1.05] relative flex justify-center">
             {item.index !== 5 && item.index !== 10 ? (
-              <div className="w-[210px] h-[237px]">
+              <div className="w-[210px] h-[237px] overflow-hidden relative">
                 <Image
                   src={`/images/speakers/${item.index}.png`}
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-center animated-card-image absolute left-0 top-0"
                   alt="person-image"
                 />
               </div>
             ) : (
-              <div className="w-[210px] h-[237px] bg-[black]">
+              <div className="w-[210px] h-[237px] bg-[black] overflow-hidden relative">
                 <Image
                   src={landingLogo.src}
                   fill
-                  className="object-contain object-center"
+                  className="object-contain object-center animated-card-image absolute left-0 top-0"
                   alt="person-image"
                 />
               </div>
             )}
           </div>
-          <div className="mt-3 font-neueMed text-[20px] fullscreen:text-5xl fullscreen:text-[53px]">
+          <div className="animated-text mt-3 font-neueMed text-[20px] fullscreen:text-5xl fullscreen:text-[53px]">
             {speakersData[item.index - 1].Name}
           </div>
-          <div className="font-neueMed text-[16px] fullscreen:text-4xl fullscreen:text-[42px]">
+          <div className="animated-text animated-text-delay-0.2s font-neueMed text-[16px] fullscreen:text-4xl fullscreen:text-[42px]">
             {speakersData[item.index - 1].Title.split("-")[0]}
           </div>
-          <div className="font-neueMed text-[14px] fullscreen:text-[37px] border-solid border-[1px] border-black px-1 fullscreen:px-[10px] mt-1 fullscreen:mb-[37px]">
+          <div className="animated-text animated-text-delay-0.4s font-neueMed text-[14px] fullscreen:text-[37px] border-solid border-[1px] border-black px-1 fullscreen:px-[10px] mt-1 fullscreen:mb-[37px]">
             {speakersData[item.index - 1].Title.split("-")[1]}
           </div>
         </div>

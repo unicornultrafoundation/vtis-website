@@ -39,11 +39,19 @@ const config: Config = {
         'slide-in-up': {
           '0%': {
             opacity: 0,
-            transform: 'translateY(30px)',
+            transform: 'translateY(25px)',
           },
           '100%': {
             opacity: 1,
             transform: 'translateY(0)',
+          }
+        },
+        'card-image-animation': {
+          '0%': {
+            transform: 'scale(1.25)'
+          },
+          '100%': {
+            transform: 'scale(1)'
           }
         }
       },
