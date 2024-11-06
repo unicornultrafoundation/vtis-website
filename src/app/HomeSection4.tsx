@@ -408,7 +408,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={4}
-                className="pt-[35%] fullscreen:pt-[20%]"
+                className="pt-[35%] tablet:pt-[26%] fullscreen:pt-[20%]"
                 items={[
                   {
                     companyName: "SSI Digital",
@@ -438,7 +438,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={5}
-                className="pt-[40%] fullscreen:pt-[26%] "
+                className="pt-[40%] tablet:pt-[34%] fullscreen:pt-[26%] "
                 items={[
                   {
                     companyName: "SSI Digital",
