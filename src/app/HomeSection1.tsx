@@ -55,9 +55,8 @@ export default function HomeSection1() {
             {dateText.split('').map((char, i) => (
               <span
                 key={i}
-                className="inline-block opacity-0"
+                className={`inline-block opacity-0 animate-[fade-in-up-blur_0.5s_ease_forwards]`}
                 style={{
-                  animation: `fadeInUpBlur 0.5s ease forwards`,
                   animationDelay: `${i * 0.02}s`
                 }}
               >
@@ -69,11 +68,8 @@ export default function HomeSection1() {
             {title1.split('').map((char, i) => (
               <span
                 key={i}
-                className="inline-block opacity-0"
-                style={{
-                  animation: `fadeInUpBlur 0.5s ease forwards`,
-                  animationDelay: `${1.5 + i * 0.1}s`
-                }}
+                className="inline-block opacity-0 animate-[fade-in-up-blur_0.5s_ease_forwards]"
+                style={{ animationDelay: `${1.5 + i * 0.1}s` }}
               >
                 {char === " " ? '\u00A0' : char}
               </span>
@@ -82,11 +78,8 @@ export default function HomeSection1() {
             {title2.split('').map((char, i) => (
               <span
                 key={i}
-                className="inline-block opacity-0"
-                style={{
-                  animation: `fadeInUpBlur 0.5s ease forwards`,
-                  animationDelay: `${3 + i * 0.1}s`
-                }}
+                className="inline-block opacity-0  animate-[fade-in-up-blur_0.5s_ease_forwards]"
+                style={{ animationDelay: `${3 + i * 0.1}s` }}
               >
                 {char === " " ? '\u00A0' : char}
               </span>

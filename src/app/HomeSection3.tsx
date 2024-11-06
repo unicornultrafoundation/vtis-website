@@ -21,9 +21,9 @@ function Block({
       }}
       className="w-full tablet:w-[50%] tablet:h-[740px] fullscreen:h-[1610px] flex flex-col px-4 tablet:pl-10 tablet:py-10 max-[768px]:py-6 gap-5 fullscreen:gap-[42px] tablet:pr-24 justify-between "
     >
-      <div className="w-full tablet:max-w-[600px] fullscreen:max-w-full font-neueMed text-[40px] max-[768px]:text-[32px] fullscreen:text-[106px]">
+      <div className="animated-text w-full tablet:max-w-[600px] fullscreen:max-w-full font-neueMed text-[40px] max-[768px]:text-[32px] fullscreen:text-[106px]">
         {title}
-        <div className="w-full font-neueMed text-[24px] max-[768px]:text-[20px] fullscreen:text-[64px] mt-4">
+        <div className="animated-text animated-text-delay-0.5s w-full font-neueMed text-[24px] max-[768px]:text-[20px] fullscreen:text-[64px] mt-4">
           {description}
         </div>
       </div>

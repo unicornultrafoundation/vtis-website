@@ -25,11 +25,11 @@ export default function HomeSection2() {
           <div className="px-1 fullscreen:px-[10px] text-[white] border-solid border border-[white] font-neueMed text-[20px] fullscreen:text-[53px] mb-[5px]">
             VTIS
           </div>
-          <div className=" w-[249px] fullscreen:w-[943px] tablet:w-full text-[white] font-neueMed text-[28px] fullscreen:text-[74.6px] pb-4">
+          <div className="animated-text w-[249px] fullscreen:w-[943px] tablet:w-full text-[white] font-neueMed text-[28px] fullscreen:text-[74.6px] pb-4">
             Vietnam Tech Impact Summit
           </div>
           <div className="flex gap-2 tablet:gap-3">
-            <button className=" h-12 fullscreen:w-[410px] text-white fullscreen:h-[128px] hidden laptop:flex bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center laptop:hover:bg-white laptop:hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8">
+            <button className="animated-text h-12 fullscreen:w-[410px] text-white fullscreen:h-[128px] hidden laptop:flex bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center laptop:hover:bg-white laptop:hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8">
               Partner with Us
             </button>
             <button className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
@@ -51,11 +51,11 @@ export default function HomeSection2() {
           </div>
         </div>
         <div className="w-[50%] max-[768px]:w-full fullscreen:w-[1504px]">
-          <div className="fullscreen:max-w-full font-neueMed text-[28px] max-[768px]:text-[24px] fullscreen:text-[74.6px] fullscreen:leading-[96px] text-[white] pb-[156px] tablet:pb-[216px] pl-2 max-w-[564px] pr-10 max-[768px]:pl-0">
+          <div className="animated-text animated-text-delay-0.5s fullscreen:max-w-full font-neueMed text-[28px] max-[768px]:text-[24px] fullscreen:text-[74.6px] fullscreen:leading-[96px] text-[white] pb-[156px] tablet:pb-[216px] pl-2 max-w-[564px] pr-10 max-[768px]:pl-0">
             <span className="text-[#28D2DC]">
               Vietnam Tech Impact Expo (VNTIE)
             </span>
-            &nbsp; is an annual event that brings together leading innovators,
+              &nbsp; is an annual event that brings together leading innovators,
             experts, and enthusiasts in the field of digital asset and
             technology development. Hosted in Vietnam, VNTIE serves as a vibrant
             learning hub to foster collaboration, knowledge sharing, and
