@@ -21,7 +21,7 @@ const config: Config = {
         tablet: "768px",
         laptop: "1280px",
         desktop: "1512px",
-        qhr: "2560px",
+        fullscreen: "3840px",
       },
     },
   },
