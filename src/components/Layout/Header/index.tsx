@@ -14,7 +14,7 @@ export default function Header() {
       <header className="sticky top-0 mt-0 items-center justify-between w-full bg-[#000000] text-white z-50">
         <div className="w-full h-full p-2 tablet:p-1 flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="pl-3">
+          <Link href="/" className="pl-3 flex-1">
             <ImageBase.LandingLogo
               width={117}
               height={21}
@@ -44,7 +44,7 @@ export default function Header() {
           </div>
 
           {/* Action Button */}
-          <div className="flex items-center gap-2 tablet:gap-1">
+          <div className="flex flex-1 justify-end items-center gap-2 tablet:gap-1">
             <button className=" h-12 hidden laptop:flex bg-[#ffffff26] px-6 py-4 text-center laptop:items-center laptop:hover:bg-white laptop:hover:text-black transition duration-500">
               Partner with Us
             </button>
