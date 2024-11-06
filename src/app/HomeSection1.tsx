@@ -7,7 +7,7 @@ import { useCountUp } from "use-count-up";
 
 function CategoryTag({
   name,
-  backgroundColor,
+  backgroundColor
 }: {
   name: string;
   backgroundColor: string;
@@ -15,7 +15,7 @@ function CategoryTag({
   return (
     <div
       style={{
-        backgroundColor: backgroundColor,
+        backgroundColor: backgroundColor
       }}
       className="py-3 tablet:py-4 fullscreen:py-[42.67px] px-[24px] fullscreen:px-16 rounded-[90px] font-neueMed border-solid border-[1px] border-black uppercase text-[16px] fullscreen:text-[42.6px]"
     >
@@ -28,7 +28,7 @@ function SectionStatItem({ title, amount }: { title: string; amount: number }) {
   const { value } = useCountUp({
     isCounting: true,
     end: amount,
-    duration: 5,
+    duration: 5
   });
   return (
     <div className="w-[25%] max-[768px]:w-[50%] py-6 tablet:py-10 flex flex-col items-center justify-center max-[768px]:items-start px-4">
@@ -43,17 +43,54 @@ function SectionStatItem({ title, amount }: { title: string; amount: number }) {
 }
 
 export default function HomeSection1() {
+  const dateText = "3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM"
+  const title1 = "Vietnam Tech"
+  const title2 = "Impact Summit 2024"
+
   return (
     <div className="w-full flex flex-col">
       <div className="w-full flex px-4 py-6 tablet:py-5 items-end max-[768px]:flex-col max-[768px]:gap-4">
-        <div className="w-[60%] h-full flex flex-col gap-2 max-[768px]:w-full">
-          <div className="w-full font-neueMed text-[20px] max-[768px]:text-[16px] fullscreen:text-[53px] fullscreen:text-nowrap">
-            3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM
+        <div className={`w-[60%] h-full flex flex-col gap-2 max-[768px]:w-full transition-all duration-500`}>
+          <div className="w-full min-h-[24px] tablet:min-h-[30px] font-neueMed text-[20px] max-[768px]:text-[16px] fullscreen:text-[53px] fullscreen:text-nowrap">
+            {dateText.split('').map((char, i) => (
+              <span
+                key={i}
+                className="inline-block opacity-0"
+                style={{
+                  animation: `fadeInUpBlur 0.5s ease forwards`,
+                  animationDelay: `${i * 0.02}s`
+                }}
+              >
+                {char === " " ? '\u00A0' : char}
+              </span>
+            ))}
           </div>
-          <div className="w-full h-full font-medium font-neueMed text-[88px] max-[768px]:text-[40px] fullscreen:text-[234px] fullscreen:leading-[234px] max-[768px]:leading-[40px] leading-[88px]">
-            Vietnam Tech
+          <div className="w-full h-full min-h-[80px] tablet:min-h-[176px] font-medium font-neueMed text-[88px] max-[768px]:text-[40px] fullscreen:text-[234px] fullscreen:leading-[234px] max-[768px]:leading-[40px] leading-[88px]">
+            {title1.split('').map((char, i) => (
+              <span
+                key={i}
+                className="inline-block opacity-0"
+                style={{
+                  animation: `fadeInUpBlur 0.5s ease forwards`,
+                  animationDelay: `${1.5 + i * 0.1}s`
+                }}
+              >
+                {char === " " ? '\u00A0' : char}
+              </span>
+            ))}
             <br />
-            Impact Summit 2024
+            {title2.split('').map((char, i) => (
+              <span
+                key={i}
+                className="inline-block opacity-0"
+                style={{
+                  animation: `fadeInUpBlur 0.5s ease forwards`,
+                  animationDelay: `${3 + i * 0.1}s`
+                }}
+              >
+                {char === " " ? '\u00A0' : char}
+              </span>
+            ))}
           </div>
         </div>
         <div className="flex-1 flex flex-wrap gap-1 tablet:gap-2 fullscreen:gap-[21px] justify-end px-5 max-[768px]:w-full max-[768px]:justify-start max-[768px]:px-0">
