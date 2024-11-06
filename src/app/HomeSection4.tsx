@@ -1,7 +1,6 @@
 "use client";
 
 import mask from "@/assets/images/mask.png";
-import ImageBase from "@/components/Images/ImageBase";
 import useIsMobile from "@/hooks/useIsMobile";
 import Image from "next/image";
 import landingLogo from "@/assets/images/landing-logo.png";
@@ -42,14 +41,14 @@ const speakersData = [
   },
   {
     Name: "Dr Olinga Taeed",
-    Title: "First Blockchain Profesor, Advisor for China Gov for Blockchain",
+    Title: "Blockchain Profesor, Advisor - China Gov",
     image:
       "https://drive.google.com/file/d/1vR7-ei3TMLS22y-nNntBh41v45eYEeII/view?usp=drive_link",
     Status: "",
   },
   {
     Name: "Loi Luu",
-    Title: "Founder Kyber",
+    Title: "Founder - Kyber",
     image:
       "https://drive.google.com/file/d/1FNfr0jw31czMXrGF-Fwkb_ckgi38jp1s/view?usp=drive_link",
     Status: "",
@@ -139,7 +138,7 @@ const speakersData = [
   },
   {
     Name: "Binh Tran",
-    Title: "Partner. AVV ventures",
+    Title: "Partner - AVV ventures",
     image:
       "https://drive.google.com/file/d/1YYTmZsHcfWyv8rZ0nlG36BFn5pva83BE/view?usp=drive_link",
     Status: "",
@@ -203,7 +202,6 @@ const getSquareBGByIndex = (index: number) => {
 const Column = ({
   items,
   className,
-  colIndex,
 }: {
   items: { name: string; title: string; companyName: string; index: number }[];
   className: string;
