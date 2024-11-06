@@ -15,7 +15,7 @@ const TierParners = ({
   return (
     <div className="w-full flex flex-col">
       {tier && (
-        <div className="w-full font-neueMed text-[32px] max-[768px]:text-[18px] text-[#fff] mt-8 mb-4">
+        <div className="w-full font-neueMed text-[32px] max-[768px]:text-[18px] fullscreen:text-[85px] text-[#fff] mt-8 fullscreen:mt-32 mb-4 fullscreen:mb-[42px]">
           {tier}
         </div>
       )}
@@ -49,10 +49,10 @@ const HomeSection6 = () => {
     <div className="bg-[#000000] flex flex-col gap-8 px-12 max-[768px]:px-0 py-[80px] pb-50">
       {/* {partners} */}
       <div className="w-full flex flex-col px-5">
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-8 max-[768px]:text-[24px]">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-8 fullscreen:mb-[85px] max-[768px]:text-[24px] fullscreen:text-[128px]">
           Strategic partners
         </div>
-        <div className="w-full flex flex-wrap gap-[5px] mb-20">
+        <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
           <TierParners
             partners={Array(5)
               .fill("")
@@ -64,10 +64,10 @@ const HomeSection6 = () => {
               })}
           />
         </div>
-        <div className="w-full font-neueMed text-[48px] text-[#fff] max-[768px]:text-[24px]">
+        <div className="w-full font-neueMed text-[48px] fullscreen:text-9xl text-[#fff] max-[768px]:text-[24px]">
           Key partners
         </div>
-        <div className="w-full flex flex-col flex-wrap gap-10 mb-16">
+        <div className="w-full flex flex-col flex-wrap gap-10 mb-16 fullscreen:mb-[213px]">
           <TierParners
             tier="Title"
             partners={Array(5)
@@ -113,7 +113,7 @@ const HomeSection6 = () => {
               })}
           />
         </div>
-        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 max-[768px]:text-[24px]">
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-5 fullscreen:mb-[85px] max-[768px]:text-[24px] fullscreen:text-9xl">
           Government Partner
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-16">
