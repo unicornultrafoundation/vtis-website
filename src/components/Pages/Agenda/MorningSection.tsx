@@ -102,7 +102,7 @@ export default function MorningSection({ activeTab }: Props) {
         {/* Hovered Image - displayed only if hoveredImage is set */}
         {hoveredImageMorning && (
             <div
-                className="hidden tablet:block absolute left-[300px] fullscreen:left-[650px] opacity-100 transition-opacity duration-300">
+                className="hidden tablet:block absolute left-[400px] fullscreen:left-[650px] opacity-100 transition-opacity duration-300">
               <Image
                   src={hoveredImageMorning}
                   alt="Speaker"
