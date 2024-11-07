@@ -55,7 +55,7 @@ export default function HomeSection3() {
       />
       <Block
         title="Blockchain"
-        description="Uncover how blockchain is revolutionizing industries of finance, supply chain, gaming and decentralized applications. Learn from experts to unveil the boundless possibilities of blockchain technology"
+        description="Uncover how blockchain is revolutionizing industries of  finance, supply chain, gaming and decentralized applications. Learn from experts from both traditional and blockchain sectors, to unveil the boundless possibilities of blockchain technology, and see how Web2 embraces Web3."
         backgroundColor={isMobile ? "#28D2DC" : "#fff"}
         img={
           <ImageBase.BlockchainImg className="fullscreen:w-[533px] fullscreen:h-[518px]" />
@@ -63,7 +63,7 @@ export default function HomeSection3() {
       />
       <Block
         title="Game"
-        description="Uncover how blockchain is revolutionizing industries of finance, supply chain, gaming and decentralized applications. Learn from experts to unveil the boundless possibilities of blockchain technology"
+        description="Dive into the world of gaming and eSport and learn how AI is revolutionizing the landscape, with a hands-on experience in a game designing class. Culminate in the thrilling of Mobile & PC Game Finals, where the best gamers battle it out for supremacy."
         backgroundColor={isMobile ? "#fff" : "#28D2DC"}
         img={
           <ImageBase.GameImg className="fullscreen:w-[533px] fullscreen:h-[518px]" />
