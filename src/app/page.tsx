@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    //@ts-ignore
+  //@ts-expect-error: error
     const observers = [];
     const elements = document.getElementsByClassName("animated-text");
     // console.log(elements)
@@ -22,7 +22,7 @@ export default function Home() {
               if (String(c).includes("animated-text-delay")) {
                 const classBuffer = String(c).split("-");
                 const delay = classBuffer[classBuffer.length - 1];
-                //@ts-ignore
+              //@ts-expect-error: error
                 entry.target.style.animationDelay = delay;
               }
             }
@@ -38,12 +38,12 @@ export default function Home() {
       observer.observe(el);
       observers.push(observer);
     }
-    //@ts-ignore
+  //@ts-expect-error: error
     return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   useEffect(() => {
-    //@ts-ignore
+  //@ts-expect-error: error
     const observers = [];
     const elements = document.getElementsByClassName("animated-card-image");
     // console.log(elements)
@@ -63,7 +63,7 @@ export default function Home() {
       observer.observe(el);
       observers.push(observer);
     }
-    //@ts-ignore
+  //@ts-expect-error: error
     return () => observers.forEach((o) => o.disconnect());
   }, []);
 

@@ -45,9 +45,6 @@ function SectionStatItem({ title, amount }: { title: string; amount: number }) {
 export default function HomeSection1() {
   const dateText =
     "3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM";
-  const title1 = "Vietnam Tech";
-  const title2 = "Impact Summit 2024";
-
   return (
     <div className="w-full flex flex-col">
       <div className="w-full flex px-4 py-6 tablet:py-5 items-end max-[768px]:flex-col max-[768px]:gap-4">
