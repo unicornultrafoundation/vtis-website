@@ -7,7 +7,7 @@ import { useCountUp } from "use-count-up";
 
 function CategoryTag({
   name,
-  backgroundColor
+  backgroundColor,
 }: {
   name: string;
   backgroundColor: string;
@@ -15,7 +15,7 @@ function CategoryTag({
   return (
     <div
       style={{
-        backgroundColor: backgroundColor
+        backgroundColor: backgroundColor,
       }}
       className="py-3 tablet:py-4 fullscreen:py-[42.67px] px-[24px] fullscreen:px-16 rounded-[90px] font-neueMed border-solid border-[1px] border-black uppercase text-[16px] fullscreen:text-[42.6px]"
     >
@@ -28,7 +28,7 @@ function SectionStatItem({ title, amount }: { title: string; amount: number }) {
   const { value } = useCountUp({
     isCounting: true,
     end: amount,
-    duration: 5
+    duration: 5,
   });
   return (
     <div className="w-[25%] max-[768px]:w-[50%] py-6 tablet:py-10 flex flex-col items-center justify-center max-[768px]:items-start px-4">
@@ -43,29 +43,32 @@ function SectionStatItem({ title, amount }: { title: string; amount: number }) {
 }
 
 export default function HomeSection1() {
-  const dateText = "3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM"
-  const title1 = "Vietnam Tech"
-  const title2 = "Impact Summit 2024"
+  const dateText =
+    "3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM";
+  const title1 = "Vietnam Tech";
+  const title2 = "Impact Summit 2024";
 
   return (
     <div className="w-full flex flex-col">
       <div className="w-full flex px-4 py-6 tablet:py-5 items-end max-[768px]:flex-col max-[768px]:gap-4">
-        <div className={`w-[60%] h-full flex flex-col gap-2 max-[768px]:w-full transition-all duration-500`}>
+        <div
+          className={`w-[60%] h-full flex flex-col gap-2 max-[768px]:w-full transition-all duration-500`}
+        >
           <div className="w-full min-h-[24px] tablet:min-h-[30px] font-neueMed text-[20px] max-[768px]:text-[16px] fullscreen:text-[53px] fullscreen:text-nowrap">
-            {dateText.split('').map((char, i) => (
+            {dateText.split("").map((char, i) => (
               <span
                 key={i}
                 className={`inline-block opacity-0 animate-[fade-in-up-blur_0.5s_ease_forwards]`}
                 style={{
-                  animationDelay: `${i * 0.02}s`
+                  animationDelay: `${i * 0.02}s`,
                 }}
               >
-                {char === " " ? '\u00A0' : char}
+                {char === " " ? "\u00A0" : char}
               </span>
             ))}
           </div>
           <div className="w-full h-full min-h-[80px] tablet:min-h-[176px] font-medium font-neueMed text-[88px] max-[768px]:text-[40px] fullscreen:text-[234px] fullscreen:leading-[234px] max-[768px]:leading-[40px] leading-[88px]">
-            {title1.split('').map((char, i) => (
+            {/* {title1.split('').map((char, i) => (
               <span
                 key={i}
                 className="inline-block opacity-0 animate-[fade-in-up-blur_0.5s_ease_forwards]"
@@ -74,8 +77,8 @@ export default function HomeSection1() {
                 {char === " " ? '\u00A0' : char}
               </span>
             ))}
-            <br />
-            {title2.split('').map((char, i) => (
+            <br /> */}
+            {/* {title2.split('').map((char, i) => (
               <span
                 key={i}
                 className="inline-block opacity-0  animate-[fade-in-up-blur_0.5s_ease_forwards]"
@@ -83,7 +86,14 @@ export default function HomeSection1() {
               >
                 {char === " " ? '\u00A0' : char}
               </span>
-            ))}
+            ))} */}
+            <Image
+              src="/images/title.png"
+              width={479}
+              height={262}
+              className="inline-block opacity-0 animate-[fade-in-up-blur_0.5s_ease_forwards]"
+              alt="title"
+            />
           </div>
         </div>
         <div className="flex-1 flex flex-wrap gap-1 tablet:gap-2 fullscreen:gap-[21px] justify-end px-5 max-[768px]:w-full max-[768px]:justify-start max-[768px]:px-0">

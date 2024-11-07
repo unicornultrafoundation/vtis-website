@@ -1,18 +1,20 @@
 import ImageBase from "@/components/Images/ImageBase";
+import ssiLogo from "@/assets/images/SSI.png";
+import Image from "next/image";
 
 const HomeSection5 = () => {
   return (
     <>
-      <div className="w-full h-full bg-black">
-        <div className=" pt-8 pb-[99px] tablet:pb-0 tablet:pt-[11px] w-full tablet:h-[500px] fullscreen:h-[1336px] gap-16 tablet:gap-0 bg-black bg-[url('/images/section5/section5-bg.png')] bg-cover bg-center text-white flex flex-col tablet:flex-row tablet:justify-between items-center tablet:border-b tablet:border-[#333]">
+      <div className="w-full h-full bg-black pb-20">
+        <div className=" pt-8 pb-[99px] tablet:pb-0 tablet:pt-[11px] w-full tablet:h-[500px] fullscreen:h-[1336px] gap-16 tablet:gap-0 bg-black bg-[url('/images/section5/section5-bg.png')] bg-cover bg-center text-white flex flex-col tablet:flex-row tablet:justify-between items-center">
           {/* Left / Top */}
-          <div className=" w-full tablet:h-full  flex flex-col tablet:justify-center gap-6 tablet:gap-10 fullscreen:gap-[106px] tablet:border-r border-[#333]">
+          <div className=" w-full tablet:h-full  flex flex-col tablet:justify-center gap-6 tablet:gap-10 fullscreen:gap-[106px] tablet:border-r border-[#262626]">
             <h4 className="animated-text font-neueBold text-3xl text-[32px] tablet:text-6xl tablet:text-[56px] fullscreen:text-[149px] text-center">
               Host
             </h4>
             <div className="animated-text animated-text-delay-0.25s flex w-full justify-center items-center gap-16">
-              <ImageBase.SSIDLogo className="w-[107px] h-[56px] tablet:w-[138px] fullscreen:w-[368px] tablet:h-[72px] fullscreen:h-[192px]" />
-              <ImageBase.FPTLogo className="w-[91px] h-[56px] tablet:w-[117px] fullscreen:w-[321px] tablet:h-[72px] fullscreen:h-[192px]" />
+            <Image src={ssiLogo.src} alt='ssi-logo' width={111} height={72} />
+              <ImageBase.FPTLogo className="w-[117px] h-[72px]" />
             </div>
           </div>
           {/* Right / Bottom*/}
@@ -21,13 +23,12 @@ const HomeSection5 = () => {
               Organizer
             </h4>
             <div className="animated-text animated-text-delay-0.75s flex w-full justify-center items-center gap-16 ">
-              <ImageBase.SSIDLogo className="w-[107px] h-[56px] tablet:w-[138px] fullscreen:w-[368px] tablet:h-[72px] fullscreen:h-[192px]" />
+               <ImageBase.SSIDLogo className="w-[92px] h-[48px]" />
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-[#000000] flex flex-col gap-[62px] tablet:gap-[72px] fullscreen:gap-[213px] px-4 tablet:px-8 py-[64px] tablet:py-[72px] fullscreen:py-[192px] tablet:border-b tablet:border-[#333]">
-        {/* Header */}
+      {/* <div className="bg-[#000000] flex flex-col gap-[62px] tablet:gap-[72px] fullscreen:gap-[213px] px-4 tablet:px-8 py-[64px] tablet:py-[72px] fullscreen:py-[192px] tablet:border-b tablet:border-[#333]">
         <div className="w-full flex flex-col justify-center items-center gap-6 fullscreen:gap-16">
           <ImageBase.SSIDLogo className="animated-text w-[92px] h-12 fullscreen:w-[245px] fullscreen:h-[128px]" />
           <p className="animated-text animated-text-delay-0.5s laptop:w-[1061px] fullscreen:w-[2829px] text-[32px] tablet:text-5xl fullscreen:text-9xl text-white text-center font-neueMed ">
@@ -37,9 +38,7 @@ const HomeSection5 = () => {
             digital transformation
           </p>
         </div>
-        {/* Body */}
         <div className="w-full flex flex-col gap-8">
-          {/* 01 */}
           <div className="w-full flex gap-3 tablet:gap-0 flex-wrap tablet:flex-nowrap justify-between pt-6 pb-[72px] fullscreen:pb-[192px] border-t border-[#333333]">
             <p className="animated-text text-white text-base fullscreen:text-[42px] font-neueMed">
               01
@@ -54,7 +53,6 @@ const HomeSection5 = () => {
               Vietnam and nearby regions.
             </p>
           </div>
-          {/* 02 */}
           <div className="w-full flex gap-3 tablet:gap-0 flex-wrap tablet:flex-nowrap justify-between pt-6 pb-[72px] fullscreen:pb-[190px] border-y border-[#333333]">
             <p className="animated-text text-white text-base fullscreen:text-[42px] font-neueMed">
               02
@@ -70,7 +68,6 @@ const HomeSection5 = () => {
             </p>
           </div>
         </div>
-        {/* Footer */}
         <div className="w-full flex flex-col gap-6 fullscreen:gap-16 justify-center items-center">
           <ImageBase.FPTLogo
             width={87}
@@ -82,7 +79,7 @@ const HomeSection5 = () => {
             sector by Fortune’s SEA 500
           </p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

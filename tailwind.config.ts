@@ -26,23 +26,23 @@ const config: Config = {
       keyframes: {
         'fade-in-up-blur': {
           '0%': {
-            opacity: 0,
+            opacity: '0',
             transform: 'translateY(10px)',
             filter: ' blur(4px)'
           },
           '100%': {
-            opacity: 1,
+            opacity: '1',
             transform: 'translateY(0)',
             filter: 'blur(0px)'
           }
         },
         'slide-in-up': {
           '0%': {
-            opacity: 0,
+            opacity: '0',
             transform: 'translateY(25px)',
           },
           '100%': {
-            opacity: 1,
+            opacity: '1',
             transform: 'translateY(0)',
           }
         },
