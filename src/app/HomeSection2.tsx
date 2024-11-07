@@ -1,4 +1,5 @@
 import ImageBase from "@/components/Images/ImageBase";
+import Link from "next/link";
 
 // const getSquareBGByIndex = (index: number) => {
 //   switch (index) {
@@ -29,9 +30,13 @@ export default function HomeSection2() {
             Vietnam Tech Impact Summit
           </div>
           <div className="flex gap-2 tablet:gap-3">
-            <button className="animated-text h-12 fullscreen:w-[410px] text-white fullscreen:h-[128px] hidden laptop:flex bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center laptop:hover:bg-white laptop:hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8">
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdnx0Knyzusil9koJIXf_Ol0-Bdh91xKhbhjhVKbiD_uIGpuw/viewform"
+              target="_blank"
+              className="animated-text h-12 fullscreen:w-[410px] text-white fullscreen:h-[128px] hidden laptop:flex bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center laptop:hover:bg-white laptop:hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8"
+            >
               Partner with Us
-            </button>
+            </Link>
             <button className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
               <ImageBase.GetTicketImg
                 fill-color="#000"
@@ -49,7 +54,7 @@ export default function HomeSection2() {
             <span className="text-[#28D2DC]">
               Vietnam Tech Impact Expo (VNTIE)
             </span>
-              &nbsp; is an annual event that brings together leading innovators,
+            &nbsp; is an annual event that brings together leading innovators,
             experts, and enthusiasts in the field of digital asset and
             technology development. Hosted in Vietnam, VNTIE serves as a vibrant
             learning hub to foster collaboration, knowledge sharing, and
