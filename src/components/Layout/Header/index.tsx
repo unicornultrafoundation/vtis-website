@@ -2,7 +2,6 @@
 import ImageBase from "@/components/Images/ImageBase";
 import { navs } from "@/config/nav";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import SideBarMenu from "./SidebarMenu";
 
@@ -10,8 +9,6 @@ export default function Header() {
   //   const pathname = usePathname();
   const [activeTab, setActiveTab] = useState("");
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
-
-  const router = useRouter();
 
   return (
     <>
