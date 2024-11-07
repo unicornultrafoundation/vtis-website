@@ -1,6 +1,6 @@
 "use client";
 
-import HomeBanner from "@/assets/images/home-banner.png";
+// import HomeBanner from "@/assets/images/home-banner.png";
 import { formatWithCommas } from "@/utils";
 import Image from "next/image";
 import { useCountUp } from "use-count-up";
@@ -109,14 +109,8 @@ export default function HomeSection1() {
         </div>
       </div>
       <div className="w-full aspect-[3] max-[768px]:aspect-[375/240] relative">
-        <Image
-          src={HomeBanner.src}
-          fill
-          alt="home-banner"
-          // objectFit="cover"
-          // objectPosition="center"
-          className="object-cover object-center"
-        />
+       
+        <video src={'/video/trailer.mp4'} controls width={'100%'} />
       </div>
       <div className="w-full flex flex-wrap">
         <SectionStatItem amount={20000} title="Attendees" />

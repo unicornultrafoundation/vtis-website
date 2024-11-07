@@ -349,12 +349,6 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 15,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 21,
-                  },
                 ]}
               />
               <Column
@@ -371,7 +365,7 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 5,
+                    index: 21,
                   },
                   {
                     companyName: "SSI Digital",
@@ -503,11 +497,17 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 3,
                   },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 5,
+                  // },
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 5,
+                    index: 21,
                   },
                   {
                     companyName: "SSI Digital",
@@ -626,12 +626,6 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 19,
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 21,
                   },
                   // {
                   //   companyName: "SSI Digital",
