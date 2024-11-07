@@ -1,6 +1,7 @@
 'use client';
 
 import Speaker from '@/assets/images/agenda/speaker.png';
+import Speaker1 from '@/assets/images/speakers/4.png';
 
 import Image, { StaticImageData } from "next/image";
 import { useMemo, useState } from "react";
@@ -10,65 +11,76 @@ interface Props {
   activeTab?: string;
 }
 
+interface Speaker {
+  title: string;
+  time: string;
+  description: string;
+  image?: StaticImageData;
+}
+
 
 export default function AfternoonSection({activeTab} : Props) {
   const [hoveredImageAfternoon, setHoveredImageAfternoon] = useState<StaticImageData | null>(null);
 
-  const listSpeakerAfternoon = [
+  const listSpeakerAfternoon : Speaker[] = [
     {
-      time: '13:30 - 14:30',
-      description: 'Panel Discussion: The Future of AI: Traditional vs. Blockchain Suggested Topic: "Traditional AI and Blockchain AI: Opportunities for Collaboration and Competition Content: Discuss how traditional AI and Blockchain AI can complement each other, opportunities for innovation, and competitive potential within the tech ecosystem.',
-      image: Speaker,
+      title: 'Keynote from Sponsor',
+      time: '13:30 - 14:00',
+      description: '30-minute keynote by Richard Teng - CEO, Binance on Tech Impact',
+      image: Speaker1,
     },
     {
-      time: '14:30 - 15:00',
-      description: 'Keynote: The Future of Blockchain and AI for the Economy',
-      image: Speaker,
+      title: 'Panel on Blockchain and its Applications in Life',
+      time: '14:30 - 15:30',
+      description: 'Discussion with representatives from Tether, Avax, SSID, and Chainlink',
     },
     {
-      time: '15:00 - 15:30',
-      description: 'Keynote: Blockchain Ecosystem and Its Impact on the Financial Economy',
-      image: Speaker,
+      title: 'Keynote by Kucoin COO',
+      time: '15:30 - 16:00',
+      description: '30-minute keynote by Kucoin COO on Tech Impact',
     },
     {
-      time: '15:30 - 16:10',
-      description: 'Keynote: The State of Digital Assets in Vietnam',
-      image: Speaker,
-    },
-    {
-      time: '16:10 - 17:00',
-      description: 'Panel Discussion: Legal Framework for Digital Assets in Vietnam Topic: Legal Framework and Opportunities for Collaboration in the Digital Asset Sector.',
-      image: Speaker,
+      title: 'Panel Discussion with Vietnamese Startups in the Blockchain Field',
+      time: '16:15 - 17:30',
+      description: 'Discussion with representatives from Onus, ATX, Nami, and Icetea Labs',
     }
 
   ];
 
 
-  const listSpeakerAfternoon2 = [
+  const listSpeakerAfternoon2 : Speaker[] = [
     {
+      title: 'Panel with Web3 Investment Funds',
       time: '13:30 - 14:30',
-      description: 'Panel Discussion: The Future of AI: Traditional vs. Blockchain Suggested Topic: "Traditional AI and Blockchain AI: Opportunities for Collaboration and Competition Content: Discuss how traditional AI and Blockchain AI can complement each other, opportunities for innovation, and competitive potential within the tech ecosystem.',
-      image: Speaker,
+      description: 'Discussion with representatives from IDG, JDI, and Chain Capital',
     },
     {
+      title: 'Keynote by Bitget Representative',
       time: '14:30 - 15:00',
-      description: 'Keynote: The Future of Blockchain and AI for the Economy',
-      image: Speaker,
+      description: '',
     },
     {
-      time: '15:00 - 15:30',
-      description: 'Keynote: Blockchain Ecosystem and Its Impact on the Financial Economy',
-      image: Speaker,
+      title: 'Panel on Gaming: Contributions of Games to Life and the Economy',
+      time: '15:00 - 16:00',
+      description: '',
     },
     {
-      time: '15:30 - 16:10',
-      description: 'Keynote: The State of Digital Assets in Vietnam',
-      image: Speaker,
+      title: 'Panel on AI: The Future of AI - Open Source and Decentralized or Closed Source and Centralized?',
+      time: '16:00 - 17:00',
+      description:
+          'Speakers:\n' +
+          '- Hung Bui - VinAI (offline)\n' +
+          '- Raghu - SAP (offline)\n' +
+          '- Tuan Cao - Genetica (offline)\n' +
+          '- Binh Tran - AVV (offline)\n' +
+          '- Prof Fabio - Oxford Brookes, Oxford University (online)\n' +
+          '- Moderator: Ha Dao\n' ,
     },
     {
-      time: '16:10 - 17:00',
-      description: 'Panel Discussion: Legal Framework for Digital Assets in Vietnam Topic: Legal Framework and Opportunities for Collaboration in the Digital Asset Sector.',
-      image: Speaker,
+      title: 'Closing Ceremony',
+      time: '17:00 - 17:30',
+      description:
+          'Summary and closing remarks',
     }
   ];
 
@@ -92,7 +104,7 @@ export default function AfternoonSection({activeTab} : Props) {
         {/* Hovered Image - displayed only if hoveredImage is set */}
         {hoveredImageAfternoon && (
             <div
-                className="hidden tablet:block absolute left-[300px] fullscreen:left-[650px] opacity-100 transition-opacity duration-300">
+                className="hidden tablet:block absolute left-[400px] fullscreen:left-[650px] opacity-100 transition-opacity duration-300">
 
               <Image
                   src={hoveredImageAfternoon}
@@ -110,13 +122,17 @@ export default function AfternoonSection({activeTab} : Props) {
               <div
                   key={index}
                   className="relative group h-full flex flex-col"
-                  onMouseEnter={() => setHoveredImageAfternoon(speaker.image)}  // Set image on hover
-                  onMouseLeave={() => setHoveredImageAfternoon(null)}           // Clear image on leave
+                  onMouseEnter={() => speaker.image ? setHoveredImageAfternoon(speaker.image) : setHoveredImageAfternoon(null)}
+                  onMouseLeave={() => setHoveredImageAfternoon(null)}
               >
                 <div
-                    className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2 fullscreen:py-[64px] fullscreen:text-[48px] font-neueMed">
-                  <p className=" w-full tablet:max-w-[353px] fullscreen:max-w-[941px] max-w-[116px] ">{speaker.time}</p>
-                  <p className=" w-full">{speaker.description}</p>
+                    className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2 fullscreen:py-[64px]  text-[18px] fullscreen:text-[48px] font-neueMed">
+                  <div className=" w-full tablet:max-w-[353px] fullscreen:max-w-[941px] max-w-[116px] ">
+                    <p>{speaker.time}</p>
+                    <p className=''>{speaker.title}</p>
+                  </div>
+                  <p className='pl-5'
+                     dangerouslySetInnerHTML={{ __html: speaker.description.replaceAll('\n', '<br />') }}/>
                 </div>
                 {index !== listData.length - 1 && (
                     <hr className="w-full h-[1px] border-[#333]"/>
