@@ -24,7 +24,15 @@ function CategoryTag({
   );
 }
 
-function SectionStatItem({ title, amount }: { title: string; amount: number }) {
+function SectionStatItem({
+  title,
+  amount,
+  plus,
+}: {
+  title: string;
+  amount: number;
+  plus?: string;
+}) {
   const { value } = useCountUp({
     isCounting: true,
     end: amount,
@@ -32,8 +40,8 @@ function SectionStatItem({ title, amount }: { title: string; amount: number }) {
   });
   return (
     <div className="w-[25%] max-[768px]:w-[50%] py-6 tablet:py-10 flex flex-col items-center justify-center max-[768px]:items-start px-4">
-      <div className="font-neueMed text-[56px] max-[768px]:text-[40px] fullscreen:text-[149px]">
-        {formatWithCommas(Number(value?.toString()))}
+      <div className="font-neueMed text-[56px] tracking-[-2.56px] max-[768px]:text-[40px] fullscreen:text-[149px]">
+        {formatWithCommas(Number(value?.toString()))} {plus}
       </div>
       <div className="font-neueMed text-[24px] max-[768px]:text-[20px] fullscreen:text-6xl fullscreen:text-[64px]">
         {title}
@@ -111,10 +119,10 @@ export default function HomeSection1() {
         />
       </div>
       <div className="w-full flex flex-wrap">
-        <SectionStatItem amount={15000} title="Attendees" />
-        <SectionStatItem amount={500} title="Companies" />
-        <SectionStatItem amount={350} title="Speakers" />
-        <SectionStatItem amount={65} title="Countries" />
+        <SectionStatItem amount={20000} title="Attendees" />
+        <SectionStatItem plus="+" amount={100} title="Speakers" />
+        <SectionStatItem plus="+" amount={50} title="Side events" />
+        <SectionStatItem plus="+" amount={500} title="Companies" />
       </div>
     </div>
   );
