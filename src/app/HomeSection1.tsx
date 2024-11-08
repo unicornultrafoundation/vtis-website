@@ -59,17 +59,22 @@ export default function HomeSection1() {
         <div
           className={`w-[60%] h-full flex flex-col gap-2 max-[768px]:w-full transition-all duration-500`}
         >
-          <div className="w-full min-h-[24px] tablet:min-h-[30px] font-neueMed text-[20px] max-[768px]:text-[16px] fullscreen:text-[53px] fullscreen:text-nowrap">
-            {dateText.split("").map((char, i) => (
-              <span
-                key={i}
-                className={`inline-block opacity-0 animate-[fade-in-up-blur_0.5s_ease_forwards]`}
-                style={{
-                  animationDelay: `${i * 0.02}s`,
-                }}
-              >
-                {char === " " ? "\u00A0" : char}
-              </span>
+          <div className="flex flex-wrap w-full min-h-[24px] tablet:min-h-[30px] font-neueMed text-[20px] max-[768px]:text-[16px] fullscreen:text-[53px] fullscreen:text-nowrap">
+            {dateText.split(" ").map((word, wIndex) => (
+              <div key={wIndex}>
+                {word.split("").map((char, i) => (
+                  <span
+                    key={i}
+                    className={`inline-block opacity-0 animate-[fade-in-up-blur_0.5s_ease_forwards]`}
+                    style={{
+                      animationDelay: `${((wIndex * i) + i) * 0.01}s`,
+                    }}
+                  >
+                    {char === " " ? "\u00A0" : char}
+                  </span>
+                ))}
+                &nbsp;
+              </div>
             ))}
           </div>
           <div className="w-full h-full min-h-[80px] tablet:min-h-[176px] font-medium font-neueMed text-[88px] max-[768px]:text-[40px] fullscreen:text-[234px] fullscreen:leading-[234px] max-[768px]:leading-[40px] leading-[88px]">
