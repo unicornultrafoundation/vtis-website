@@ -21,6 +21,7 @@ export default function AfternoonSection({ activeTab }: Props) {
   const [hoveredImageAfternoon, setHoveredImageAfternoon] =
     useState<StaticImageData | null>(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerAfternoon: Speaker[] = [
     {
       title: "Sponsor Keynote: Tech Impact",
@@ -29,59 +30,67 @@ export default function AfternoonSection({ activeTab }: Props) {
       image: Speaker4,
     },
     {
-      title: "Panel on Blockchain and its Applications in Life",
-      time: "14:30 - 15:30",
+      title: "Panel on Blockchain and Its Applications in Daily Life",
+      time: "13:50",
       description:
-        "Discussion with representatives from Tether, Avax, SSID, and Chainlink",
+        "Speakers: Delegates from Tether, Avax, Binance, Holdstation, and U2U",
     },
     {
-      title: "Keynote by Kucoin COO",
-      time: "15:30 - 16:00",
-      description: "30-minute keynote by Kucoin COO on Tech Impact",
+      title: "Keynote: Tech Impact",
+      time: "14:30",
+      description: "Speaker: COO of KuCoin (20mins)",
     },
     {
-      title:
-        "Panel Discussion with Vietnamese Startups in the Blockchain Field",
-      time: "16:15 - 17:30",
-      description:
-        "Discussion with representatives from Onus, ATX, Nami, and Icetea Labs",
-    },
-  ];
-
-  const listSpeakerAfternoon2: Speaker[] = [
-    {
-      title: "Panel with Web3 Investment Funds",
-      time: "13:30 - 14:30",
-      description:
-        "Discussion with representatives from IDG, JDI, and Chain Capital",
+      title: "",
+      time: "10 mins",
+      description: "Break",
     },
     {
-      title: "Keynote by Bitget Representative",
-      time: "14:30 - 15:00",
-      description: "",
-    },
-    {
-      title: "Panel on Gaming: Contributions of Games to Life and the Economy",
-      time: "15:00 - 16:00",
-      description: "",
+      title: "Panel on Future Innovations and Security in Digital Asset",
+      time: "15:00",
+      description: "Speakers: Bybit, Bitget, Bingx, KuCoin",
     },
     {
       title:
         "Panel on AI: The Future of AI - Open Source and Decentralized or Closed Source and Centralized?",
-      time: "16:00 - 17:00",
+      time: "16:00",
       description:
         "Speakers:\n" +
-        "- Hung Bui - VinAI (offline)\n" +
-        "- Raghu - SAP (offline)\n" +
-        "- Tuan Cao - Genetica (offline)\n" +
-        "- Binh Tran - AVV (offline)\n" +
-        "- Prof Fabio - Oxford Brookes, Oxford University (online)\n" +
+        "- Phong Nguyen - FPT\n" +
+        "- Raghu - SAP \n" +
+        "- Tuan Cao - Genetica \n" +
+        "- Binh Tran - AVV \n" +
+        "- Prof. Fabio - Oxford Brookes, Oxford University \n" +
         "- Moderator: Ha Dao\n",
     },
     {
-      title: "Closing Ceremony",
-      time: "17:00 - 17:30",
-      description: "Summary and closing remarks",
+      title: "Panel Discussion with Vietnamese Blockchain Startups",
+      time: "17:00",
+      description: "Speakers: Delegates from Onus, ATX, and Icetea Labs",
+    },
+  ];
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const listSpeakerAfternoon2: Speaker[] = [
+    {
+      title: "Panel by Web3 Ventures",
+      time: "13:30",
+      description: "Speakers: Delegates from IDG, JDL, Chain Capital",
+    },
+    {
+      title: "Keynote from Bitget Delegate",
+      time: "14:30",
+      description: "",
+    },
+    {
+      title: "Gaming panel: Gaming's Contribution to Life and Economy",
+      time: "15:00",
+      description: "",
+    },
+    {
+      title: "Closing ceremony",
+      time: "16:00",
+      description: "",
     },
   ];
 

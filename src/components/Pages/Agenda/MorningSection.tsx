@@ -21,6 +21,7 @@ export default function MorningSection({ activeTab }: Props) {
   const [hoveredImageMorning, setHoveredImageMorning] =
     useState<StaticImageData | null>(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerMorning: Speaker[] = [
     {
       title: "Opening Performance",
@@ -40,10 +41,9 @@ export default function MorningSection({ activeTab }: Props) {
       image: Speaker2,
     },
     {
-      title: "Break",
+      title: "",
       time: "10 mins",
-      description: "Speaker: Mr. Truong Gia Binh - Chairman of FPT",
-      image: Speaker2,
+      description: "Break",
     },
     {
       title:
@@ -70,23 +70,23 @@ export default function MorningSection({ activeTab }: Props) {
     },
   ];
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerMorning2: Speaker[] = [
     {
-      title: "Panel on Fintech: The Future of Fintech in the Next 5 Years",
-      time: "9:00 - 10:00",
-      description:
-        "Panel on Fintech: The Future of Fintech in the Next 5 Years",
+      title: "Fintech Panel: The Future of Fintech in the Next 5 Years",
+      time: "9:00",
+      description: "Speakers: CEO DNSE, CEO Finhay, Zalo Pay CEO",
     },
     {
-      title: "Keynote by Mr. Hoang Nam Tien - FPT",
-      time: "10:00 - 10:30",
-      description: "Topic: Technology's Impact on Education and the Future",
+      title: "Keynote: The Effect of Technology on Education and the Future",
+      time: "10:00",
+      description: "Speaker: Mr. Hoang Nam Tien - FPT",
     },
     {
-      title: "Panel Discussion with Web 2 Investment Funds",
-      time: "10:30 - 11:30",
+      title: "Panel by Web2 Ventures",
+      time: "10:30",
       description:
-        "Discussion with representatives from SSIAM, Thinkzone, and Vina Capital on evaluating and investing in technology startup projects",
+        "Speakers: Delegates from SSIAM, Thinkzone, Vina Capital, Vin Ventures",
     },
   ];
 
