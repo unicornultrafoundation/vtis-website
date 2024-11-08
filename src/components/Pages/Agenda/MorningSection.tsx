@@ -23,38 +23,49 @@ export default function MorningSection({ activeTab }: Props) {
 
   const listSpeakerMorning: Speaker[] = [
     {
-      title: "Opening Ceremony",
-      time: "9:00 - 9:30",
+      title: "Opening Performance",
+      time: "9:00",
+      description: "",
+    },
+    {
+      title: "Opening Performance",
+      time: "9:15",
       description: "Opening speech by Mr. Nguyen Duy Hung - Chairman of SSI",
       image: Speaker1,
     },
     {
       title: "Keynote Speech on Event Theme - Tech Impact",
-      time: "9:30 - 10:15",
-      description: "Speech by Mr. Truong Gia Binh - Chairman of FPT",
+      time: "9:30",
+      description: "Speaker: Mr. Truong Gia Binh - Chairman of FPT",
+      image: Speaker2,
+    },
+    {
+      title: "Break",
+      time: "10 mins",
+      description: "Speaker: Mr. Truong Gia Binh - Chairman of FPT",
       image: Speaker2,
     },
     {
       title:
         "Talkshow on AI: Generative AI - Business Impact and Future Potential",
-      time: "10:15 - 11:00",
+      time: "10:30",
       description:
         "Speakers:\n" +
-        "- Vinesh - Qualcomm (online)\n" +
-        "- Lan Tran - Viettin Bank (offline)\n" +
-        "- Gaurav - JP Morgan Chase (offline)\n" +
-        "- Santhosh - Techcombank (offline)\n" +
+        "- Vinesh - Qualcomm \n" +
+        "- Lan Tran - Viettin Bank \n" +
+        "- Gaurav - JP Morgan Chase \n" +
+        "- Hung Bui (VinAI)\n" +
         "- Kavitha - AWS (online)\n" +
         "- Moderator: Ha Dao\n",
     },
     {
-      title: "Panel Discussion on Legal Aspects in the Crypto Field",
-      time: "11:00 - 12:00",
+      title: "Panel Discussion on Legal Matters in the Crypto Industry",
+      time: "11:15",
       description:
         "Moderator: Le Bao Nguyen - Deputy Director, SSI Digital\n" +
         " Speakers:\n" +
-        "- Malcolm - Deputy Director of Compliance, OKX\n" +
-        "- Jonathan Cheung - Head of Legal, Bybit\n" +
+        "- Malcolm - OKX\n" +
+        "- Jonathan Cheung - Bybit\n" +
         "- Legal team from Binance\n",
     },
   ];
