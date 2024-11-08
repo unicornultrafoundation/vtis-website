@@ -109,8 +109,14 @@ export default function HomeSection1() {
         </div>
       </div>
       <div className="w-full aspect-[3] max-[768px]:aspect-[375/240] relative">
-       
-        <video src={'/video/trailer.mp4'} controls width={'100%'} />
+        <video
+          src={"/video/trailer.mp4"}
+          controls
+          width={"100%"}
+          autoPlay={true}
+          muted
+          loop
+        />
       </div>
       <div className="w-full flex flex-wrap">
         <SectionStatItem amount={20000} title="Attendees" />

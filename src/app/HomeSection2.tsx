@@ -38,10 +38,9 @@ export default function HomeSection2() {
             >
               Partner with Us
             </Link>
-            <button
-              onClick={() =>
-                window.open("https://app.moongate.id/e/vtis24", "_blank")
-              }
+            <Link
+              href="https://app.moongate.id/e/vtis24"
+              target="_blank"
               className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500"
             >
               <ImageBase.GetTicketImg
@@ -52,7 +51,7 @@ export default function HomeSection2() {
                 <div>Get Ticket</div>
                 <div>Get Ticket</div>
               </div>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="w-[50%] max-[768px]:w-full fullscreen:w-[1504px]">
