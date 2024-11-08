@@ -34,13 +34,16 @@ export default function HomeSection2() {
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSdnx0Knyzusil9koJIXf_Ol0-Bdh91xKhbhjhVKbiD_uIGpuw/viewform"
               target="_blank"
-              className="animated-text h-12 fullscreen:w-[410px] text-white fullscreen:h-[128px] hidden laptop:flex bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center laptop:hover:bg-white laptop:hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8"
+              className="animated-text h-12 fullscreen:w-[410px] text-white fullscreen:h-[128px] flex justify-center items-center bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center hover:bg-white hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8"
             >
               Partner with Us
             </Link>
-            <button 
-            onClick={() => window.open('https://app.moongate.id/e/vtis24', "_blank")}
-            className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
+            <button
+              onClick={() =>
+                window.open("https://app.moongate.id/e/vtis24", "_blank")
+              }
+              className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500"
+            >
               <ImageBase.GetTicketImg
                 fill-color="#000"
                 className={`w-auto h-[48px] fullscreen:h-[128px]`}
@@ -55,10 +58,16 @@ export default function HomeSection2() {
         <div className="w-[50%] max-[768px]:w-full fullscreen:w-[1504px]">
           <div className="animated-text animated-text-delay-0.5s fullscreen:max-w-full font-neueMed text-[28px] max-[768px]:text-[24px] fullscreen:text-[74.6px] fullscreen:leading-[96px] text-[white] pb-[156px] tablet:pb-[216px] pl-2 max-w-[615px] pr-10 max-[768px]:pl-0">
             <span className="text-[#28D2DC]">
-            VTIS—the premier tech event in Vietnam
+              VTIS—the premier tech event in Vietnam
             </span>
-            —is a hub for transformative innovations, serving as "The gateway to Vietnam's emerging technology market."<br/><br/>
-            VTIS connects global experts, businesses, and investors, and tech enthusiasts across technology sectors. Focusing on 4 themes—Fintech, AI, Blockchain, Gaming, VTIS will unlock market access, partnerships, and investment.
+            —is a hub for transformative innovations, serving as "The gateway to
+            Vietnam's emerging technology market."
+            <br />
+            <br />
+            VTIS connects global experts, businesses, and investors, and tech
+            enthusiasts across technology sectors. Focusing on 4 themes—Fintech,
+            AI, Blockchain, Gaming, VTIS will unlock market access,
+            partnerships, and investment.
           </div>
         </div>
         <div className="fullscreen:w-[586px] fullscreen:h-[583px] absolute right-0 bottom-[-10px] tablet:bottom-[-3px] bg-black tablet:w-[220px] tablet:h-[220px] ">
