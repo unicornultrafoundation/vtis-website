@@ -13,7 +13,7 @@ const speakersData = [
     Status: "",
   },
   {
-    Name: "Trương Gia Binh",
+    Name: "Truong Gia Binh",
     Title: "Chairman - FPT",
     image: "\bĐã update web",
     Status: "",
