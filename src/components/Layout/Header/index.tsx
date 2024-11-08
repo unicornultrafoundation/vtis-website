@@ -49,9 +49,11 @@ export default function Header() {
             >
               Partner with Us
             </Link>
-            <button 
-                onClick={() => window.open('https://app.moongate.id/e/vtis24', "_blank")}
-            className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500">
+            <Link
+              href="https://app.moongate.id/e/vtis24"
+              target="_blank"
+              className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500"
+            >
               <ImageBase.GetTicketImg
                 fill-color="#000"
                 className={`w-auto tablet:h-[48px] fullscreen:h-[128px]`}
@@ -60,7 +62,7 @@ export default function Header() {
                 <div>Get Ticket</div>
                 <div>Get Ticket</div>
               </div>
-            </button>
+            </Link>
             {/* Menu Bar Mobile */}
             <div className="laptop:hidden z-50">
               {isOpenMobileMenu ? (
