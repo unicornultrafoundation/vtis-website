@@ -79,7 +79,7 @@ const speakersData = [
   },
   {
     Name: "Kavitha Prasad",
-    Title: "General Manager of AI. AWS",
+    Title: "General Manager of AI - AWS",
     image: "\bĐã update web",
     Status: "",
   },
@@ -129,8 +129,8 @@ const speakersData = [
     Status: "",
   },
   {
-    Name: "Santhosh Mahendiran",
-    Title: "Chief Data & Analytics Officer - Techcombank",
+    Name: "Tran Cong Quy Lan ",
+    Title: "VP of Tech - Viettin Bank",
     image:
       "https://drive.google.com/file/d/1tyGdPZGPhkHmsGlIOx2guqFCVHxNQPJu/view?usp=drive_link",
     Status: "",
