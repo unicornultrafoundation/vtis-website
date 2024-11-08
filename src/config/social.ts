@@ -6,18 +6,18 @@ interface SocialItem {
 export const social: SocialItem[] = [
   {
     label: "Linkedin",
-    href: "/",
+    href: "https://www.linkedin.com/company/vietnam-tech-impact-summit-vtis",
   },
   {
     label: "Twitter X",
-    href: "/",
+    href: "https://x.com/vtis2024",
   },
   {
     label: "Facebook",
-    href: "/",
+    href: "https://www.facebook.com/vtis.io",
   },
   {
     label: "Telegram",
-    href: "/",
+    href: "https://web.telegram.org",
   },
 ];

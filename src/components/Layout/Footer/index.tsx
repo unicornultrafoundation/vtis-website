@@ -20,9 +20,13 @@ export default function Footer() {
             <h2 className="font-neueMed text-[48px] tablet:text-6xl tablet:text-[64px] fullscreen:text-[170px] fullscreen:leading-[192px] font-medium bg-gradient-to-r from-[#28D2DC] to-[#FFFFFF] bg-clip-text text-transparent tablet:text-end">
               Empowering Transformation—Fostering Innovation
             </h2>
-            <button className="font-neueMed w-full tablet:w-[162px] fullscreen:w-[430px] px-8 tablet:px-8 fullscreen:px-[85px] py-4 tablet:py-[14px] fullscreen:py-[37px] text-xl fullscreen:text-[53px] fullscreen:leading-[74px] bg-[#28D2DC] text-black">
-              Contact Us
-            </button>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdnx0Knyzusil9koJIXf_Ol0-Bdh91xKhbhjhVKbiD_uIGpuw/viewform"
+              target="_blank"
+              className="animated-text h-12 fullscreen:w-[410px] text-white fullscreen:h-[128px] flex justify-center items-center bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center hover:bg-white hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8"
+            >
+              Partner with Us
+            </Link>
           </div>
           {/* Menu */}
           <div className="flex w-full tablet:flex-col justify-between tablet:justify-center tablet:items-center gap-20 tablet:gap-6  ">
@@ -50,7 +54,7 @@ export default function Footer() {
             <div className="flex flex-col tablet:flex-row tablet:justify-center tablet:items-center gap-8 tablet:gap-10">
               {social.map((nav, index) => (
                 <div key={index}>
-                  <Link href={nav.href} className="cursor-pointer">
+                  <Link href={nav.href} className="cursor-pointer" target="_blank">
                     <p className="font-neueMed text-base opacity-50">
                       {nav.label}
                     </p>

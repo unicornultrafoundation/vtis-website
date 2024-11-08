@@ -3,7 +3,6 @@
 import mask from "@/assets/images/mask.png";
 import useIsMobile from "@/hooks/useIsMobile";
 import Image from "next/image";
-import landingLogo from "@/assets/images/landing-logo.png";
 import { useState } from "react";
 
 const speakersData = [
@@ -34,8 +33,8 @@ const speakersData = [
     Status: "",
   },
   {
-    Name: "Bybit",
-    Title: "",
+    Name: "Malcolm Wright",
+    Title: "Deputy Head of Compliance - OKX",
     image: "",
     Status: "",
   },
@@ -67,8 +66,8 @@ const speakersData = [
     Status: "",
   },
   {
-    Name: "Tran Trong Kien",
-    Title: "Co Founder - Gosu Game",
+    Name: "Nguyen Trung Trang",
+    Title: "CPO - SSI Digital",
     image: "",
     Status: "",
   },
@@ -217,8 +216,7 @@ const Column = ({
           className="w-[100%] border-solid border-[0.5px] border-[#D9D9D9] p-4 fullscreen:p-[26px] flex flex-col gap-1 fullscreen:gap-[10px] items-start justify-start"
         >
           <div className="w-[100%] aspect-[1/1.05] relative flex justify-center">
-            {item.index !== 4 && item.index !== 9 ? (
-              <div className="w-[210px] h-[237px] overflow-hidden relative">
+              <div className="w-full aspect-[210/237] overflow-hidden relative">
                 <Image
                   src={`/images/speakers/${
                     item.index >= 3 ? item.index + 1 : item.index
@@ -228,16 +226,6 @@ const Column = ({
                   alt="person-image"
                 />
               </div>
-            ) : (
-              <div className="w-[210px] h-[237px] bg-[black] overflow-hidden relative">
-                <Image
-                  src={landingLogo.src}
-                  fill
-                  className="object-contain object-center animated-card-image absolute left-0 top-0"
-                  alt="person-image"
-                />
-              </div>
-            )}
           </div>
           <div className="animated-text mt-3 font-neueMed text-[20px] fullscreen:text-5xl fullscreen:text-[53px]">
             {
@@ -270,7 +258,7 @@ export default function HomeSection4() {
   const [isViewAll, setViewAll] = useState(false);
 
   return (
-    <div className="w-full flex relative mb-[73px] max-[768px]:mb-20">
+    <div id="speakers" className="w-full flex relative mb-[73px] max-[768px]:mb-20">
       <div className="animated-text z-30 font-neueMed text-[64px] fullscreen:text-[170px] fullscreen:leading-[192px] tablet:w-[80%] w-full h-[72px] max-[768px]:!text-[28px] max-[768px]:leading-[36px] px-14 max-[768px]:px-4 py-6 leading-[64px] absolute pt-8 fullscreen:pt-[85px] max-[415px]:pt-6">
         {isMobile ? (
           <>Vietnam Tech Impact <br/>Summit Speakers</>

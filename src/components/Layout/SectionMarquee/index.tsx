@@ -1,6 +1,7 @@
 "use client";
 
 import ImageBase from "@/components/Images/ImageBase";
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
 export function SectionMarquee() {
@@ -11,12 +12,12 @@ export function SectionMarquee() {
           {Array(20)
             .fill("")
             .map((_, index) => (
-              <div key={index} className="flex items-center gap-10">
+              <Link href={`https://app.moongate.id/e/vtis24`} target="_blank" key={index} className="flex items-center gap-10">
                 <div className="h-full flex items-center">Get Ticket</div>
                 <div className="h-full flex items-center">
                   <ImageBase.Ticket width={40} />
                 </div>
-              </div>
+              </Link>
             ))}
         </div>
       </Marquee>
