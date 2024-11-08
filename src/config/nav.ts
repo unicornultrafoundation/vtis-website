@@ -22,6 +22,6 @@ export const navs: NavItem[] = [
   },
   {
     label: "News",
-    href: "",
+    href: "#news",
   },
 ];
