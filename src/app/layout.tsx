@@ -39,6 +39,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>VTIS 2024 </title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="VTIS 2024" />
+        <meta property="og:description" content="VTIS 2024" />
+        <meta property="og:url" content="https://vtis.io" />
+        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ppNeueBold.variable} ${ppNeueMed.variable} antialiased mx-auto`}
       >

@@ -10,20 +10,20 @@ export default function Footer() {
   const pathname = usePathname();
   const [activeTab, setActiveTab] = useState(pathname);
   return (
-    <footer className=" relative w-full p-4 tablet:p-12 bg-gradient-to-t from-[#28D2DC] to-black">
+    <footer className=" relative w-full p-4 tablet:p-1 bg-[linear-gradient(180deg,_rgba(40,210,220,0)_0%,_#28D2DC_100%)]">
       <ImageBase.FooterImage className="hidden tablet:block absolute right-0 bottom-0" />
       <div className="w-full h-full flex flex-col tablet:justify-between">
         {/* Top */}
         <div className="w-full h-full flex flex-col gap-16 tablet:gap-20 justify-center tablet:justify-between items-start">
           {/* Shaping */}
-          <div className="w-[343px] tablet:w-full fullscreen:w-[1274px] flex flex-col gap-6 fullscreen:gap-16 items-end tablet:items-center tablet:text-center">
-            <h2 className="font-neueMed text-[48px] tablet:text-6xl tablet:text-[64px] fullscreen:text-[170px] fullscreen:leading-[192px] font-medium bg-gradient-to-r from-[#28D2DC] to-[#FFFFFF] bg-clip-text text-transparent tablet:text-end">
+          <div className="w-[343px] tablet:w-full fullscreen:w-[1274px] flex flex-col gap-6 fullscreen:gap-16 tablet:items-center tablet:text-center">
+            <h2 className="font-neueMed text-[48px] tablet:text-6xl tablet:text-[64px] fullscreen:text-[170px] fullscreen:leading-[192px] font-medium bg-gradient-to-r from-[#28D2DC] to-[#FFFFFF] bg-clip-text text-transparent tablet:text-center">
               Empowering Transformation—Fostering Innovation
             </h2>
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSdnx0Knyzusil9koJIXf_Ol0-Bdh91xKhbhjhVKbiD_uIGpuw/viewform"
               target="_blank"
-              className="animated-text h-12 fullscreen:w-[410px] text-white fullscreen:h-[128px] flex justify-center items-center bg-[#ffffff26] px-6 py-4 font-neueMed fullscreen:text-[42px] text-center laptop:items-center hover:bg-white hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8"
+              className="animated-text h-12 fullscreen:w-[410px] text-black fullscreen:h-[128px] flex justify-center items-center bg-[#28D2DC] px-8 py-[14px] font-neueMed fullscreen:text-[42px] text-center laptop:items-center hover:bg-white hover:text-black transition duration-500 fullscreen:px-16 fullscreen:py-8"
             >
               Partner with Us
             </Link>
@@ -54,7 +54,11 @@ export default function Footer() {
             <div className="flex flex-col tablet:flex-row tablet:justify-center tablet:items-center gap-8 tablet:gap-10">
               {social.map((nav, index) => (
                 <div key={index}>
-                  <Link href={nav.href} className="cursor-pointer" target="_blank">
+                  <Link
+                    href={nav.href}
+                    className="cursor-pointer"
+                    target="_blank"
+                  >
                     <p className="font-neueMed text-base opacity-50">
                       {nav.label}
                     </p>
