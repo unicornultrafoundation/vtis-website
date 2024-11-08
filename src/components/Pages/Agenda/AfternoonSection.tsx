@@ -137,7 +137,7 @@ export default function AfternoonSection({ activeTab }: Props) {
             <div className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2 fullscreen:py-[64px]  text-[18px] fullscreen:text-[48px] font-neueMed">
               <div className=" w-full tablet:max-w-[353px] fullscreen:max-w-[941px] max-w-[116px] ">
                 <p>{speaker.time}</p>
-                <p className="">{speaker.title}</p>
+                {/* <p className="">{speaker.title}</p> */}
               </div>
               <p
                 className="pl-5"

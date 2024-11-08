@@ -2,17 +2,37 @@
 import ImageBase from "@/components/Images/ImageBase";
 import { navs } from "@/config/nav";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import SideBarMenu from "./SidebarMenu";
 
 export default function Header() {
   //   const pathname = usePathname();
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState<string>("/");
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
+  const router = useRouter();
+
+  const handleScrollOrNavigate = (href: string) => {
+    if (href === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      router.push("/");
+      setActiveTab(href);
+    } else if (href.startsWith("#")) {
+      const element = document.querySelector(href) as HTMLElement | null;
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setActiveTab(href);
+      }
+    } else {
+      // Điều hướng sang trang khác
+      setActiveTab(href);
+      router.push(href);
+    }
+  };
 
   return (
     <>
-      <header className="sticky top-0 mt-0 items-center justify-between w-full bg-[#000000] text-white z-50">
+      <header className="sticky top-0 mt-0 items-center justify-between w-full bg-[#000000] text-white z-50 scroll-smooth">
         <div className="w-full h-full p-2 tablet:p-1 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="pl-3 flex-1">
@@ -25,8 +45,11 @@ export default function Header() {
               <div key={index}>
                 <Link
                   href={nav.href}
-                  className="cursor-pointer font-neueMed text-sm text-[15px] fullscreen:text-4xl fullscreen:text-[40px]"
-                  onClick={() => setActiveTab(nav.href)}
+                  className="cursor-pointer font-neueMed text-sm text-[15px] fullscreen:text-4xl fullscreen:text-[40px] scroll-smooth"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleScrollOrNavigate(nav.href);
+                  }}
                 >
                   <p
                     className={`hover:text-white transition-all ${
