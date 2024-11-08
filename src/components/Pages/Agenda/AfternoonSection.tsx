@@ -1,7 +1,7 @@
 "use client";
 
 import Speaker from "@/assets/images/agenda/speaker.png";
-import Speaker1 from "@/assets/images/speakers/4.png";
+import Speaker4 from "@/assets/images/speakers/4.png";
 
 import Image, { StaticImageData } from "next/image";
 import { useMemo, useState } from "react";
@@ -23,11 +23,10 @@ export default function AfternoonSection({ activeTab }: Props) {
 
   const listSpeakerAfternoon: Speaker[] = [
     {
-      title: "Keynote from Sponsor",
-      time: "13:30 - 14:00",
-      description:
-        "30-minute keynote by Richard Teng - CEO, Binance on Tech Impact",
-      image: Speaker1,
+      title: "Sponsor Keynote: Tech Impact",
+      time: "13:30",
+      description: "Speaker: Richard Teng - CEO of Binance",
+      image: Speaker4,
     },
     {
       title: "Panel on Blockchain and its Applications in Life",
