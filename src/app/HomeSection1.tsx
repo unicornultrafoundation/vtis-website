@@ -53,6 +53,8 @@ function SectionStatItem({
 export default function HomeSection1() {
   const dateText =
     "3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM";
+    const words = dateText.split(" ");
+    const delayUnit = 0.03;
   return (
     <div className="w-full flex flex-col">
       <div className="w-full flex px-4 py-6 tablet:py-5 items-end max-[768px]:flex-col max-[768px]:gap-4">
@@ -60,14 +62,17 @@ export default function HomeSection1() {
           className={`w-[60%] h-full flex flex-col gap-2 max-[768px]:w-full transition-all duration-500`}
         >
           <div className="flex flex-wrap w-full min-h-[24px] tablet:min-h-[30px] font-neueMed text-[20px] max-[768px]:text-[16px] fullscreen:text-[53px] fullscreen:text-nowrap">
-            {dateText.split(" ").map((word, wIndex) => (
+            {words.map((word, wIndex) => (
               <div key={wIndex}>
                 {word.split("").map((char, i) => (
                   <span
                     key={i}
                     className={`inline-block opacity-0 animate-[fade-in-up-blur_0.5s_ease_forwards]`}
                     style={{
-                      animationDelay: `${((wIndex * i) + i) * 0.01}s`,
+                      animationDelay: `${wIndex === 0 ? 
+                      i * delayUnit :
+                      ((words.slice(0,wIndex).reduce((prev, curr) => prev + curr.length, 0)) + i) * delayUnit
+                     }s`,
                     }}
                   >
                     {char === " " ? "\u00A0" : char}
