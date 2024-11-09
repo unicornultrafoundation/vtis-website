@@ -42,8 +42,14 @@ export default function RootLayout({
       <head>
         <title>VTIS 2024 </title>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="VTIS 2024" />
-        <meta property="og:description" content="VTIS 2024" />
+        <meta
+          property="og:title"
+          content="Vietnam Tech Impact Summit 2024 (VTIS) – Vietnam’s Premier Tech Event"
+        />
+        <meta
+          property="og:description"
+          content="VTIS unites global experts, businesses, and tech enthusiasts across Fintech, AI, Blockchain, and Gaming, creating “The gateway to Vietnam’s emerging tech market.” Hosted by SSI and FPT Group and organized by SSID, the summit offers 20,000 attendees two days of networking, cutting-edge insights, and opportunities to drive innovation and forge partnerships."
+        />
         <meta property="og:url" content="https://vtis.io" />
         <meta property="og:image" content="/images/og-image.png" />
         <meta property="og:image:type" content="image/png" />

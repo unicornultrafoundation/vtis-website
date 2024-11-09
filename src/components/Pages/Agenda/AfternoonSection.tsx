@@ -41,8 +41,8 @@ export default function AfternoonSection({ activeTab }: Props) {
       description: "Speaker: COO of KuCoin (20mins)",
     },
     {
-      title: "",
-      time: "10 mins",
+      title: "10 mins",
+      time: "",
       description: "Break",
     },
     {
@@ -135,12 +135,14 @@ export default function AfternoonSection({ activeTab }: Props) {
             onMouseLeave={() => setHoveredImageAfternoon(null)}
           >
             <div className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2 fullscreen:py-[64px]  text-[18px] fullscreen:text-[48px] font-neueMed">
-              <div className=" w-full tablet:max-w-[353px] fullscreen:max-w-[941px] max-w-[116px] ">
+              <div className=" w-full tablet:max-w-[100px] fullscreen:max-w-[941px] max-w-[116px] ">
                 <p>{speaker.time}</p>
-                {/* <p className="">{speaker.title}</p> */}
               </div>
+              <p className="hidden tablet:flex tablet:flex-col tablet:w-[300px] desktop:w-[400px]">
+                {speaker.title}
+              </p>
               <p
-                className="pl-5"
+                className="pl-5 w-full"
                 dangerouslySetInnerHTML={{
                   __html: speaker.description.replaceAll("\n", "<br />"),
                 }}
