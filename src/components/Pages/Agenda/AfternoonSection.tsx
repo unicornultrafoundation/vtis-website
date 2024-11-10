@@ -73,9 +73,9 @@ export default function AfternoonSection({ activeTab }: Props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerAfternoon2: Speaker[] = [
     {
-      title: "Panel: Web3 Ventures",
+      title: "Tokenizing the Tangible Phy-sital: Blockchain Revolutionizing Real-World Assets in the East",
       time: "13:30",
-      description: "Speakers: Delegates from IDG Blockchain, JDL, Chain Capital",
+      description: "Speakers: Delegates from IDG Blockchain, JDI, Chain Capital",
     },
     {
       title: "Keynote from Bitget Delegate",

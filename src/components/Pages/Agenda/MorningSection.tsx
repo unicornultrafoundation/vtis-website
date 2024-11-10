@@ -84,7 +84,7 @@ export default function MorningSection({ activeTab }: Props) {
       description: "Speaker: Mr. Hoang Nam Tien @FPT",
     },
     {
-      title: "Panel: Web2 Ventures",
+      title: "Vision & Venture: Web2 Giants on Vietnam’s Growth",
       time: "10:30",
       description:
           "Speakers: Delegates from SSIAM, Thinkzone, Vina Capital, Vin Ventures",
