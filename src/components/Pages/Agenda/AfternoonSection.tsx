@@ -24,31 +24,31 @@ export default function AfternoonSection({ activeTab }: Props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerAfternoon: Speaker[] = [
     {
-      title: "Sponsor Keynote: Tech Impact",
+      title: "Keynote: Tech impact",
       time: "13:30",
-      description: "Speaker: Richard Teng - CEO of Binance",
+      description: "Speaker: Richard Teng - CEO @Binance",
       image: Speaker4,
     },
     {
-      title: "Panel on Blockchain and Its Applications in Daily Life",
+      title: "Panel: Blockchain and its applications in daily life",
       time: "13:50",
       description:
-        "Speakers: Delegates from Tether, Avax, Binance, Holdstation, and U2U",
+        "Speakers: Delegates from Tether, Avax, Binance, Holdstation, and U2U Network",
     },
     {
-      title: "Keynote: Tech Impact",
+      title: "Keynote: Tech impact",
       time: "14:30",
-      description: "Speaker: COO of KuCoin (20mins)",
+      description: "Speaker:  COO @KuCoin",
     },
     {
-      title: "10 mins",
+      title: "",
       time: "",
-      description: "Break",
+      description: "Breaktime - 10 minutes",
     },
     {
-      title: "Panel on Future Innovations and Security in Digital Asset",
+      title: "Panel: Future Innovations and Security in Digital Asset",
       time: "15:00",
-      description: "Speakers: Bybit, Bitget, Bingx, KuCoin",
+      description: "Speakers:  Bybit, Bitget, Bingx, KuCoin",
     },
     {
       title:
@@ -56,15 +56,15 @@ export default function AfternoonSection({ activeTab }: Props) {
       time: "16:00",
       description:
         "Speakers:\n" +
-        "- Phong Nguyen - FPT\n" +
-        "- Raghu - SAP \n" +
-        "- Tuan Cao - Genetica \n" +
-        "- Binh Tran - AVV \n" +
-        "- Prof. Fabio - Oxford Brookes, Oxford University \n" +
-        "- Moderator: Ha Dao\n",
+        "- Phong Nguyen - Chief AI Officer @FPT AI \n" +
+        "- Raghu Banda - Sr Director of AI @SAP  \n" +
+        "- Tuan Cao - CEO @Genetica  \n" +
+        "- Binh Tran @AVV  \n" +
+        "- Prof. Fabio - Director of AI Labs @Oxford Brookes, Oxford University \n" +
+        "- Moderator: Ha Dao - CEO @AIxBlock\n",
     },
     {
-      title: "Panel Discussion with Vietnamese Blockchain Startups",
+      title: "Panel: Vietnam Blockchain Startups",
       time: "17:00",
       description: "Speakers: Delegates from Onus, ATX, and Icetea Labs",
     },
@@ -73,9 +73,9 @@ export default function AfternoonSection({ activeTab }: Props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerAfternoon2: Speaker[] = [
     {
-      title: "Panel by Web3 Ventures",
+      title: "Panel: Web3 Ventures",
       time: "13:30",
-      description: "Speakers: Delegates from IDG, JDL, Chain Capital",
+      description: "Speakers: Delegates from IDG Blockchain, JDL, Chain Capital",
     },
     {
       title: "Keynote from Bitget Delegate",
@@ -135,16 +135,16 @@ export default function AfternoonSection({ activeTab }: Props) {
             onMouseLeave={() => setHoveredImageAfternoon(null)}
           >
             <div className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2 fullscreen:py-[64px]  text-[18px] fullscreen:text-[48px] font-neueMed">
-              <div className=" w-full tablet:max-w-[100px] fullscreen:max-w-[941px] max-w-[116px] ">
+              <div className=" w-full tablet:max-w-[100px] fullscreen:max-w-[941px] max-w-[90px] ">
                 <p>{speaker.time}</p>
               </div>
-              <p className="hidden tablet:flex tablet:flex-col tablet:w-[300px] desktop:w-[400px]">
+              <p className="hidden tablet:flex w-full tablet:max-w-[300px] fullscreen:max-w-[400px]">
                 {speaker.title}
               </p>
               <p
-                className="pl-5 w-full"
-                dangerouslySetInnerHTML={{
-                  __html: speaker.description.replaceAll("\n", "<br />"),
+                  className="tablet:pl-5 w-full"
+                  dangerouslySetInnerHTML={{
+                    __html: speaker.description.replaceAll("\n", "<br />"),
                 }}
               />
             </div>
