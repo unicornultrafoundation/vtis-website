@@ -57,17 +57,17 @@ export default function MorningSection({ activeTab }: Props) {
           "- Gaurav Chawla - VP @JP Morgan Chase \n" +
           "- Hung Bui - CEO @VinAI \n" +
           "- Kavitha Prasad - GM of AI @AWS\n" +
-          "- Moderator: Ha Dao - CEO @AIxBlock\n",
+          "Moderator: Ha Dao - CEO @AIxBlock\n",
     },
     {
-      title: "Panel Discussion: Legal Matters in the Crypto Industry\n",
+      title: "Panel Discussion: Legal Matters in the Digital assets",
       time: "11:15",
       description:
           " Speakers:\n" +
-          "- Malcolm Wright - Deputy Head of Compliance @OKX" +
+          "- Malcolm Wright - Deputy Head of Compliance @OKX\n" +
           "- Jonathan Cheung @Bybit \n" +
           "- Legal Team @Binance\n" +
-          "- Moderator: Le Bao Nguyen - Deputy Director, SSI Digital\n"
+          "Moderator: Le Bao Nguyen - Deputy Director, SSI Digital\n"
     },
   ];
 

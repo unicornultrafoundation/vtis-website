@@ -61,7 +61,7 @@ export default function AfternoonSection({ activeTab }: Props) {
         "- Tuan Cao - CEO @Genetica  \n" +
         "- Binh Tran @AVV  \n" +
         "- Prof. Fabio - Director of AI Labs @Oxford Brookes, Oxford University \n" +
-        "- Moderator: Ha Dao - CEO @AIxBlock\n",
+        "Moderator: Ha Dao - CEO @AIxBlock\n",
     },
     {
       title: "Panel: Vietnam Blockchain Startups",
@@ -134,22 +134,26 @@ export default function AfternoonSection({ activeTab }: Props) {
             }
             onMouseLeave={() => setHoveredImageAfternoon(null)}
           >
-            <div className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2 fullscreen:py-[64px]  text-[18px] fullscreen:text-[48px] font-neueMed">
+            <div
+                className="flex tablet:group-hover:bg-white tablet:group-hover:text-black py-6 px-2 fullscreen:py-[64px]  text-[18px] fullscreen:text-[48px] font-neueMed">
               <div className=" w-full tablet:max-w-[100px] fullscreen:max-w-[941px] max-w-[90px] ">
                 <p>{speaker.time}</p>
               </div>
               <p className="hidden tablet:flex w-full tablet:max-w-[300px] fullscreen:max-w-[400px]">
                 {speaker.title}
               </p>
-              <p
-                  className="tablet:pl-5 w-full"
-                  dangerouslySetInnerHTML={{
-                    __html: speaker.description.replaceAll("\n", "<br />"),
-                }}
-              />
+              <div className='flex flex-col gap-2 '>
+                <p className='flex tablet:hidden'>{speaker.title}</p>
+                <p
+                    className="tablet:pl-5 w-full"
+                    dangerouslySetInnerHTML={{
+                      __html: speaker.description.replaceAll("\n", "<br />"),
+                    }}
+                />
+              </div>
             </div>
             {index !== listData.length - 1 && (
-              <hr className="w-full h-[1px] border-[#333]" />
+                <hr className="w-full h-[1px] border-[#333]"/>
             )}
           </div>
         ))}
