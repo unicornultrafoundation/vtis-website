@@ -517,6 +517,18 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 7,
                   },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 9,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 11,
+                  },
                 ]}
               />
               <Column
@@ -547,30 +559,6 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 8,
                   },
-                ]}
-              />
-              <Column
-                colIndex={2}
-                className="!-mt-[35%]"
-                items={[
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 9,
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 11,
-                  },
-                ]}
-              />
-              <Column
-                colIndex={3}
-                className="!-mt-[0.2%]"
-                items={[
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
@@ -583,16 +571,52 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 12,
                   },
-
                 ]}
               />
+              {/*<Column*/}
+              {/*  colIndex={2}*/}
+              {/*  className="!-mt-[35%]"*/}
+              {/*  items={[*/}
+              {/*    {*/}
+              {/*      companyName: "SSI Digital",*/}
+              {/*      name: "Mr Mai Huy Tuan",*/}
+              {/*      title: "CEO",*/}
+              {/*      index: 9,*/}
+              {/*    },*/}
+              {/*    {*/}
+              {/*      companyName: "SSI Digital",*/}
+              {/*      name: "Mr Mai Huy Tuan",*/}
+              {/*      title: "CEO",*/}
+              {/*      index: 11,*/}
+              {/*    },*/}
+              {/*  ]}*/}
+              {/*/>*/}
+              {/*<Column*/}
+              {/*  colIndex={3}*/}
+              {/*  className="!-mt-[0.2%]"*/}
+              {/*  items={[*/}
+              {/*    {*/}
+              {/*      companyName: "SSI Digital",*/}
+              {/*      name: "Mr Mai Huy Tuan",*/}
+              {/*      title: "CEO",*/}
+              {/*      index: 10,*/}
+              {/*    },*/}
+              {/*    {*/}
+              {/*      companyName: "SSI Digital",*/}
+              {/*      name: "Mr Mai Huy Tuan",*/}
+              {/*      title: "CEO",*/}
+              {/*      index: 12,*/}
+              {/*    },*/}
+
+              {/*  ]}*/}
+              {/*/>*/}
             </>
           )}
           {isMobile && isViewAll && (
             <>
               <Column
                 colIndex={4}
-                className="!-mt-[47.3%]"
+                className="!-mt-[33.3%]"
                 items={[
                   {
                     companyName: "SSI Digital",
