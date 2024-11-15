@@ -569,7 +569,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={3}
-                className="!-mt-[40.4%]"
+                className="!-mt-[0.2%]"
                 items={[
                   {
                     companyName: "SSI Digital",
@@ -592,7 +592,7 @@ export default function HomeSection4() {
             <>
               <Column
                 colIndex={4}
-                className="!-mt-[7.2%]"
+                className="!-mt-[47.3%]"
                 items={[
                   {
                     companyName: "SSI Digital",
@@ -624,6 +624,12 @@ export default function HomeSection4() {
                   //   title: "CEO",
                   //   index: 23,
                   // },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 16,
+                  },
                 ]}
               />
               <Column
@@ -659,12 +665,6 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 14,
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 16,
                   },
                 ]}
               />
