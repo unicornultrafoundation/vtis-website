@@ -25,9 +25,16 @@ const speakersData = [
       "https://drive.google.com/file/d/11SutzcL2JGbFejrPXlIYtiB8hiznjZO-/view?usp=drive_link",
     Status: "",
   },
+  // {
+  //   Name: "Richard Teng",
+  //   Title: "CEO - Binance",
+  //   image:
+  //     "https://drive.google.com/file/d/18yjncrgz_ACK7TcCJe-8nBjEfbEbVz3a/view?usp=drive_link",
+  //   Status: "",
+  // },
   {
-    Name: "Richard Teng",
-    Title: "CEO - Binance",
+    Name: "Joy Lam",
+    Title: "Head of Global Regulatory and APAC Legal - Binance",
     image:
       "https://drive.google.com/file/d/18yjncrgz_ACK7TcCJe-8nBjEfbEbVz3a/view?usp=drive_link",
     Status: "",
