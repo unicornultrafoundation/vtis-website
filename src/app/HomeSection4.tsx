@@ -551,7 +551,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={2}
-                className="!-mt-[7.1%]"
+                className="!-mt-[35%]"
                 items={[
                   {
                     companyName: "SSI Digital",
@@ -569,7 +569,7 @@ export default function HomeSection4() {
               />
               <Column
                 colIndex={3}
-                className="!pt-[-1%]"
+                className="!-mt-[40.4%]"
                 items={[
                   {
                     companyName: "SSI Digital",
