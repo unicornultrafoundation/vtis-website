@@ -1,7 +1,6 @@
 "use client";
 
 import Speaker from "@/assets/images/agenda/speaker.png";
-import Speaker4 from "@/assets/images/speakers/4.png";
 
 import Image, { StaticImageData } from "next/image";
 import { useMemo, useState } from "react";
@@ -26,8 +25,7 @@ export default function AfternoonSection({ activeTab }: Props) {
     {
       title: "Keynote: Tech impact",
       time: "13:30",
-      description: "Speaker: Richard Teng - CEO @Binance",
-      image: Speaker4,
+      description: "",
     },
     {
       title: "Panel: Blockchain and its applications in daily life",
