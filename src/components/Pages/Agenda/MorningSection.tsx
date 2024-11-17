@@ -27,46 +27,46 @@ export default function MorningSection({ activeTab }: Props) {
     {
       title: "Opening Performance",
       time: "9:00",
-      description: "",
+      description: "Opening Performance (Drum show)",
     },
     {
-      title: "",
-      time: "9:15",
-      description: "Opening Speech by Mr. Nguyen Duy Hung - SSI Chairman",
+      title: "Program Opening",
+      time: "9:20",
+      description: "Opening Speech by Mr. Nguyen Duy Hung - Chairman of SSI",
       image: Speaker1,
     },
     {
-      title: "Keynote Speech on Tech Impact",
-      time: "9:30",
-      description: "Speaker: Mr. Truong Gia Binh - FPT Chairman",
+      title: "Keynote Speech on Event Theme - Tech Impact",
+      time: "9:40",
+      description: "Speech by Mr. Truong Gia Binh - Chairman @FPT",
       image: Speaker2,
     },
     {
-      title: "",
-      time: "",
-      description: "Breaktime - 10 minutes",
+      title: "Keynote Speech of Management",
+      time: "10:00",
+      description: "",
     },
     {
       title:
-          "Talkshow: Generative AI - Business Impact and Future Potential",
-      time: "10:30",
+          "Talkshow on AI: Generative AI - Business Impact and Future Potential",
+      time: "10:20",
       description:
           "Speakers:\n" +
-          "- Vinesh Sukumar - Sr Director @Qualcomm  \n" +
-          "- Lan Tran - CIO @Viettin Bank  \n" +
-          "- Gaurav Chawla - VP @JP Morgan Chase \n" +
-          "- Hung Bui - CEO @VinAI \n" +
-          "- Kavitha Prasad - GM of AI @AWS\n" +
+          "- Dr. Vinesh Sukumar - Sr Director, Head of AI/ML @Qualcomm\n" +
+          "- Lan Tran - Chief Information Officer (CIO) @Viettin bank\n" +
+          // "- Gaurav Chawla - VP @JP Morgan Chase \n" +
+          "- Hung Bui - CEO @VinAI\n" +
+          "- Kavitha Prasad - General manager of AI @AWS\n" +
           "Moderator: Ha Dao - CEO @AIxBlock\n",
     },
     {
-      title: "Panel Discussion: Legal Matters in the Digital assets",
-      time: "11:15",
+      title: "The Legal Frontier of Digital Assets: Benefits, Challenges, and Global Experiences",
+      time: "11:10",
       description:
           " Speakers:\n" +
-          "- Malcolm Wright - Deputy Head of Compliance @OKX\n" +
-          "- Jonathan Cheung @Bybit \n" +
-          "- Legal Team @Binance\n" +
+          "- Malcolm - Deputy Head of Compliance @OKX\n" +
+          "- Robert Mcdonald - Chief Legal & Compliance Officer @Bybit \n" +
+          "- Joy Lam - Head of Global Regulatory and APAC Legal @Binance\n" +
           "Moderator: Le Bao Nguyen - Deputy Director, SSI Digital\n"
     },
   ];
@@ -74,20 +74,45 @@ export default function MorningSection({ activeTab }: Props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerMorning2: Speaker[] = [
     {
-      title: "Panel: The future of Fintech in the next 5 Years ",
+      title: "Panel on AI: AI in Enterprise: Accelerating Digital Transformation",
       time: "9:00",
-      description: "CEO @DNSE, CEO @Finhay, CEO @Zalo Pay",
+      description:
+          " Speakers:\n" +
+          "- Raghu Banda - Sr Director of AI @SAP\n" +
+          "- Tuan Cao - CEO @Life AI\n" +
+          "- Binh Tran - General Manager @AVV \n" +
+          "- Prof. Fabio Cuzzolin - Prof of AI, Director of AI labs @Oxford Brookes, Oxford University\n" +
+          "Moderator: Ha Dao, CEO @AIxBlock\n",
     },
     {
       title: "Keynote: The Effect of Technology on Education and the Future",
-      time: "10:00",
-      description: "Speaker: Mr. Hoang Nam Tien @FPT",
+      time: "9:45",
+      description:
+          " Speakers:\n" +
+          "- Mr. Hoang Nam Tien - Vice President @FPT University\n"
     },
     {
-      title: "Vision & Venture: Web2 Giants on Vietnam’s Growth",
+      // title: "Vision & Venture: Web2 Giants on Vietnam’s Growth",
+      title: "Panel Discussion with Web2 & Web3 Ventures",
       time: "10:30",
       description:
-          "Speakers: Delegates from SSIAM, Thinkzone, Vina Capital, Vin Ventures",
+          " Speakers:\n" +
+          "- Do Bui - Founder @Thinkzone\n" +
+          "- Nguyen Phan Dung - Deputy CEO @SSIAM\n" +
+          " Panelist:\n" +
+          "- IDG, SSIAM, Thinkzone, Animoca Brand, Kucoin\n"
+    },
+    {
+      // title: "Vision & Venture: Web2 Giants on Vietnam’s Growth",
+      title: "How Bitget Support Innovation & Tech Impact",
+      time: "11:20",
+      description: "BITGET"
+    },
+    {
+      // title: "Vision & Venture: Web2 Giants on Vietnam’s Growth",
+      title: "How Bingx Supports Innovation & Tech Impact",
+      time: "11:40",
+      description: "BINGX"
     },
   ];
 

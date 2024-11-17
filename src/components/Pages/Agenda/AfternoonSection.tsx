@@ -23,66 +23,102 @@ export default function AfternoonSection({ activeTab }: Props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerAfternoon: Speaker[] = [
     {
-      title: "Keynote: Tech impact",
-      time: "13:30",
-      description: "",
-    },
-    {
-      title: "Panel: Blockchain and its applications in daily life",
-      time: "13:50",
-      description:
-        "Speakers: Delegates from Tether, Avax, Binance, Holdstation, and U2U Network",
-    },
-    {
-      title: "Keynote: Tech impact",
-      time: "14:30",
-      description: "Speaker:  COO @KuCoin",
-    },
-    {
       title: "",
-      time: "",
-      description: "Breaktime - 10 minutes",
+      time: "13:30",
+      description:
+          "Speakers:\n" +
+          "- Mr Don Lam - VinaCapital",
     },
     {
-      title: "Panel: Future Innovations and Security in Digital Asset",
-      time: "15:00",
-      description: "Speakers:  Bybit, Bitget, Bingx, KuCoin",
+      title: "Panel on Blockchain and Its Applications in Daily Life",
+      time: "14:00",
+      description:
+          "Speakers:\n" +
+          "- Lynn Hoang - Country Director @Binance\n" +
+          "- Queenie - Vietnam Country Manager @Tether\n" +
+          "- Trung Banh - Co-Founder / Chief Product Officer @Holdstation\n" +
+          "- Le Sy Nguyen - Vietnam Country Head @Bitget\n" +
+          "Moderator: Chloe Phung, Co-founder & Co-CEO @U2U Network\n",
     },
+    {
+      title: "Keynote Speech on Event Theme - Tech Impact",
+      time: "14:45",
+      description:
+          "Speakers:\n" +
+          "- COO Kucoin",
+    },
+    {
+      title: "Fintech Panel: The Future of Fintech in the Next 5 Years",
+      time: "15:15",
+      description:
+          "Speakers:\n" +
+          "- Giang Nguyen - Founder @DNSE\n" +
+          "- Nghiem Xuan Huy - Founder @Finhay\n" +
+          "- Lynn Hoang - Country Manager @Binance\n" +
+          "Moderator: Le Thi Le Hang - CSO @SSI\n" ,
+    },
+    // {
+    //   title: "Panel: Future Innovations and Security in Digital Asset",
+    //   time: "15:00",
+    //   description: "Speakers:  Bybit, Bitget, Bingx, KuCoin",
+    // },
     {
       title:
         "Panel on AI: The Future of AI - Open Source and Decentralized or Closed Source and Centralized?",
       time: "16:00",
       description:
         "Speakers:\n" +
-        "- Phong Nguyen - Chief AI Officer @FPT AI \n" +
-        "- Raghu Banda - Sr Director of AI @SAP  \n" +
-        "- Tuan Cao - CEO @Genetica  \n" +
+        "- Raghu Banda - Sr Director of AI @SAP\n" +
+        "- Tuan Cao - CEO @Life AI\n" +
+        "- Binh Tran - General Manager @AVV\n" +
         "- Binh Tran @AVV  \n" +
-        "- Prof. Fabio - Director of AI Labs @Oxford Brookes, Oxford University \n" +
+        "- Prof. Fabio Cuzzolin - Prof of AI, Director of AI labs @Oxford Brookes, Oxford University\n" +
         "Moderator: Ha Dao - CEO @AIxBlock\n",
     },
     {
-      title: "Panel: Vietnam Blockchain Startups",
-      time: "17:00",
-      description: "Speakers: Delegates from Onus, ATX, and Icetea Labs",
+      title: "Panel Discussion with Vietnamese Blockchain Startups",
+      time: "16:45",
+      description:
+          "Panelist:\n" +
+          "- Delegates from K300, ATX, Maxx, Holdstation. Moderator: VBU\n",
+    },
+    {
+      title: "Keynote Speech on Event Theme - Tech Impact",
+      time: "17:15",
+      description: "",
     },
   ];
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const listSpeakerAfternoon2: Speaker[] = [
     {
-      title: "Tokenizing the Tangible Phy-sital: Blockchain Revolutionizing Real-World Assets in the East",
+      title: "How Binance Support Innovation & Tech Impact",
       time: "13:30",
-      description: "Speakers: Delegates from IDG Blockchain, JDI, Chain Capital",
+      description:
+          "Speakers:\n" +
+          "- Richard Teng - CEO @Binance\n",
     },
     {
-      title: "Keynote from Bitget Delegate",
+      title: "DePIN for Life",
+      time: "14:00",
+      description:
+          "Delegates from IDG, JDI, Chain Capital, Mod: Chloe Phung (U2U)\n",
+    },
+    {
+      title: "Keynote of Platinum key partners",
       time: "14:30",
       description: "",
     },
     {
+      title: "Panel on Future Innovations and Security in Digital Asset",
+      time: "15:30",
+      description:
+          "Speakers:\n" +
+          "-  Bybit, Bitget, Bingx, KuCoin, MEXC\n",
+    },
+    {
       title: "Gaming panel: Gaming's Contribution to Life and Economy",
-      time: "15:00",
+      time: "16:15",
       description: "",
     },
     {
