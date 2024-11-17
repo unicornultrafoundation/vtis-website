@@ -53,7 +53,7 @@ export default function MorningSection({ activeTab }: Props) {
       description:
           "Speakers:\n" +
           "- Dr. Vinesh Sukumar - Sr Director, Head of AI/ML @Qualcomm\n" +
-          "- Lan Tran - Chief Information Officer (CIO) @Viettin bank\n" +
+          "- Lan Tran - Chief Information Officer (CIO) @VietinBank\n" +
           // "- Gaurav Chawla - VP @JP Morgan Chase \n" +
           "- Hung Bui - CEO @VinAI\n" +
           "- Kavitha Prasad - General manager of AI @AWS\n" +

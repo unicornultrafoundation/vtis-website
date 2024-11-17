@@ -137,7 +137,7 @@ const speakersData = [
   },
   {
     Name: "Tran Cong Quy Lan ",
-    Title: "VP of Tech - Viettin Bank",
+    Title: "VP of Tech - VietinBank",
     image:
       "https://drive.google.com/file/d/1tyGdPZGPhkHmsGlIOx2guqFCVHxNQPJu/view?usp=drive_link",
     Status: "",
