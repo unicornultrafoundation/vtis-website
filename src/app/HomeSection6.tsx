@@ -70,7 +70,7 @@ const HomeSection6 = () => {
           />
           <TierParners
             tier="Platinum"
-            partners={Array(3)
+            partners={Array(5)
               .fill("")
               .map((_, i) => {
                 return {
@@ -81,7 +81,7 @@ const HomeSection6 = () => {
           />
           <TierParners
             tier="Gold"
-            partners={Array(4)
+            partners={Array(6)
               .fill("")
               .map((_, i) => {
                 return {
@@ -90,9 +90,9 @@ const HomeSection6 = () => {
                 };
               })}
           />
-          {/* <TierParners
+          <TierParners
             tier="Silver"
-            partners={Array(5)
+            partners={Array(4)
               .fill("")
               .map((_, i) => {
                 return {
@@ -100,7 +100,7 @@ const HomeSection6 = () => {
                   logo: `silver/partner-${i}.png`,
                 };
               })}
-          /> */}
+          />
         </div>
         <div className="w-full font-neueMed text-[48px] text-[#fff] mb-8 fullscreen:mb-[85px] max-[768px]:text-[24px] fullscreen:text-[128px]">
           Strategic partners
@@ -118,7 +118,7 @@ const HomeSection6 = () => {
           />
         </div>
         <div className="w-full font-neueMed text-[48px] text-[#fff] mb-8 fullscreen:mb-[85px] max-[768px]:text-[24px] fullscreen:text-[128px]">
-          Event partners
+          Media partners
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
           <TierParners
