@@ -116,7 +116,7 @@ const speakersData = [
   },
   {
     Name: "Tuan Cao",
-    Title: "CEO, Founder - Genetica",
+    Title: "CEO, Founder - Life AI",
     image:
       "https://drive.google.com/file/d/1wNuQcrWxrD3pXL2eCTPxl8pKk2ir1_e3/view?usp=drive_link",
     Status: "",
