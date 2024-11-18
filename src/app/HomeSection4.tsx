@@ -207,7 +207,7 @@ const speakersData = [
   },
   {
     Name: "Hoang Nam Tien",
-    Title: "Ex Chairman - FPT Software",
+    Title: "Vice President - FPT University",
     image: "",
     Status: "",
   },
