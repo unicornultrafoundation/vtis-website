@@ -217,6 +217,12 @@ const speakersData = [
     image: "",
     Status: "",
   },
+  {
+    Name: "Ha Dao",
+    Title: "CEO, Co founder - AIxBlock",
+    image: "",
+    Status: "",
+  },
 ];
 
 const getSquareBGByIndex = (index: number) => {
@@ -235,7 +241,7 @@ const getSquareBGByIndex = (index: number) => {
   }
 };
 
-const placeHolderImgIndexes = [24, 28, 31];
+const placeHolderImgIndexes = [24, 28];
 
 const Column = ({
   items,
@@ -496,6 +502,12 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 26,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 32,
                   },
                 ]}
               />
@@ -823,6 +835,12 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 30,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 32,
                   },
                 ]}
               />
