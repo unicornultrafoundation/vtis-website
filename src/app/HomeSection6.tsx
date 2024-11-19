@@ -52,7 +52,7 @@ const HomeSection6 = () => {
   return (
     <div className="bg-[#000000] flex flex-col gap-8 px-12 max-[768px]:px-0 py-[80px] fullscreen:pt-[213px] fullscreen:pb-[407px] pb-50">
       {/* {partners} */}
-      <div id='partners' className="w-full flex flex-col px-5">
+      <div id="partners" className="w-full flex flex-col px-5">
         <div className="w-full font-neueMed text-[48px] fullscreen:text-9xl text-[#fff] max-[768px]:text-[24px]">
           Key partners
         </div>
@@ -122,12 +122,42 @@ const HomeSection6 = () => {
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
           <TierParners
-            partners={Array(5)
+            partners={Array(20)
               .fill("")
               .map((_, i) => {
                 return {
                   name: "Parner " + i,
                   logo: `event-partners/partner-${i}.png`,
+                };
+              })}
+          />
+        </div>
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-8 fullscreen:mb-[85px] max-[768px]:text-[24px] fullscreen:text-[128px]">
+          Community partners
+        </div>
+        <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
+          <TierParners
+            partners={Array(29)
+              .fill("")
+              .map((_, i) => {
+                return {
+                  name: "Parner " + i,
+                  logo: `community/partner-${i}.png`,
+                };
+              })}
+          />
+        </div>
+        <div className="w-full font-neueMed text-[48px] text-[#fff] mb-8 fullscreen:mb-[85px] max-[768px]:text-[24px] fullscreen:text-[128px]">
+          Participating companies
+        </div>
+        <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
+          <TierParners
+            partners={Array(12)
+              .fill("")
+              .map((_, i) => {
+                return {
+                  name: "Parner " + i,
+                  logo: `company/partner-${i}.png`,
                 };
               })}
           />
