@@ -241,7 +241,7 @@ const getSquareBGByIndex = (index: number) => {
   }
 };
 
-const placeHolderImgIndexes = [24, 28];
+const placeHolderImgIndexes: number[] = [];
 
 const Column = ({
   items,
