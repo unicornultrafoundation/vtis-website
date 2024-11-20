@@ -12,6 +12,7 @@ export default function Header() {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
   const router = useRouter();
 
+
   const handleScrollOrNavigate = (href: string) => {
     if (href === "/") {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -32,7 +33,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 mt-0 items-center justify-between w-full bg-[#000000] text-white z-50 scroll-smooth">
+      <header className="fixed top-0 mt-0 items-center justify-between w-full bg-[#000000] text-white z-50 scroll-smooth ">
         <div className="w-full h-full p-2 tablet:p-1 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="pl-3 flex-1">
