@@ -11,15 +11,16 @@ export default function Home() {
   const [filterCategory, setFilterCategory] = useState("generalStage");
   const [day1, setDay1] = useState<Agenda[]>([]);
   const [day2, setDay2] = useState<Agenda[]>([]);
+  const [loading, setLoading] = useState(false);
 
   const classTabActive = useCallback(
-    (tabActive: string) => {
-      if (activeTab === tabActive) {
-        return " text-[#FFFFFF] border-b border-b-[#FFFFFF] tablet:border-b-0";
-      }
-      return "text-gray-500";
-    },
-    [activeTab]
+      (tabActive: string) => {
+        if (activeTab === tabActive) {
+          return " text-[#FFFFFF] border-b border-b-[#FFFFFF] tablet:border  tablet:bg-[#FFF] tablet:text-[#000]";
+        }
+        return "text-gray-500";
+      },
+      [activeTab]
   );
 
   const classFilter = useCallback(
@@ -51,7 +52,7 @@ export default function Home() {
 
   const listFilter = [
     {
-      label: "General Stage",
+      label: "Main Stage",
       category: "generalStage",
     },
     {
@@ -82,15 +83,18 @@ export default function Home() {
   ]
 
   useEffect(() => {
-    if (filterCategory === "generalStage") {
-      setDay1(listAgendaGeneral);
-      setDay2(listAgendaGeneral2)
-    } else if (filterCategory === "ai") {
-      setDay1(listAgendaAI);
-      setDay2(listAgendaAI2)
-    }
+    setLoading(true); // Start loading
+    setTimeout(() => {
+      if (filterCategory === "generalStage") {
+        setDay1(listAgendaGeneral);
+        setDay2(listAgendaGeneral2);
+      } else if (filterCategory === "ai") {
+        setDay1(listAgendaAI);
+        setDay2(listAgendaAI2);
+      }
+      setLoading(false); // End loading
+    }, 100);
   }, [filterCategory]);
-
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -108,8 +112,17 @@ export default function Home() {
   }, []);
 
 
+  if (loading) {
+    return (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+
+        </div>
+    );
+  }
+
+
   return (
-      <div className="min-h-screen bg-[#000] top-14 mb-20 z-0">
+      <div className="min-h-screen bg-[#000] w-full top-14 mb-20 z-0">
         <div
             className="sticky top-14 mt-0 fullscreen:p-[21px] z-20 bg-[#FFF] text-black font-neueMed w-full items-center justify-center hidden text-2xl tablet:flex tablet:text-[16px] fullscreen:text-[42px]">
           3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM
@@ -147,8 +160,8 @@ export default function Home() {
 
           <div className="flex flex-col tablet:flex-row justify-center tablet:gap-[100px] laptop:gap-[100px]">
             {/* Sidebar for Tablets/Desktop */}
-            <div className="hidden tablet:flex flex-col">
-              {listDay.map((item, index) => (
+            <div className="hidden tablet:flex flex-col gap-2 font-neueMed">
+              {day1.length && day2.length && listDay.length && listDay.map((item, index) => (
                   <button
                       key={index}
                       className={`text-center rounded-[90px] px-6 py-[10px] scroll-smooth w-[100px] ${classTabActive(
@@ -178,135 +191,171 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className='flex flex-col'>
-              <div
-                  className="px-4 max-w-[947px] h-full w-full fullscreen:px-16 py-6 tablet:py-0 tablet:pb-[126px] fullscreen:pb-[328px] tablet:px-6 flex flex-col gap-2 items-center justify-center ">
-                {day1.map((speaker, index) => (
-                    <div
-                        className='flex tablet:gap-10 flex-col tablet:flex-row justify-between items-center  w-full bg-[rgb(255,255,255,0.05)] rounded-2xl h-full tablet:p-6 '
-                        id={index === 0 ? "day1" : ""} key={index}
-                    >
-                      <div className='flex w-full tablet:w-auto justify-between items-center h-full py-4 px-5 tablet:p-0'>
-                        <div
-                            className='flex tablet:flex-col h-full w-full max-w-[167px] tablet:max-w-full gap-3 tablet:gap-4 tablet:w-11 items-center justify-between  text-[#474747]'>
-                          <p>{speaker.timeStart}</p>
-                          <div className="flex h-full tablet:flex-col w-full justify-center items-center">
-                            {/* First Dot */}
-                            <div className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mb-1"/>
-                            {/* Dashed Line */}
-                            <div className="flex tablet:h-full tablet:w-[1px]  w-full  items-center">
-                              <div
-                                  className="tablet:w-[1px] tablet:h-full h-[1px] w-full  tablet:border-l-2 border-t-2  border-dashed border-[#474747]"/>
-                            </div>
-                            {/* Second Dot */}
-                            <div className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mt-1"/>
-                          </div>
-                          <p>{speaker.timeEnd}</p>
-                        </div>
-                        <div className='tablet:min-w-[120px] block tablet:hidden'>
-                          <p className={`tablet:px-3 tablet:py-2 px-2 py-1 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${speaker.type ? "border" : ""}`}>{speaker.type}</p>
-                        </div>
 
-                      </div>
-
-                      <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
-
-                      <div className='flex flex-col tablet:gap-10 w-full h-full justify-between'>
-                        <div className='flex w-full gap-3 justify-between p-5 tablet:p-0 '>
-                          <p className='h-full tablet:text-2xl font-neueMed text-[#FFF]'>{speaker.description}</p>
-                          <div className='tablet:min-w-[120px] hidden tablet:block'>
-                            <p className={`tablet:px-3 tablet:py-2 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${speaker.type ? "border" : ""}`}>{speaker.type}</p>
-                          </div>
-                        </div>
-                        <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
-
-                        <div className='flex flex-col tablet:flex-row tablet:flex-wrap tablet:gap-10 gap-5 h-full tablet:py-2 tablet:px-0 p-5 font-neueMed'>
-                          {speaker.speaker.map((item, index) => (
-                              <div key={index} className='flex gap-2 rounded-full text-white font-neueMed'>
-                                <Image
-                                    src={item.image || ''}
-                                    alt="Speaker"
-                                    width={48}
-                                    height={48}
-                                    className="object-fit h-[48px] w-[48px] rounded-full"
-                                />
-                                <div className=''>
-                                  <p className='text-lg'>{item.name}</p>
-                                  <p className='text-[#28D2DC]'>{item.company}</p>
-                                </div>
-                              </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                ))}
-              </div>
-              <div id="day2"
-                   className="px-4 max-w-[947px] h-full w-full fullscreen:px-16 py-6 tablet:py-0 tablet:pb-[126px] fullscreen:pb-[328px] tablet:px-6 flex flex-col gap-2 items-center justify-center ">
-                {day2.map((speaker2, index2) => (
-
-                    <div
-                        className='flex tablet:gap-10 flex-col tablet:flex-row justify-between items-center  w-full bg-[rgb(255,255,255,0.05)] rounded-2xl h-full tablet:p-6 '
-                        id={index2 === 0 ? "day1" : ""} key={index2}
-                    >
+            {day1.length || day2.length ?
+                (
+                    <div className='flex flex-col'>
                       <div
-                          className='flex w-full tablet:w-auto justify-between items-center h-full py-4 px-5 tablet:p-0'>
-                        <div
-                            className='flex tablet:flex-col h-full w-full max-w-[167px] tablet:max-w-full gap-3 tablet:gap-4 tablet:w-11 items-center justify-between  text-[#474747]'>
-                          <p>{speaker2.timeStart}</p>
-                          <div className="flex h-full tablet:flex-col w-full justify-center items-center">
-                            {/* First Dot */}
-                            <div className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mb-1"/>
-                            {/* Dashed Line */}
-                            <div className="flex tablet:h-full tablet:w-[1px]  w-full  items-center">
+                          className="px-4 max-w-[947px] h-full w-full fullscreen:px-0 py-6 tablet:py-0 tablet:pb-[126px] fullscreen:pb-[328px] tablet:px-0 flex flex-col gap-2 items-center justify-center ">
+                        <p className='text-center w-full text-white font-neueMed uppercase'>Day 1</p>
+
+                        {day1.map((speaker, index) => (
+                            <div
+                                className='flex tablet:gap-10 flex-col tablet:flex-row justify-between items-center  w-full bg-[rgb(255,255,255,0.05)] rounded-2xl h-full tablet:p-6 '
+                                id={index === 0 ? "day1" : ""} key={index}
+                            >
                               <div
-                                  className="tablet:w-[1px] tablet:h-full h-[1px] w-full  tablet:border-l-2 border-t-2  border-dashed border-[#474747]"/>
-                            </div>
-                            {/* Second Dot */}
-                            <div className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mt-1"/>
-                          </div>
-                          <p>{speaker2.timeEnd}</p>
-                        </div>
-                        <div className='tablet:min-w-[120px] block tablet:hidden'>
-                          <p className={`tablet:px-3 tablet:py-2 px-2 py-1 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${speaker2.type ? "border" : ""}`}>{speaker2.type}</p>
-                        </div>
+                                  className='flex w-full tablet:w-auto justify-between items-center h-full py-4 px-5 tablet:p-0'>
+                                <div
+                                    className='flex tablet:flex-col h-full w-full max-w-[167px] tablet:max-w-full gap-3 tablet:gap-4 tablet:w-11 items-center justify-between  text-[#474747]'>
+                                  <p>{speaker.timeStart}</p>
+                                  <div className="flex h-full tablet:flex-col w-full justify-center items-center">
+                                    {/* First Dot */}
+                                    <div
+                                        className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mb-1"/>
+                                    {/* Dashed Line */}
+                                    <div className="flex tablet:h-full tablet:w-[1px]  w-full  items-center">
+                                      <div
+                                          className="tablet:w-[1px] tablet:h-full h-[1px] w-full  tablet:border-l-2 border-t-2  border-dashed border-[#474747]"/>
+                                    </div>
+                                    {/* Second Dot */}
+                                    <div
+                                        className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mt-1"/>
+                                  </div>
+                                  <p>{speaker.timeEnd}</p>
+                                </div>
+                                <div className='tablet:min-w-[120px] block tablet:hidden'>
+                                  <p className={`tablet:px-3 tablet:py-2 px-2 py-1 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${speaker.type ? "border" : ""}`}>{speaker.type}</p>
+                                </div>
 
-                      </div>
+                              </div>
 
-                      <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
+                              <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
 
-                      <div className='flex flex-col tablet:gap-10 w-full h-full justify-between'>
-                        <div className='flex w-full gap-3 justify-between p-5 tablet:p-0 '>
-                          <p className='h-full tablet:text-2xl text-xl font-neueMed  text-[#FFF]'>{speaker2.description}</p>
-                          <div className='tablet:min-w-[120px] hidden tablet:block'>
-                            <p className={`tablet:px-3 tablet:py-2 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${speaker2.type ? "border" : ""}`}>{speaker2.type}</p>
-                          </div>
-                        </div>
+                              <div className='flex flex-col tablet:gap-10 w-full h-full justify-between'>
+                                <div className='flex w-full gap-3 justify-between p-5 tablet:p-0 '>
+                                  <p className='h-full tablet:text-2xl font-neueMed text-[#FFF]'>{speaker.description}</p>
+                                  <div className='tablet:min-w-[120px] hidden tablet:block'>
+                                    <p className={`tablet:px-3 tablet:py-2 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${speaker.type ? "border" : ""}`}>{speaker.type}</p>
+                                  </div>
+                                </div>
+                                <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
 
-                        <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
-
-                        <div className='flex flex-col tablet:flex-row  tablet:flex-wrap gap-10 h-full tablet:py-2 tablet:px-0 p-5'>
-                          {speaker2.speaker.map((item, index) => (
-                              <div key={index} className='flex gap-2 rounded-full text-white font-neueMed'>
-                                <Image
-                                    src={item.image || ''}
-                                    alt="Speaker"
-                                    width={48}
-                                    height={48}
-                                    className="object-fit h-[48px] w-[48px] rounded-full"
-                                />
-                                <div className=''>
-                                  <p className='text-lg'>{item.name}</p>
-                                  <p className='text-[#28D2DC]'>{item.company}</p>
+                                <div
+                                    className='flex flex-col tablet:flex-row tablet:flex-wrap tablet:gap-10 gap-5 h-full tablet:py-2 tablet:px-0 p-5 font-neueMed'>
+                                  {speaker.speaker.map((item, index) => (
+                                      <div key={index} className='flex gap-2 rounded-full text-white font-neueMed'>
+                                        <Image
+                                            src={item.image || ''}
+                                            alt="Speaker"
+                                            width={48}
+                                            height={48}
+                                            className="object-fit h-[48px] w-[48px] rounded-full"
+                                        />
+                                        <div className=''>
+                                          <p className='text-lg'>{item.name}</p>
+                                          <p className='text-[#28D2DC]'>{item.company}</p>
+                                        </div>
+                                      </div>
+                                  ))}
                                 </div>
                               </div>
-                          ))}
-                        </div>
+                            </div>
+                        ))}
+                      </div>
+
+                      <hr className="w-full border-[#FFFFFF] opacity-[0.05] "/>
+
+
+                      <div
+                          id="day2"
+                          className="px-4 max-w-[947px] h-full w-full fullscreen:px-0 py-6 tablet:py-10 tablet:pb-[126px] fullscreen:pb-[328px] tablet:px-0 flex flex-col gap-2 items-center justify-center "
+                      >
+                        <p className='text-center w-full text-white font-neueMed uppercase'>Day 2</p>
+
+                        {day2.map((speaker2, index2) => (
+
+                            <div
+                                className='flex tablet:gap-10 flex-col tablet:flex-row justify-between items-center  w-full bg-[rgb(255,255,255,0.05)] rounded-2xl h-full tablet:p-6 '
+                                id={index2 === 0 ? "day1" : ""} key={index2}
+                            >
+                              <div
+                                  className='flex w-full tablet:w-auto justify-between items-center h-full py-4 px-5 tablet:p-0'>
+                                <div
+                                    className='flex tablet:flex-col h-full w-full max-w-[167px] tablet:max-w-full gap-3 tablet:gap-4 tablet:w-11 items-center justify-between  text-[#474747]'>
+                                  <p>{speaker2.timeStart}</p>
+                                  <div className="flex h-full tablet:flex-col w-full justify-center items-center">
+                                    {/* First Dot */}
+                                    <div
+                                        className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mb-1"/>
+                                    {/* Dashed Line */}
+                                    <div className="flex tablet:h-full tablet:w-[1px]  w-full  items-center">
+                                      <div
+                                          className="tablet:w-[1px] tablet:h-full h-[1px] w-full  tablet:border-l-2 border-t-2  border-dashed border-[#474747]"/>
+                                    </div>
+                                    {/* Second Dot */}
+                                    <div
+                                        className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mt-1"/>
+                                  </div>
+                                  <p>{speaker2.timeEnd}</p>
+                                </div>
+                                <div className='tablet:min-w-[120px] block tablet:hidden'>
+                                  <p className={`tablet:px-3 tablet:py-2 px-2 py-1 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${speaker2.type ? "border" : ""}`}>{speaker2.type}</p>
+                                </div>
+
+                              </div>
+
+                              <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
+
+                              <div className='flex flex-col tablet:gap-10 w-full h-full justify-between'>
+                                <div className='flex w-full gap-3 justify-between p-5 tablet:p-0 '>
+                                  <p className='h-full tablet:text-2xl text-xl font-neueMed  text-[#FFF]'>{speaker2.description}</p>
+                                  <div className='tablet:min-w-[120px] hidden tablet:block'>
+                                    <p className={`tablet:px-3 tablet:py-2 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${speaker2.type ? "border" : ""}`}>{speaker2.type}</p>
+                                  </div>
+                                </div>
+
+                                <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
+
+                                <div
+                                    className='flex flex-col tablet:flex-row  tablet:flex-wrap gap-10 h-full tablet:py-2 tablet:px-0 p-5'>
+                                  {speaker2.speaker.map((item, index) => (
+                                      <div key={index} className='flex gap-2 rounded-full text-white font-neueMed'>
+                                        <Image
+                                            src={item.image || ''}
+                                            alt="Speaker"
+                                            width={48}
+                                            height={48}
+                                            className="object-fit h-[48px] w-[48px] rounded-full"
+                                        />
+                                        <div className=''>
+                                          <p className='text-lg'>{item.name}</p>
+                                          <p className='text-[#28D2DC]'>{item.company}</p>
+                                        </div>
+                                      </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                        ))}
+                      </div>
+
+                    </div>
+                )
+                :
+                (
+
+                    <div className='w-full flex items-center justify-center'>
+                      <div
+                          className="w-full tablet:max-w-[947px] max-w-[360px] h-56 flex justify-center items-center rounded-2xl border border-disabled border-dashed mx-4">
+                        <text className="text-white ">
+                          Nothing to show
+                        </text>
                       </div>
                     </div>
-                ))}
-              </div>
-            </div>
+
+                )
+            }
           </div>
         </div>
 

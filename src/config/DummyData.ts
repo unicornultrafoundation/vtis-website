@@ -4,11 +4,11 @@ import EventLogo from "@/assets/images/agenda/default-image.png";
 import BinhTran from "@/assets/images/agenda/Binh Tran.png";
 import ChloePhung from "@/assets/images/agenda/Chloe Phung.png";
 import DonLam from "@/assets/images/agenda/Don Lam.png";
-import VinneshSukumar from "@/assets/images/agenda/Dr. Vinesh Sukumar _  Senior Director - Head of AI_ML Product Management, Qualcomm.png";
+import VinneshSukumar from "@/assets/images/agenda/VineshSukumar.png";
 import HaDao from "@/assets/images/agenda/Ha Dao.png";
 import HoangNamTien from "@/assets/images/agenda/Hoang Nam Tien.png";
 import HunngBui from "@/assets/images/agenda/Hung Bui.png";
-import KavithaPrasad from "@/assets/images/agenda/Kavitha Prasad _ General Manager of AI, AWS.png";
+import KavithaPrasad from "@/assets/images/agenda/KavithaPrasad.png";
 import LynnHoang from "@/assets/images/agenda/Lynn Hoang.png";
 import NestorCamilo from "@/assets/images/agenda/Nestor Camilo.png";
 import ProfessorFabioCuzzolin from "@/assets/images/agenda/Professor Fabio Cuzzolin.png";
@@ -32,7 +32,7 @@ import GiangNguyen from "@/assets/images/agenda/Giang Nguyen.png";
 import LeSyNguyen from "@/assets/images/agenda/Le Sy Nguyen.png";
 import JoyLam from "@/assets/images/agenda/Joy Lam.png";
 import Malcolm from "@/assets/images/agenda/Malcolm Wright.png";
-// import LeBaoNguyen from "@/assets/images/agenda/LeBao";
+import LeBaoNguyen from "@/assets/images/agenda/Le Bao Nguyen.png";
 import NghiemXuanHuy from "@/assets/images/agenda/Nghiem Xuan Huy.png";
 import DoBui from "@/assets/images/agenda/Do Bui.png";
 import DoVietHung from "@/assets/images/agenda/Do Viet Hung .png";
@@ -40,7 +40,8 @@ import HoangVietAnh from "@/assets/images/agenda/Hoang Viet Anh.png";
 import LeThiLeHang from "@/assets/images/agenda/Le Thi Le Hang.png";
 // import NamTran from "@/assets/images/agenda/Nam Tran.png";
 import NguyenPhanDung from "@/assets/images/agenda/Nguyen Phan Dung .png";
-
+import NguyenTrungTrang from "@/assets/images/agenda/Nguyen Trung Trang.png";
+import TranManhNam from "@/assets/images/agenda/Tran Manh Nam.png";
 
 export interface Speaker {
   name?: string;
@@ -63,7 +64,7 @@ export const listAgendaGeneral: Agenda[] = [
     timeEnd: "9:20",
     speaker: [{ name: "Opening Performance ",image: EventLogo }],
     type: "",
-    description: "Opening Performance",
+    description: " Drum Show",
 
   },
   {
@@ -83,9 +84,9 @@ export const listAgendaGeneral: Agenda[] = [
   {
     timeStart: "10:00",
     timeEnd: "10:30",
-    speaker: [{ name: "Keynote Speech of Management", image: EventLogo }],
+    speaker: [{ name: "", image: EventLogo }],
     type: "Keynote",
-    description: "Opening Performance",
+    description: "Keynote Speech of Management.",
   },
   {
     timeStart: "10:30",
@@ -107,7 +108,7 @@ export const listAgendaGeneral: Agenda[] = [
       { name: "Malcolm", company: "OKX", image: Malcolm },
       { name: "Robert Mcdonald", company: "Bybit", image: RobertMcDonald },
       { name: "Joy Lam", company: "Binance", image: JoyLam },
-      { name: "Le Bao Nguyen (Mod)", company: "SSI Digital", image: EventLogo },
+      { name: "Le Bao Nguyen (Mod)", company: "SSI Digital", image: LeBaoNguyen },
     ],
     type: "Panel Discussion",
     description: "The Legal Frontier of Digital Assets: Benefits, Challenges, and Global Experiences",
@@ -136,7 +137,7 @@ export const listAgendaGeneral: Agenda[] = [
     timeStart: "14:05",
     timeEnd: "14:50",
     speaker: [
-      { name: "Nguyen Trung Trang", company: "Co-Founder & CPO @SSID", image: EventLogo },
+      { name: "Nguyen Trung Trang", company: "SSID", image: NguyenTrungTrang },
       { name: "Queenie", company: "Tether", image: Queenie },
       { name: "Trung Banh", company: "Holdstation", image: TrungBanh },
       { name: "Le Sy Nguyen", company: "Bitget", image: LeSyNguyen },
@@ -216,7 +217,7 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Shirsha Chaudhuri ", company: "Thomson Reuters", image: ShirshaRay },
       { name: "Raghu Banda", company: "SAP", image: RaghuBanda },
       { name: "Nestor Camilo", company: "Oracle", image: NestorCamilo },
-      { name: "Tran Manh Nam", company: "VNPay", image: EventLogo },
+      { name: "Tran Manh Nam", company: "VNPay", image: TranManhNam },
       { name: "CEO", company: "Strant", image: EventLogo },
       { name: "Ha Dao (Mod)", company: "AIxBlock", image: HaDao },
     ],
