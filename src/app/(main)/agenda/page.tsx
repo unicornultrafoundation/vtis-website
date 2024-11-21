@@ -128,7 +128,7 @@ export default function Home() {
           3-4 DECEMBER, 2024 - NATIONAL CONVENTION CENTER, HANOI, VIETNAM
         </div>
         <div className=" tablet:text-center pl-4 tablet:pl-0 fullscreen:h-[235px] tablet:mb-8">
-          <p className="text-white text-4xl tablet:text-[88px] fullscreen:text-[234px] font-neueMed mt-14 tablet:mt-[124px] fullscreen:pt-[170px] leading-[88px]">
+          <p className="text-white text-4xl tablet:text-[88px] fullscreen:text-[234px] font-neueMed  tablet:mt-[124px] fullscreen:pt-[170px] leading-[88px]">
             Agenda
           </p>
         </div>
