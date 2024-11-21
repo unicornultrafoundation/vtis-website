@@ -4,6 +4,7 @@ import { SectionMarquee } from "@/components/Layout/SectionMarquee";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Suspense } from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -59,10 +60,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ppNeueBold.variable} ${ppNeueMed.variable} antialiased mx-auto`}
       >
+      <Suspense>
         <Header />
         {children}
         <Footer />
         <SectionMarquee />
+      </Suspense>
+
       </body>
     </html>
   );
