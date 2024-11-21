@@ -2,7 +2,7 @@
 import ImageBase from "@/components/Images/ImageBase";
 import { navs } from "@/config/nav";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import SideBarMenu from "./SidebarMenu";
 
@@ -11,7 +11,7 @@ export default function Header() {
   const [activeTab, setActiveTab] = useState<string>("/");
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
   const router = useRouter();
-
+  const pathName = usePathname();
 
   const handleScrollOrNavigate = (href: string) => {
     if (href === "/") {
@@ -44,11 +44,15 @@ export default function Header() {
           <div className="hidden tablet:flex items-center gap-8">
             {navs.map((nav, index) => (
               <div key={index}>
-                <Link
-                  href={nav.href}
+                <button
                   className="cursor-pointer font-neueMed text-sm text-[15px] fullscreen:text-4xl fullscreen:text-[40px] scroll-smooth"
                   onClick={(e) => {
+                    if (pathName !== "/") {
+                      router.push("/" + nav.href);
+                      return;
+                    }
                     e.preventDefault();
+                    window.history.replaceState({}, "", "/" + nav.href !== "/" ? nav.href : "" );
                     handleScrollOrNavigate(nav.href);
                   }}
                 >
@@ -59,7 +63,7 @@ export default function Header() {
                   >
                     {nav.label}
                   </p>
-                </Link>
+                </button>
               </div>
             ))}
           </div>
