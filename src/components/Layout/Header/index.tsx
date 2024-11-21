@@ -47,7 +47,7 @@ export default function Header() {
                 <button
                   className="cursor-pointer font-neueMed text-sm text-[15px] fullscreen:text-4xl fullscreen:text-[40px] scroll-smooth"
                   onClick={(e) => {
-                    if (pathName !== "/") {
+                    if (pathName !== "/" && nav.href.startsWith("#")) {
                       router.push("/" + nav.href);
                       return;
                     }
