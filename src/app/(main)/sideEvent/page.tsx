@@ -1,14 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
-import {
-  Agenda,
-  listAgendaAI,
-  listAgendaAI2,
-  listAgendaGeneral,
-  listAgendaGeneral2,
-  listSideEvent
-} from "@/config/DummyData";
+import { listSideEvent } from "@/config/DummyData";
 import Image from "next/image";
 
 import bgImg from "@/assets/images/agenda/bg-side-event.png";
