@@ -58,6 +58,16 @@ export interface Agenda {
 }
 
 
+export interface SideEvent {
+  time: string;
+  day: string;
+  month: string;
+  year: string;
+  host: string;
+  type: string;
+  event: string;
+}
+
 export const listAgendaGeneral: Agenda[] = [
   {
     timeStart: "9:00",
@@ -406,3 +416,85 @@ export const listAgendaAI2: Agenda[] = [
     description: "AI on Commodity Hardware: a Case for CPU",
   },
 ];
+
+
+
+
+
+
+//Side Event
+
+export const listSideEvent: SideEvent[] = [
+  {
+    time: "13:00 - 17:00",
+    day: "11",
+    month: "November",
+    year: "2021",
+    host: "SSI",
+    type: "Free",
+    event: "SSI Techday",
+  },
+  {
+    time: "13:00 - 17:00",
+    day: "11",
+    month: "November",
+    year: "2021",
+    host: "FPT",
+    type: "Invite Only",
+    event: "FPT Techday",
+  },
+  {
+    time: "13:00 - 17:00",
+    day: "11",
+    month: "November",
+    year: "2021",
+    host: "U2U",
+    type: "Free",
+    event: "U2U Techday",
+  },
+  {
+    time: "13:00 - 17:00",
+    day: "11",
+    month: "November",
+    year: "2021",
+    host: "Binance",
+    type: "Invite Only",
+    event: "Binance Techday",
+  },
+  {
+    time: "13:00 - 17:00",
+    day: "11",
+    month: "November",
+    year: "2021",
+    host: "Kucoin",
+    type: "Free",
+    event: "Kucoin Techday",
+  },
+  {
+    time: "13:00 - 17:00",
+    day: "11",
+    month: "November",
+    year: "2021",
+    host: "Bitget",
+    type: "Invite Only",
+    event: "Bitget Techday",
+  },
+  {
+    time: "13:00 - 17:00",
+    day: "11",
+    month: "November",
+    year: "2021",
+    host: "AWS",
+    type: "Side Event",
+    event: "AWS Techday",
+  },
+  {
+    time: "13:00 - 17:00",
+    day: "11",
+    month: "November",
+    year: "2021",
+    host: "VinAI",
+    type: "Free",
+    event: "VinAI Techday",
+  },
+]

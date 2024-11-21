@@ -10,14 +10,20 @@ import {
   listAgendaGeneral2,
 } from "@/config/DummyData";
 import ImageBase from "@/components/Images/ImageBase";
+import { useRouter, useSearchParams } from "next/navigation";
 
-export default function Home() {
+export default function AgendaPage() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+
   const [activeTab, setActiveTab] = useState("day1");
-  const [filterCategory, setFilterCategory] = useState("generalStage");
   const [day1, setDay1] = useState<Agenda[]>([]);
   const [day2, setDay2] = useState<Agenda[]>([]);
   const [loading, setLoading] = useState(false);
-
+  const [filterCategory, setFilterCategory] = useState(
+      searchParams.get("filter") || "mainStage"
+  );
   const classTabActive = useCallback(
     (tabActive: string) => {
       if (activeTab === tabActive) {
@@ -49,6 +55,10 @@ export default function Home() {
   const handleScrollTop = (category: string) => {
     setFilterCategory(category);
     setActiveTab("day1");
+    const newSearchParams = new URLSearchParams(window.location.search);
+    newSearchParams.set("filter", category);
+    router.push(`?${newSearchParams.toString()}`);
+
     setTimeout(() => {
       window.scrollTo({ behavior: "smooth", top: 0 });
     }, 50);
@@ -57,7 +67,7 @@ export default function Home() {
   const listFilter = [
     {
       label: "Main Stage",
-      category: "generalStage",
+      category: "mainStage",
     },
     {
       label: "AI",
@@ -89,7 +99,7 @@ export default function Home() {
   useEffect(() => {
     setLoading(true); // Start loading
     setTimeout(() => {
-      if (filterCategory === "generalStage") {
+      if (filterCategory === "mainStage") {
         setDay1(listAgendaGeneral);
         setDay2(listAgendaGeneral2);
       } else if (filterCategory === "ai") {
