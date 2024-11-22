@@ -4,7 +4,7 @@ import EventLogo from "@/assets/images/agenda/default-image.png";
 import BinhTran from "@/assets/images/agenda/Binh Tran.png";
 // import ChloePhung from "@/assets/images/agenda/Chloe Phung.png";
 import DonLam from "@/assets/images/agenda/Don Lam.png";
-// import VinneshSukumar from "@/assets/images/agenda/VineshSukumar.png";
+import VinneshSukumar from "@/assets/images/agenda/VineshSukumar.png";
 import HaDao from "@/assets/images/agenda/Ha Dao.png";
 import HoangNamTien from "@/assets/images/agenda/Hoang Nam Tien.png";
 import HunngBui from "@/assets/images/agenda/Hung Bui.png";
@@ -230,7 +230,7 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Mr. Raghu Banda", company: "Sr Director of AI @SAP", image: RaghuBanda },
       { name: "Mr. Nestor Camilo", company: " Cloud Adoption Director, AI @Oracle", image: NestorCamilo },
       { name: "Mr. Tran Manh Nam", company: "Director of Corporate Division @VNPay", image: TranManhNam },
-      { name: "CEO", company: "Strant", image: EventLogo },
+      // { name: "CEO", company: "Strant", image: EventLogo },
       { name: "Mr. Phong Nguyen", company: "Chief AI Officer @FPT AI", image: PhongNguyen },
       { name: "Moderator: Ms. Ha Dao", company: "CEO @AIxBlock ", image: HaDao },
     ],
