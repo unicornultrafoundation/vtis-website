@@ -102,7 +102,7 @@ export const listAgendaGeneral: Agenda[] = [
     timeStart: "10:30",
     timeEnd: "11:15",
     speaker: [
-      { name: "Dr. Vinesh Sukumar", company: "Sr Director, Head of AI/ML @Qualcomm , image: VinneshSukumar" },
+      { name: "Dr. Vinesh Sukumar", company: "Sr Director, Head of AI/ML @Qualcomm ", image: VinneshSukumar },
       { name: "Mr. Lan Tran", company: "Chief Information Officier (CIO) @Vietinbank", image: TranCongQuynhLan },
       { name: "Mr. Hung Bui", company: "CEO @VinAI", image: HunngBui },
       { name: "Ms. Kavitha Prasad", company: "General Manager of AI @AWS", image: KavithaPrasad },
