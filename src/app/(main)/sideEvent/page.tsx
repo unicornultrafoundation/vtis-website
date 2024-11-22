@@ -167,7 +167,7 @@ export default function SideEvent() {
                 </div>
 
                 <div
-                    className=' h-full tablet:h-[272px]  tablet:max-w-[960px] bg-[rgba(255,255,255,0.05)] w-full flex flex-col tablet:flex-row items-center p-4 gap-8 rounded-lg'>
+                    className=' h-full tablet:h-[272px]  tablet:max-w-[1253px] bg-[rgba(255,255,255,0.05)] w-full flex flex-col tablet:flex-row items-center p-4 gap-8 rounded-lg'>
                   <div className='w-full max-w-[240px] h-full flex  items-center justify-center'>
                     <Image src={img} alt='' className='rounded-xl w-full h-full '/>
                   </div>
@@ -185,6 +185,13 @@ export default function SideEvent() {
                       <p className={`rounded-[90px] max-w-[100px] text-base text-center border px-3 py-1 ${item.type === "Free" ? "text-[#28D2DC] border-[#28D2DC]" : ""}`}>{item.type}</p>
                     </div>
                   </div>
+                  <Link
+                      href="#"
+                      target="_blank"
+                      className="w-full tablet:max-w-[170px] text-center bg-[#28D2DC] text-white py-2 rounded-lg"
+                  >
+                    Register now
+                  </Link>
                 </div>
               </div>
           ))}

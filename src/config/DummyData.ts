@@ -175,13 +175,13 @@ export const listAgendaGeneral: Agenda[] = [
     type: "Panel Discussion",
     description: "The Future of Fintech in the Next 5 Years",
   },
-  {
-    timeStart: "15:45",
-    timeEnd: "16:00",
-    speaker: [{ name: "Rep. Hyratek", image: EventLogo }],
-    type: "Keynote",
-    description: "Tech Impact",
-  },
+  // {
+  //   timeStart: "15:45",
+  //   timeEnd: "16:00",
+  //   speaker: [{ name: "Rep. Hyratek", image: EventLogo }],
+  //   type: "Keynote",
+  //   description: "Tech Impact",
+  // },
   {
     timeStart: "16:05",
     timeEnd: "16:50",
@@ -190,7 +190,7 @@ export const listAgendaGeneral: Agenda[] = [
       { name: "Tuan Cao", company: "Life AI", image: TuanCao },
       { name: "Binh Tran", company: "AVV", image: BinhTran },
       { name: "Prof. Fabio Cuzzolin", company: "Oxford University", image: ProfessorFabioCuzzolin },
-      { name: "Rep. Hyratek", image: EventLogo },
+      // { name: "Rep. Hyratek", image: EventLogo },
       { name: "Ha Dao (Mod)", company: "AIxBlock", image: HaDao },
 
     ],
@@ -229,6 +229,7 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Nestor Camilo", company: "Oracle", image: NestorCamilo },
       { name: "Tran Manh Nam", company: "VNPay", image: TranManhNam },
       { name: "CEO", company: "Strant", image: EventLogo },
+      { name: "Phong Nguyen", company: ", FPT AI", image: PhongNguyen },
       { name: "Ha Dao (Mod)", company: "AIxBlock", image: HaDao },
     ],
     type: "Panel Discussion",
