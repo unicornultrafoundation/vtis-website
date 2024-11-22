@@ -307,6 +307,12 @@ const speakersData = [
     image: "",
     Status: "",
   },
+  {
+    Name: "Takeshi Chino",
+    Title: "General Manager for Japan - Binance",
+    image: "",
+    Status: "",
+  },
 ];
 
 const getSquareBGByIndex = (index: number) => {
@@ -488,6 +494,12 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 41,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 47,
                   },
                 ]}
               />
@@ -1025,6 +1037,12 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 45,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 47,
                   },
                 ]}
               />
