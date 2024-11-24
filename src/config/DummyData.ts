@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 import NguyenDuyHung from "@/assets/images/agenda/NguyenDuyHung.png";
 import EventLogo from "@/assets/images/agenda/default-image.png";
 import BinhTran from "@/assets/images/agenda/Binh Tran.png";
-// import ChloePhung from "@/assets/images/agenda/Chloe Phung.png";
+import ChloePhung from "@/assets/images/agenda/Chloe Phung.png";
 import DonLam from "@/assets/images/agenda/Don Lam.png";
 import VinneshSukumar from "@/assets/images/agenda/VineshSukumar.png";
 import HaDao from "@/assets/images/agenda/Ha Dao.png";
@@ -25,6 +25,8 @@ import PhongNguyen from "@/assets/images/agenda/Phong Nguyen.png";
 import AliArsanjani from "@/assets/images/agenda/Dr. Ali Arsanjani.png";
 import RomanSnysar from "@/assets/images/agenda/Roman Snytsar.png";
 
+import MarkRydon from "@/assets/images/agenda/Mark Rydon.png";
+import EmilyNguyen from "@/assets/images/agenda/Emily Nguyen.png";
 
 import SofM from "@/assets/images/agenda/Le Quang Duy (SofM).png";
 import MarkChu from "@/assets/images/agenda/Mark Chu.png";
@@ -43,6 +45,15 @@ import NguyenPhanDung from "@/assets/images/agenda/Nguyen Phan Dung .png";
 import NguyenTrungTrang from "@/assets/images/agenda/Nguyen Trung Trang.png";
 import TranManhNam from "@/assets/images/agenda/Tran Manh Nam.png";
 
+import KietLe from "@/assets/images/agenda/Kiet Le.jpg";
+import MoniqueBekker from "@/assets/images/agenda/Monique Bekker.png";
+import Tony from "@/assets/images/agenda/Tony.png";
+
+import RyanBui from "@/assets/images/agenda/Ryan Bui.png";
+
+import Garlan from "@/assets/images/agenda/GarlanWearfit.jpg";
+
+
 export interface Speaker {
   name?: string;
   company?: string;
@@ -50,11 +61,11 @@ export interface Speaker {
 }
 
 export interface Agenda {
-  timeStart: string;
-  timeEnd: string;
-  speaker: Speaker[];
+  timeStart?: string;
+  timeEnd?: string;
+  speaker?: Speaker[];
   type?: string;
-  description: string;
+  description?: string;
 }
 
 
@@ -72,7 +83,7 @@ export const listAgendaGeneral: Agenda[] = [
   {
     timeStart: "9:00",
     timeEnd: "9:20",
-    speaker: [{ name: "Opening Performance ",image: EventLogo }],
+    speaker: [{ name: "Opening Performance ", image: EventLogo }],
     type: "",
     description: " Drum Show",
 
@@ -105,7 +116,7 @@ export const listAgendaGeneral: Agenda[] = [
       { name: "Dr. Vinesh Sukumar", company: "Sr Director, Head of AI/ML @Qualcomm ", image: VinneshSukumar },
       { name: "Mr. Lan Tran", company: "Chief Information Officier (CIO) @Vietinbank", image: TranCongQuynhLan },
       { name: "Mr. Hung Bui", company: "CEO @VinAI", image: HunngBui },
-      { name: "Ms. Kavitha Prasad", company: "General Manager of AI @AWS", image: KavithaPrasad },
+      // { name: "Ms. Kavitha Prasad", company: "General Manager of AI @AWS", image: KavithaPrasad },
       { name: "Mr. Dang Do", company: "CTO @Strant", image: EventLogo },
       { name: "Moderator: Ms. Ha Dao", company: "CEO @AIxBlock", image: HaDao },
     ],
@@ -119,6 +130,7 @@ export const listAgendaGeneral: Agenda[] = [
       { name: "Mr. Malcolm Wright", company: "Deputy Head of Compliance @OKX", image: Malcolm },
       { name: "Mr. Robert Mcdonald", company: "Chief Legal of Compliance Officer @Bybit", image: RobertMcDonald },
       { name: "Ms. Joy Lam", company: "Head of Global Regulatory and APAC Legal @Binance", image: JoyLam },
+      { name: "Ms. Hang Le", company: "CSO @SSI", image: LeThiLeHang },
       { name: "Moderator: Mr. Le Bao Nguyen", company: "Deputy Director @SSI Digital", image: LeBaoNguyen },
     ],
     type: "Panel Discussion",
@@ -136,7 +148,6 @@ export const listAgendaGeneral: Agenda[] = [
   },
 
 
-
   {
     timeStart: "13:30",
     timeEnd: "14:00",
@@ -149,10 +160,10 @@ export const listAgendaGeneral: Agenda[] = [
     timeEnd: "14:50",
     speaker: [
       { name: "Mr. Nguyen Trung Trang", company: "Co-Founder & CPO @SSID", image: NguyenTrungTrang },
-      { name: "Ms. Queenie", company: "Vietnam Country Manager @Tether", image: Queenie },
+      { name: "Ms. Quynh Le", company: "Vietnam Country Manager @Tether", image: EventLogo },
       { name: "Mr. Trung Banh", company: "Co-Founder / Chief Product Officer @Holdstation", image: TrungBanh },
       { name: "Mr. Le Sy Nguyen", company: "Vietnam Country Head @Bitget", image: LeSyNguyen },
-      { name: "Moderator: ", image: EventLogo },
+      // { name: "Moderator: ", image: EventLogo },
     ],
     type: "Panel Discussion",
     description: "Blockchain and Its Applications in Daily Life",
@@ -166,7 +177,7 @@ export const listAgendaGeneral: Agenda[] = [
   },
   {
     timeStart: "15:15",
-    timeEnd: "15:45",
+    timeEnd: "15:55",
     speaker: [
       { name: "Mr. Giang Nguyen", company: "Founder @DNSE", image: GiangNguyen },
       { name: "Mr. Nghiem Xuan Huy", company: "Founder @Finhay", image: NghiemXuanHuy },
@@ -191,7 +202,11 @@ export const listAgendaGeneral: Agenda[] = [
       { name: "Mr. Raghu Banda", company: "Sr Director of AI @SAP", image: RaghuBanda },
       { name: "Mr. Tuan Cao", company: "CEO @Life AI", image: TuanCao },
       { name: "Mr. Binh Tran", company: "General Manager @AVV", image: BinhTran },
-      { name: "Prof. Fabio Cuzzolin", company: "Prof of AI, Director of AI Labs @Oxford Brookes, Oxford University", image: ProfessorFabioCuzzolin },
+      {
+        name: "Prof. Fabio Cuzzolin",
+        company: "Prof of AI, Director of AI Labs @Oxford Brookes, Oxford University",
+        image: ProfessorFabioCuzzolin
+      },
       // { name: "Rep. Hyratek", image: EventLogo },
       { name: "Moderator:  Ms. Ha Dao", company: "CEO @AIxBlock", image: HaDao },
 
@@ -204,12 +219,12 @@ export const listAgendaGeneral: Agenda[] = [
     timeEnd: "17:30",
     speaker: [
       { name: "Rep. IDG", image: EventLogo },
-      { name: "Rep. JDI", image: EventLogo },
-      { name: "Rep. Aethir", image: EventLogo },
+      { name: "Mark Rydon", company: "Co-Founder & CSO @Aethir", image: MarkRydon },
+      { name: "Ms. Chloe Phung", company: "Co-founder & Co-CEO @U2U", image: ChloePhung },
       { name: "Moderator: Rep.U2U", image: EventLogo },
     ],
     type: "Panel Discussion",
-    description: "Panel Discussion with Vietnamese Blockchain Startups",
+    description: "DePIN for Life",
   },
   // {
   //   timeStart: "17:15",
@@ -262,7 +277,7 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "10:50",
     timeEnd: "11:20",
     speaker: [
-      { name: "Rep. Binance",image: EventLogo },
+      { name: "Rep. Binance", image: EventLogo },
     ],
     type: "Keynote",
     description: "How Binance Supports Innovation & Tech Impact",
@@ -302,8 +317,8 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "13:55",
     timeEnd: "14:35",
     speaker: [
-      { name: "Do Bui", company: "Founder Thinkzone", image: DoBui },
-      { name: "Nguyen Phan Dung", company: "Deputy CEO, SSIAM", image: NguyenPhanDung },
+      { name: "Mr. Do Bui", company: "Founder Thinkzone", image: DoBui },
+      { name: "Mr. Nguyen Phan Dung", company: "Deputy CEO, SSIAM", image: NguyenPhanDung },
       { name: "Rep. Kucoin", image: EventLogo },
       { name: "Rep. EVG", image: EventLogo },
       { name: "Moderator: Loi Luu", company: "Kyber Network", image: EventLogo },
@@ -325,12 +340,12 @@ export const listAgendaGeneral2: Agenda[] = [
     speaker: [
       { name: "Mr. Victor J", company: "Founder @Manta Network", image: EventLogo },
       { name: "Mr. Marine", company: "Head of Partnership @Optimism", image: EventLogo },
-      { name: "Mr. Eric Alexander",company:"Founding member @Access Singapore", image: EventLogo },
+      { name: "Mr. Eric Alexander", company: "Founding member @Access Singapore", image: EventLogo },
       { name: "Rep. EVG", image: EventLogo },
       { name: "Moderator: Ms. Quinn Quinn", company: "Founder @Suci Blockchain Hub", image: EventLogo },
     ],
     type: "Panel Discussion",
-    description: "DApps, Wallets, and Blockchain Ecosystems",
+    description: "Decentralizing Economic Opportunity",
   },
   {
     timeStart: "15:40",
@@ -343,9 +358,9 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "16:05",
     timeEnd: "16:40",
     speaker: [
-      { name: "Do Viet Hung", company: "President @Viresa", image: DoVietHung },
-      { name: "Hoang Viet Anh", company: " CEO @FPT Telecom", image: HoangVietAnh },
-      { name: "Le Quang Duy (SofM)", company: "LoL World Championship Runner-Up", image: SofM },
+      { name: "Mr. Do Viet Hung", company: "President @Viresa", image: DoVietHung },
+      { name: "Mr. Hoang Viet Anh", company: " CEO @FPT Telecom", image: HoangVietAnh },
+      { name: "Mr. Le Quang Duy (SofM)", company: "LoL World Championship Runner-Up", image: SofM },
       { name: "Moderator: Mr. Mark Chu", company: "CEO @The Flash  ", image: MarkChu },
     ],
     type: "Panel Discussion",
@@ -361,10 +376,6 @@ export const listAgendaGeneral2: Agenda[] = [
     description: "Closing Ceremony",
   },
 ];
-
-
-
-
 
 
 export const listAgendaAI: Agenda[] = [
@@ -421,15 +432,157 @@ export const listAgendaAI2: Agenda[] = [
   {
     timeStart: "11:15",
     timeEnd: "11:50",
-    speaker: [{ name: "Mr. Roman Snytsar",company:"Former AI Engineer Manager @Microsoft " ,image: RomanSnysar }],
+    speaker: [{ name: "Mr. Roman Snytsar", company: "Former AI Engineer Manager @Microsoft ", image: RomanSnysar }],
     type: "Keynote",
     description: "AI on Commodity Hardware: a Case for CPU",
   },
 ];
 
 
+//DePIN
+export const listDePIN: Agenda[] = [
+  {
+    timeStart: "13:00",
+    timeEnd: "13:30",
+    speaker: [
+      { name: "Organizer", image: EventLogo },
+    ],
+    type: "",
+    description: "Check in guest ",
+  },
+  {
+    timeStart: "13:30",
+    timeEnd: "13:35",
+    speaker: [
+      { name: "Rep. U2U", image: EventLogo },
+    ],
+    type: "",
+    description: "Opening speech ",
+  },
+  {
+    timeStart: "13:35",
+    timeEnd: "13:50",
+    speaker: [
+      { name: "Ms. Chloe Phung", company: "Co-founder & Co-CEO @U2U", image: ChloePhung },
+    ],
+    type: "Keynote",
+    description: "Welcoming guest & U2U keynote , What Lies Ahead for DePIN?",
+  },
+  {
+    timeStart: "13:50",
+    timeEnd: "14:05",
+    speaker: [
+      { name: "Ms. Emily Nguyen", company: "Country Manager @DIN", image: EmilyNguyen },
+    ],
+    type: "Keynote",
+    description: "",
+  },
+  {
+    timeStart: "14:05",
+    timeEnd: "14:20",
+    speaker: [
+      { name: "Mr. Mark Rydon", company: "Co-Founder & CSO @Aethir", image: MarkRydon },
+    ],
+    type: "Keynote",
+    description: "",
+  },
+  {
+    timeStart: "14:20",
+    timeEnd: "14:55",
+    speaker: [
+      { name: "Mr. Kiet Le", company: "Investment Director @IDG Capital Vietnam", image: KietLe },
+      { name: "Ms. Monique Bekker", company: "Head of Marketing @Blocx", image: MoniqueBekker },
+      { name: "Mr. Tony", company: "CEO @Ermis Network", image: Tony },
+      { name: " Rep. @Lbank", image: EventLogo },
+    ],
+    type: "Panel Discussion",
+    description: "Decentralization: Why It Matters and How DePIN Leads the Way",
+  },
+  {
+    timeStart: "14:55",
+    timeEnd: "15:45",
+    speaker: [
+      { name: "Organizer", image: EventLogo },
+    ],
+    type: "",
+    description: "Startup Showcase",
+  },
+  {
+    timeStart: "15:45",
+    timeEnd: "15:55",
+    speaker: [
+      { name: "Mr. Ryan Bui", company: "Ecosystem Director @U2U", image: RyanBui },
+    ],
+    type: "Keynote",
+    description: "How U2U Empowers DePIN Startups for Success",
+  },
+  {
+    timeStart: "15:55",
+    timeEnd: "16:35",
+    speaker: [
+      { name: "Mr. Cathy Zhu", company: "Venture Partner @RockTree Capital", image: EventLogo },
+      { name: "Mr. Peter Hoang Nguyen", company: "CEO & Founder @Medoo", image: EventLogo },
+      { name: "Mr. Tony", company: "CEO, Ermis Network", image: Tony },
 
-
+    ],
+    type: "Panel Discussion",
+    description: "When AI meets RWA and DePIN: What's next?",
+  },
+  {
+    timeStart: "16:30",
+    timeEnd: "16:40",
+    type: "",
+    description: "Break time",
+  },
+  {
+    timeStart: "16:40",
+    timeEnd: "16:50",
+    speaker: [
+      { name: "Mr. Garlan", company: "CMO @WearFit AI", image: Garlan },
+    ],
+    type: "Keynote",
+    description: "",
+  },
+  {
+    timeStart: "16:50",
+    timeEnd: "17:05",
+    speaker: [
+      { name: "Organizer", image: EventLogo },
+    ],
+    type: "Q&A ,Questions & Giveaway",
+    description: "How U2U Empowers DePIN Startups for Success",
+  },
+  {
+    timeStart: "17:05",
+    timeEnd: "17:15",
+    speaker: [
+      { name: "Organizer", image: EventLogo },
+    ],
+    type: "Thank you note ",
+    description: "",
+  },
+  {
+    timeStart: "17:15",
+    timeEnd: "17:25",
+    speaker: [
+      { name: "Organizer", image: EventLogo },
+    ],
+    type: "Announce winners & Certificate (Top 5)",
+    description: "",
+  },
+  {
+    timeStart: "17:25",
+    timeEnd: "17:30",
+    speaker: [
+      { name: "Organizer", image: EventLogo },
+    ],
+    type: "Conclusions",
+    description: "",
+  },
+];
+export const listDePIN2: Agenda[] = [
+  {}
+];
 
 
 //Side Event
