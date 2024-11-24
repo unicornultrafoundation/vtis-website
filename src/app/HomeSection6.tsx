@@ -37,7 +37,10 @@ const TierParners = ({
                   alt="parner-logo"
                   // objectPosition="center"
                   // objectFit="contain"
-                  className="object-contain object-center"
+                  style={{
+                    filter: 'grayscale(100%)'
+                  }}
+                  className="object-contain object-center "
                 />
               </div>
             </div>
@@ -152,7 +155,7 @@ const HomeSection6 = () => {
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
           <TierParners
-            partners={Array(12)
+            partners={Array(10)
               .fill("")
               .map((_, i) => {
                 return {
