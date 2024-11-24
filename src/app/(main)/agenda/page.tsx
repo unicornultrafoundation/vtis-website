@@ -311,34 +311,40 @@ export default function AgendaPage() {
                             id={index2 === 0 ? "day1" : ""}
                             key={index2}
                         >
-                          <div
-                              className="flex w-full tablet:w-auto justify-between items-center h-full py-4 px-5 tablet:p-0">
-                            <div
-                                className="flex tablet:flex-col h-full w-full max-w-[167px] tablet:max-w-full gap-3 tablet:gap-4 tablet:w-11 items-center justify-between  text-[#474747]">
-                              <p>{speaker2.timeStart}</p>
-                              <div className="flex h-full tablet:flex-col w-full justify-center items-center">
-                                {/* First Dot */}
-                                <div className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mb-1"/>
-                                {/* Dashed Line */}
-                                <div className="flex tablet:h-full tablet:w-[1px]  w-full  items-center">
-                                  <div
-                                      className="tablet:w-[1px] tablet:h-full h-[1px] w-full  tablet:border-l-2 border-t-2  border-dashed border-[#474747]"/>
+                          {day2.length > 1 && (
+
+                              <div
+                                  className="flex w-full tablet:w-auto justify-between items-center h-full py-4 px-5 tablet:p-0">
+                                <div
+                                    className="flex tablet:flex-col h-full w-full max-w-[167px] tablet:max-w-full gap-3 tablet:gap-4 tablet:w-11 items-center justify-between  text-[#474747]">
+                                  <p>{speaker2.timeStart}</p>
+                                  <div className="flex h-full tablet:flex-col w-full justify-center items-center">
+                                    {/* First Dot */}
+                                    <div
+                                        className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mb-1"/>
+                                    {/* Dashed Line */}
+                                    <div className="flex tablet:h-full tablet:w-[1px]  w-full  items-center">
+                                      <div
+                                          className="tablet:w-[1px] tablet:h-full h-[1px] w-full  tablet:border-l-2 border-t-2  border-dashed border-[#474747]"/>
+                                    </div>
+                                    {/* Second Dot */}
+                                    <div
+                                        className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mt-1"/>
+                                  </div>
+                                  <p>{speaker2.timeEnd}</p>
                                 </div>
-                                {/* Second Dot */}
-                                <div className="tablet:w-2 tablet:h-2 w-1 h-1 rounded-full bg-[#474747] tablet:mt-1"/>
+                                <div className="tablet:min-w-[120px] block tablet:hidden">
+                                  <p
+                                      className={`tablet:px-3 tablet:py-2 px-2 py-1 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${
+                                          speaker2.type ? "border" : ""
+                                      }`}
+                                  >
+                                    {speaker2.type}
+                                  </p>
+                                </div>
                               </div>
-                              <p>{speaker2.timeEnd}</p>
-                            </div>
-                            <div className="tablet:min-w-[120px] block tablet:hidden">
-                              <p
-                                  className={`tablet:px-3 tablet:py-2 px-2 py-1 text-center rounded-lg border-[rgba(255,255,255,0.30)] text-[#FFF] tablet:text-xs ${
-                                      speaker2.type ? "border" : ""
-                                  }`}
-                              >
-                                {speaker2.type}
-                              </p>
-                            </div>
-                          </div>
+                          )}
+
 
                           <hr className="w-full border-[#FFFFFF] opacity-[0.05] block tablet:hidden"/>
 

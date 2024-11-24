@@ -219,7 +219,7 @@ export const listAgendaGeneral: Agenda[] = [
     timeEnd: "17:30",
     speaker: [
       { name: "Rep. IDG", image: EventLogo },
-      { name: "Mark Rydon", company: "Co-Founder & CSO @Aethir", image: MarkRydon },
+      { name: "Mr. Mark Rydon", company: "Co-Founder & CSO @Aethir", image: MarkRydon },
       { name: "Ms. Chloe Phung", company: "Co-founder & Co-CEO @U2U", image: ChloePhung },
       { name: "Moderator: Rep.U2U", image: EventLogo },
     ],
@@ -549,8 +549,8 @@ export const listDePIN: Agenda[] = [
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
-    type: "Q&A ,Questions & Giveaway",
-    description: "How U2U Empowers DePIN Startups for Success",
+    type: "",
+    description: "Q&A Questions & Giveaway",
   },
   {
     timeStart: "17:05",
@@ -558,8 +558,8 @@ export const listDePIN: Agenda[] = [
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
-    type: "Thank you note ",
-    description: "",
+    type: "",
+    description: "Thank you note ",
   },
   {
     timeStart: "17:15",
@@ -567,8 +567,8 @@ export const listDePIN: Agenda[] = [
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
-    type: "Announce winners & Certificate (Top 5)",
-    description: "",
+    type: "",
+    description: "Announce winners & Certificate (Top 5)",
   },
   {
     timeStart: "17:25",
@@ -576,7 +576,7 @@ export const listDePIN: Agenda[] = [
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
-    type: "Conclusions",
+    type: "Closing",
     description: "",
   },
 ];
