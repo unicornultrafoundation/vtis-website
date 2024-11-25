@@ -321,7 +321,7 @@ const speakersData = [
   },
   {
     Name: "Mark Rydon",
-    Title: "Co-Founder & CSO - Aethir",
+    Title: "Co founder & CSO - Aethir",
     image: "",
     Status: "",
   },
