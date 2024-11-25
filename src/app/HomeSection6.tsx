@@ -73,7 +73,7 @@ const HomeSection6 = () => {
           />
           <TierParners
             tier="Platinum"
-            partners={Array(6)
+            partners={Array(5)
               .fill("")
               .map((_, i) => {
                 return {
@@ -84,7 +84,7 @@ const HomeSection6 = () => {
           />
           <TierParners
             tier="Gold"
-            partners={Array(8)
+            partners={Array(14)
               .fill("")
               .map((_, i) => {
                 return {
