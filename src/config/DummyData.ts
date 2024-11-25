@@ -38,7 +38,7 @@ import LeBaoNguyen from "@/assets/images/agenda/Le Bao Nguyen.png";
 import NghiemXuanHuy from "@/assets/images/agenda/Nghiem Xuan Huy.png";
 import DoBui from "@/assets/images/agenda/Do Bui.png";
 import DoVietHung from "@/assets/images/agenda/Do Viet Hung .png";
-import HoangVietAnh from "@/assets/images/agenda/Hoang Viet Anh.png";
+// import HoangVietAnh from "@/assets/images/agenda/Hoang Viet Anh.png";
 import LeThiLeHang from "@/assets/images/agenda/Le Thi Le Hang.png";
 // import NamTran from "@/assets/images/agenda/Nam Tran.png";
 import NguyenPhanDung from "@/assets/images/agenda/Nguyen Phan Dung .png";
@@ -176,7 +176,7 @@ export const listAgendaGeneral: Agenda[] = [
     timeEnd: "14:40",
     speaker: [
       { name: "Mr. Nguyen Trung Trang", company: "Co-Founder & CPO @SSID", image: NguyenTrungTrang },
-      { name: "Ms. Quynh Le", company: "Vietnam Country Manager @Tether", image: Quinn },
+      { name: "Ms. Quynh Le", company: "Vietnam Country Manager @Tether", image: QuynhLe },
       { name: "Mr. Trung Banh", company: "Co-Founder / Chief Product Officer @Holdstation", image: TrungBanh },
       { name: "Mr. Le Sy Nguyen", company: "Vietnam Country Head @Bitget", image: LeSyNguyen },
       { name: "Moderator: Ms. My Huyen",company: "BDM @Bingx", image: MyHuyen },
