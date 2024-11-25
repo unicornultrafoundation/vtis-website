@@ -53,6 +53,19 @@ import RyanBui from "@/assets/images/agenda/Ryan Bui.png";
 
 import Garlan from "@/assets/images/agenda/GarlanWearfit.jpg";
 
+import HarryChan from "@/assets/images/agenda/Harry Chan.png";
+import AlexNguyen from "@/assets/images/agenda/Mr. Alex Nguyen.png";
+import AvantLe from "@/assets/images/agenda/Mr. Avant Le.png";
+import LeLanChi from "@/assets/images/agenda/Ms. Le Lan Chi.png";
+import MyHuyen from "@/assets/images/agenda/My Huyen.png";
+import Quinn from "@/assets/images/agenda/Quinn Quinn.png";
+import RyanSunghoKim from "@/assets/images/agenda/Ryan Sungho Kim.png";
+import SonHo from "@/assets/images/agenda/Son Ho.png";
+import TakeshiChino from "@/assets/images/agenda/Takeshi Chino.png";
+import VictorJ from "@/assets/images/agenda/Victor J.png";
+import QuynhLe from "@/assets/images/agenda/Quynh Le.png";
+import Marine from "@/assets/images/agenda/Marine.png";
+
 
 export interface Speaker {
   name?: string;
@@ -151,27 +164,30 @@ export const listAgendaGeneral: Agenda[] = [
   {
     timeStart: "13:30",
     timeEnd: "14:00",
-    speaker: [{ name: "COO Kucoin", image: EventLogo }],
+    speaker: [
+      { name: "Mr. Harry Chan", company: "Head of BD & Partnership, Kucoin", image: HarryChan },
+    ],
+
     type: "Keynote",
     description: "Tech Impact",
   },
   {
     timeStart: "14:05",
-    timeEnd: "14:50",
+    timeEnd: "14:40",
     speaker: [
       { name: "Mr. Nguyen Trung Trang", company: "Co-Founder & CPO @SSID", image: NguyenTrungTrang },
-      { name: "Ms. Quynh Le", company: "Vietnam Country Manager @Tether", image: EventLogo },
+      { name: "Ms. Quynh Le", company: "Vietnam Country Manager @Tether", image: Quinn },
       { name: "Mr. Trung Banh", company: "Co-Founder / Chief Product Officer @Holdstation", image: TrungBanh },
       { name: "Mr. Le Sy Nguyen", company: "Vietnam Country Head @Bitget", image: LeSyNguyen },
-      // { name: "Moderator: ", image: EventLogo },
+      { name: "Moderator: Ms. My Huyen",company: "BDM @Bingx", image: MyHuyen },
     ],
     type: "Panel Discussion",
-    description: "Blockchain and Its Applications in Daily Life",
+    description: "Blockchain and Its Applications",
   },
   {
-    timeStart: "14:50",
-    timeEnd: "15:10",
-    speaker: [{ name: "Rep. Bitget", image: EventLogo }],
+    timeStart: "14:45",
+    timeEnd: "15:15",
+    speaker: [{ name: "Mr. Gracy Chen",company:"CEO, Bitget", image: EventLogo }],
     type: "Keynote",
     description: "How Bitget Supports Innovation & Tech Impact",
   },
@@ -182,11 +198,11 @@ export const listAgendaGeneral: Agenda[] = [
       { name: "Mr. Giang Nguyen", company: "Founder @DNSE", image: GiangNguyen },
       { name: "Mr. Nghiem Xuan Huy", company: "Founder @Finhay", image: NghiemXuanHuy },
       { name: "Ms. Lynn Hoang", company: "Country Manager @Binance", image: LynnHoang },
-      { name: "Ms. Le Lan Chi", company: "CEO @Zalopay", image: EventLogo },
-      { name: "Moderator: Hang Le", company: "CSO @SSI", image: LeThiLeHang },
+      { name: "Ms. Le Lan Chi", company: "CEO @Zalopay", image: LeLanChi },
+      { name: "Moderator: Ms. Hang Le", company: "CSO @SSI", image: LeThiLeHang },
     ],
     type: "Panel Discussion",
-    description: "The Future of Fintech in the Next 5 Years",
+    description: "The Future of Fintech in the Next 5 - 10 Years",
   },
   // {
   //   timeStart: "15:45",
@@ -220,8 +236,9 @@ export const listAgendaGeneral: Agenda[] = [
     speaker: [
       { name: "Rep. IDG", image: EventLogo },
       { name: "Mr. Mark Rydon", company: "Co-Founder & CSO @Aethir", image: MarkRydon },
-      { name: "Ms. Chloe Phung", company: "Co-founder & Co-CEO @U2U", image: ChloePhung },
-      { name: "Moderator: Rep.U2U", image: EventLogo },
+      { name: "Mr. Tran Hoang Giang ", company: "CEO, Aura Network", image: EventLogo },
+      { name: "Mr. Harry Chan", company: "Head of BD & Partnership, Kucoin", image: HarryChan },
+      { name: "Moderator: Ms. Chloe Phung", company: "Co-founder & Co-CEO @U2U", image: ChloePhung },
     ],
     type: "Panel Discussion",
     description: "DePIN for Life",
@@ -264,9 +281,9 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "10:15",
     timeEnd: "10:50",
     speaker: [
-      { name: "Rep. Bitget", image: EventLogo },
-      { name: "Rep. Bingx", image: EventLogo },
-      { name: "Rep. KuCoin", image: EventLogo },
+      { name: "Mr. Avant Le",company:"Country Manager, Bitget", image: AvantLe },
+      { name: "Mr. Alex Nguyen",company:"Spokesperson Vietnam, BingX", image: AlexNguyen },
+      { name: "Mr. Harry Chan",company:"Head of BD & Partnership, Kucoin", image: HarryChan },
       { name: "Moderator: Rep. MEXC", image: EventLogo },
 
     ],
@@ -277,7 +294,7 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "10:50",
     timeEnd: "11:20",
     speaker: [
-      { name: "Rep. Binance", image: EventLogo },
+      { name: "Mr. Takeshi Chino",company:"GM for Japan, Binance", image: TakeshiChino },
     ],
     type: "Keynote",
     description: "How Binance Supports Innovation & Tech Impact",
@@ -286,14 +303,14 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "11:25",
     timeEnd: "12:00",
     speaker: [
-      { name: "Rep. K300", image: EventLogo },
-      { name: "Rep. ATX", image: EventLogo },
+      { name: "Mr. Son Ho",company:"Managing Partner, K300 Ventures", image: SonHo },
+      { name: "Mr. Nghiem Xuan Bach",company:"Chief Growth Officer, ATX", image: EventLogo },
       { name: "Rep. Maxx Capital", image: EventLogo },
       { name: "Rep. Holdstation", image: EventLogo },
       { name: "Moderator: Rep. VBU", image: EventLogo },
     ],
     type: "Panel Discussion",
-    description: "Panel Discussion with Vietnamese Blockchain Startups",
+    description: " The Rise Of Blockchain In Vietnam",
   },
 
   //
@@ -319,9 +336,9 @@ export const listAgendaGeneral2: Agenda[] = [
     speaker: [
       { name: "Mr. Do Bui", company: "Founder Thinkzone", image: DoBui },
       { name: "Mr. Nguyen Phan Dung", company: "Deputy CEO, SSIAM", image: NguyenPhanDung },
-      { name: "Rep. Kucoin", image: EventLogo },
+      { name: "Mr. Ryan Sungho Kim",company:"Cofounder & Partner, Hashed", image: RyanSunghoKim },
       { name: "Rep. EVG", image: EventLogo },
-      { name: "Moderator: Loi Luu", company: "Kyber Network", image: EventLogo },
+      { name: "Moderator: Mr. Loi Luu", company: "Kyber Network", image: EventLogo },
 
     ],
     type: "Panel Discussion",
@@ -330,7 +347,7 @@ export const listAgendaGeneral2: Agenda[] = [
   {
     timeStart: "14:35",
     timeEnd: "14:55",
-    speaker: [{ name: "Rep. Bingx", image: EventLogo }],
+    speaker: [{ name: "Mr. Alex Nguyen",company:"Spokesperson Vietnam, BingX", image: AlexNguyen }],
     type: "Keynote",
     description: "How Bingx Supports Innovation & Tech Impact",
   },
@@ -338,11 +355,11 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "15:00",
     timeEnd: "15:40",
     speaker: [
-      { name: "Mr. Victor J", company: "Founder @Manta Network", image: EventLogo },
-      { name: "Mr. Marine", company: "Head of Partnership @Optimism", image: EventLogo },
-      { name: "Mr. Eric Alexander", company: "Founding member @Access Singapore", image: EventLogo },
-      { name: "Rep. EVG", image: EventLogo },
-      { name: "Moderator: Ms. Quinn Quinn", company: "Founder @Suci Blockchain Hub", image: EventLogo },
+      { name: "Mr. Victor J", company: "Founder @Manta Network", image: VictorJ },
+      { name: "Ms. Marine", company: "Head of Partnership @Optimism", image: Marine },
+      { name: "Mr. Eric Alexander", company: "Founding member @Access Singapore", image:EventLogo },
+      // { name: "Rep. EVG", image: EventLogo },
+      { name: "Moderator: Ms. Quinn Quinn", company: "Founder @Suci Blockchain Hub", image: Quinn },
     ],
     type: "Panel Discussion",
     description: "Decentralizing Economic Opportunity",
@@ -359,7 +376,7 @@ export const listAgendaGeneral2: Agenda[] = [
     timeEnd: "16:40",
     speaker: [
       { name: "Mr. Do Viet Hung", company: "President @Viresa", image: DoVietHung },
-      { name: "Mr. Hoang Viet Anh", company: " CEO @FPT Telecom", image: HoangVietAnh },
+      { name: "", company: "CTO Axie", image: EventLogo },
       { name: "Mr. Le Quang Duy (SofM)", company: "LoL World Championship Runner-Up", image: SofM },
       { name: "Moderator: Mr. Mark Chu", company: "CEO @The Flash  ", image: MarkChu },
     ],
