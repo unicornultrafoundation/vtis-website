@@ -5,6 +5,19 @@ type Partner = {
   logo: string;
 };
 
+const getWidthByIndex = (index: number) => {
+  switch(index) {
+    case 0:
+      return "57%";
+    case 3:
+      return "43%";
+    case 4:
+      return "70%";
+    default:
+      return "50%";
+  }
+}
+
 const TierParners = ({
   tier,
   partners,
@@ -30,7 +43,11 @@ const TierParners = ({
             } " max-[768px]:aspect-[118/95] p-[2px] max-[768px]:p-[2px]" `}
           >
             <div className="bg-[rgba(255,255,255,0.05)] w-full h-full flex items-center justify-center">
-              <div className="relative w-[50%] aspect-video max-[768px]:w-[65%]">
+              <div 
+              style={{
+                width: tier === "Platinum"  ? getWidthByIndex(pIndex) : "50%",
+              }}
+              className="relative aspect-video max-[768px]:w-[65%]">
                 <Image
                   src={`/images/${p.logo}`}
                   fill
@@ -73,7 +90,7 @@ const HomeSection6 = () => {
           />
           <TierParners
             tier="Platinum"
-            partners={Array(6)
+            partners={Array(8)
               .fill("")
               .map((_, i) => {
                 return {
@@ -84,7 +101,7 @@ const HomeSection6 = () => {
           />
           <TierParners
             tier="Gold"
-            partners={Array(8)
+            partners={Array(13)
               .fill("")
               .map((_, i) => {
                 return {
