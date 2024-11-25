@@ -30,7 +30,11 @@ const TierParners = ({
             } " max-[768px]:aspect-[118/95] p-[2px] max-[768px]:p-[2px]" `}
           >
             <div className="bg-[rgba(255,255,255,0.05)] w-full h-full flex items-center justify-center">
-              <div className="relative w-[50%] aspect-video max-[768px]:w-[65%]">
+              <div 
+              style={{
+                width: tier === "Platinum" && pIndex === 4 ? "70%" : "50%",
+              }}
+              className="relative aspect-video max-[768px]:w-[65%]">
                 <Image
                   src={`/images/${p.logo}`}
                   fill
