@@ -142,7 +142,7 @@ const HomeSection6 = () => {
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
           <TierParners
-            partners={Array(20)
+            partners={Array(59)
               .fill("")
               .map((_, i) => {
                 return {
@@ -157,7 +157,7 @@ const HomeSection6 = () => {
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
           <TierParners
-            partners={Array(29)
+            partners={Array(58)
               .fill("")
               .map((_, i) => {
                 return {
