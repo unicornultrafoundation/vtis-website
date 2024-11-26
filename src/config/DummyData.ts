@@ -82,7 +82,7 @@ import VictoryManta from "@/assets/images/agenda/Victor - Manta.jpg";
 import SashaAsheghi from "@/assets/images/agenda/Sasha Asheghi.png";
 import NghiemXuanBach from "@/assets/images/agenda/Nghiem Xuan Bach.png";
 import Eric from "@/assets/images/agenda/Eric Alexander.png";
-// import KhangPham from "@/assets/images/agenda/Khang Pham.png";
+import KhangPham from "@/assets/images/agenda/Khang Pham.png";
 import Andy from "@/assets/images/agenda/Andy.png";
 import DangDo from "@/assets/images/agenda/Dang Do.png";
 import GracyChen from "@/assets/images/agenda/Gracy Chenpng.png";
@@ -450,7 +450,7 @@ export const listAgendaAI: Agenda[] = [
   {
     timeStart: "11:10",
     timeEnd: "11:40",
-    speaker: [{ name: "Mr. Khang Pham",company:"Senior Advisor to BOD @VNPAY", image: EventLogo }],
+    speaker: [{ name: "Mr. Khang Pham",company:"Senior Advisor to BOD @VNPAY", image: KhangPham }],
     type: "Keynote",
     description: "Beyond the Algorithm: Establishing Trust in AI through Verification",
   },
