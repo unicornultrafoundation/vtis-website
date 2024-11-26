@@ -5,7 +5,6 @@ import Image from "next/image";
 
 import bgImg from "@/assets/images/agenda/bg-side-event.png";
 import bgImg2 from "@/assets/images/agenda/bg-side-event-2.png";
-import img from "@/assets/images/agenda/img.png";
 
 import Link from "next/link";
 
