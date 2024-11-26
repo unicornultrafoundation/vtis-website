@@ -66,6 +66,10 @@ import VictorJ from "@/assets/images/agenda/Victor J.png";
 import QuynhLe from "@/assets/images/agenda/Quynh Le.png";
 import Marine from "@/assets/images/agenda/Marine.png";
 
+import AIxBlock from "@/assets/images/agenda/side-event.png";
+import U2U from "@/assets/images/agenda/U2U NETWORK.png";
+import Hanoise from "@/assets/images/agenda/Hanoise-Holdstation.jpg";
+
 
 export interface Speaker {
   name?: string;
@@ -90,6 +94,10 @@ export interface SideEvent {
   host: string;
   type: string;
   event: string;
+  description: string;
+  registerLink: string;
+  image?: StaticImageData;
+
 }
 
 export const listAgendaGeneral: Agenda[] = [
@@ -606,75 +614,43 @@ export const listDePIN2: Agenda[] = [
 
 export const listSideEvent: SideEvent[] = [
   {
-    time: "13:00 - 17:00",
-    day: "11",
-    month: "November",
-    year: "2021",
-    host: "SSI",
+    time: "9:00 - 12:00",
+    day: "3-4",
+    month: "December",
+    year: "2024",
+    host: "AIxBlock",
     type: "Free",
-    event: "SSI Techday",
+    event: "Next-Gen Tech: AI Meets Blockchain",
+    description: "Join AIxBlock at VTIS 2024 to explore how AI and blockchain are reshaping tech. Connect with top leaders from Google, SAP, Oracle, FPT AI, VNPAY, and more in this groundbreaking discussion.",
+    registerLink: "https://lu.ma/ig63h51e",
+    image: AIxBlock
   },
   {
-    time: "13:00 - 17:00",
-    day: "11",
-    month: "November",
-    year: "2021",
-    host: "FPT",
-    type: "Invite Only",
-    event: "FPT Techday",
-  },
-  {
-    time: "13:00 - 17:00",
-    day: "11",
-    month: "November",
-    year: "2021",
+    time: "13:00 - 17:30",
+    day: "3",
+    month: "December",
+    year: "2024",
     host: "U2U",
     type: "Free",
-    event: "U2U Techday",
+    event: "DePIN Alliance: Pioneering DePIN - Powering Impact",
+    description: "​DePIN Alliance: Pioneering DePIN - Powering Impact, continuing the DePIN Alliance event series, will gather visionaries and leaders focused on reshaping infrastructure through decentralized technology, hosted by U2U Network as part of the four stages of the Vietnam Tech Impact Summit (VTIS) 2024.",
+    registerLink: "https://lu.ma/uuwzdyql",
+    image: U2U
   },
   {
-    time: "13:00 - 17:00",
-    day: "11",
-    month: "November",
-    year: "2021",
-    host: "Binance",
-    type: "Invite Only",
-    event: "Binance Techday",
+    time: "9:00 - 14:00",
+    day: "4",
+    month: "December",
+    year: "2024",
+    host: "Holdstation",
+    type: "Invite-only",
+    event: "Hanoise",
+    description: "For the first time ever, Technology, Finance, Blockchain, and AI join forces for a night you’ll never forget in Hanoi.\n" +
+        "\n" +
+        "​Get ready for an electrifying experience brought to you by Holdstation, FPT, and SSI! Join us at HANOISE, the after-party that blends Hanoi’s vibrant culture with a cutting-edge nightlife vibe.",
+    registerLink: "https://lu.ma/hanoise",
+    image: Hanoise
   },
-  {
-    time: "13:00 - 17:00",
-    day: "11",
-    month: "November",
-    year: "2021",
-    host: "Kucoin",
-    type: "Free",
-    event: "Kucoin Techday",
-  },
-  {
-    time: "13:00 - 17:00",
-    day: "11",
-    month: "November",
-    year: "2021",
-    host: "Bitget",
-    type: "Invite Only",
-    event: "Bitget Techday",
-  },
-  {
-    time: "13:00 - 17:00",
-    day: "11",
-    month: "November",
-    year: "2021",
-    host: "AWS",
-    type: "Side Event",
-    event: "AWS Techday",
-  },
-  {
-    time: "13:00 - 17:00",
-    day: "11",
-    month: "November",
-    year: "2021",
-    host: "VinAI",
-    type: "Free",
-    event: "VinAI Techday",
-  },
+
+
 ]

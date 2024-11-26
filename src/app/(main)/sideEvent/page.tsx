@@ -136,7 +136,7 @@ export default function SideEvent() {
         </div>
 
         <div className='w-full flex flex-col tablet:flex-row items-center justify-center gap-2 mt-4 tablet:mt-6 font-neueMed'>
-          <Link href="#" target="_blank" className="px-6 py-3  w-full tablet:w-auto text-center text-[#FFF] bg-[rgba(255,255,255,0.15)] hover:bg-white hover:text-[#000]">
+          <Link href="https://forms.gle/fqCVGdxSkkCFqx9N9" target="_blank" className="px-6 py-3  w-full tablet:w-auto text-center text-[#FFF] bg-[rgba(255,255,255,0.15)] hover:bg-white hover:text-[#000]">
             Submit your event
           </Link>
           <button className="px-6 py-3 w-full tablet:w-auto text-center bg-[rgba(255,255,255,0.15)] text-[#FFF] hover:bg-white hover:text-[#000]">
@@ -145,9 +145,9 @@ export default function SideEvent() {
 
         </div>
 
-        <div className='w-full h-full flex flex-col items-center justify-center mt-6 tablet:mt-12 gap-4'>
+        <div className='w-full h-full flex flex-col items-center justify-center mt-6 tablet:mt-12 gap-4 tablet:p-6'>
           {listSideEvent.map((item, index) => (
-              <div key={index} className='w-full h-full text-white flex items-center justify-center font-neueMed tablet:gap-6'>
+              <div key={index} className='w-full h-full text-white flex items-center justify-center font-neueMed tablet:gap-4'>
                 <div className="relative">
                   <div
                       className="px-2 pb-2 pt-4 w-full max-w-[160px] hidden tablet:flex tablet:flex-col gap-2 justify-center items-center border rounded-2xl border-[rgba(255,255,255,0.10)]">
@@ -156,27 +156,34 @@ export default function SideEvent() {
                     <p className="px-[26px] py-2 bg-[rgba(255,255,255,0.10)] rounded-lg">{item.time}</p>
                   </div>
                   {/* Connecting Dot-Line */}
-                  {index !== listSideEvent.length - 1 && (
-                      <div
-                          className="hidden tablet:flex absolute top-full left-[50%] transform -translate-x-1/2  flex-col items-center pt-4">
-                        <div className="w-1 h-1 bg-[#474747] rounded-full"/>
-                        <div className="w-[0.5px] h-16 border-l-2 border-dashed border-[#474747]"/>
-                        <div className="w-1 h-1 bg-[#474747] rounded-full"/>
-                      </div>
-                  )}
+                  {/*{index !== listSideEvent.length - 1 && (*/}
+                  {/*    <div*/}
+                  {/*        className="hidden tablet:flex absolute top-full left-[50%] transform -translate-x-1/2  flex-col items-center pt-4">*/}
+                  {/*      <div className="w-1 h-1 bg-[#474747] rounded-full"/>*/}
+                  {/*      <div className="w-[0.5px] h-16 border-l-2 border-dashed border-[#474747]"/>*/}
+                  {/*      <div className="w-1 h-1 bg-[#474747] rounded-full"/>*/}
+                  {/*    </div>*/}
+                  {/*)}*/}
                 </div>
 
                 <div
-                    className=' h-full tablet:h-[272px]  tablet:max-w-[1253px] bg-[rgba(255,255,255,0.05)] w-full flex flex-col tablet:flex-row items-center p-4 gap-8 rounded-lg'>
-                  <div className='w-full max-w-[240px] h-full flex  items-center justify-center'>
-                    <Image src={img} alt='' className='rounded-xl w-full h-full '/>
+                    className=' h-full tablet:max-h-full tablet:max-w-[500px]  laptop:max-w-[1253px] bg-[rgba(255,255,255,0.10)] w-full flex flex-col laptop:flex-row items-center tablet:p-6 p-2 gap-8 rounded-lg'>
+                  <div className='w-full tablet:max-w-[280px] max-w-full h-full flex  items-center justify-center'>
+                    <Image src={item.image || ''} alt='' className='rounded-xl w-full h-full '/>
                   </div>
-                  <div className='w-full h-full flex-wrap flex flex-col gap-4 tablet:gap-0 justify-between tablet:py-4 tablet:pr-4 p-2'>
+                  <div className='w-full h-full flex-wrap flex flex-col gap-4 tablet:gap-0 justify-between tablet:py-0 tablet:px-0 p-2'>
                     <div className='w-full flex flex-col gap-4 tablet:gap-2'>
                       <p className='opacity-[0.5] text-xl'>{item.month} {item.day}, {item.year} </p>
                       <p className='tablet:text-[28px] text-2xl'>{item.event}</p>
+                      <p
+                          className="tablet:text-xl text-base"
+                          dangerouslySetInnerHTML={{
+                            __html: item.description.replaceAll("\n", "<br />"),
+                          }}
+                      />
+
                     </div>
-                    <div className='w-full flex flex-col gap-4'>
+                    <div className='w-full flex flex-col gap-4 tablet:mt-4'>
                       <div className='flex items-center gap-2 text-[24px]'>
                         <p className='opacity-[0.5]'>Host: </p>
                         <p className=''>{item.host} </p>
@@ -186,9 +193,9 @@ export default function SideEvent() {
                     </div>
                   </div>
                   <Link
-                      href="#"
+                      href={item.registerLink}
                       target="_blank"
-                      className="w-full tablet:max-w-[170px] text-center bg-[#28D2DC] text-white py-2 rounded-lg"
+                      className="w-full laptop:max-w-[130px] text-center bg-[#28D2DC] text-white py-2 rounded-lg"
                   >
                     Register now
                   </Link>

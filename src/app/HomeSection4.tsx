@@ -571,6 +571,12 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
+                    index: 63,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
                     index: 3,
                   },
                   {
@@ -633,24 +639,20 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 55,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 61,
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 67,
-                  },
+
+
                 ]}
               />
               <Column
                 colIndex={1}
                 className="pt-[50%] tablet:pt-[22%]"
                 items={[
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 62,
+                  },
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
@@ -709,7 +711,7 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 62,
+                    index: 61,
                   },
                 ]}
               />
@@ -781,10 +783,16 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 63,
+                    index: 67,
                   },
+
                 ]}
               />
+
+
+
+
+
               <Column
                 colIndex={3}
                 className="pt-[5%] fullscreen:pt-0"
@@ -1009,6 +1017,12 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 3,
                   },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 63,
+                  },
                   // {
                   //   companyName: "SSI Digital",
                   //   name: "Mr Mai Huy Tuan",
@@ -1051,12 +1065,20 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 2,
                   },
+
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 4,
                   },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 62,
+                  },
+
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
@@ -1266,12 +1288,10 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 61,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 63,
-                  },
+
+
+
+
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
@@ -1440,12 +1460,7 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 60,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 62,
-                  },
+
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
