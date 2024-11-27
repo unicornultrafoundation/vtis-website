@@ -433,6 +433,273 @@ const speakersData = [
     image: "",
     Status: "",
   },
+  {
+    Name: "Nghiem Xuan Bach",
+    Title: "Chief Growth Officer - ATX",
+    image: "",
+    Status: "",
+  },
+  {
+    Name: "Xenofon",
+    Title: "Founder of ZuCasa - INATBA",
+    image: "",
+    Status: "",
+  },
+  {
+    Name: "Sasha Asheghi",
+    Title: "Founder - Arcanum Ventures",
+    image: "",
+    Status: "",
+  },
+  {
+    Name: "Cathal",
+    Title: "NexStox - NexStox",
+    image: "",
+    Status: "",
+  },
+  {
+    Name: "Linh Pham",
+    Title: "Regional Head of Growth (SEA) - CoinEx",
+    image: "",
+    Status: "",
+  },
+  {
+    Name: "Andy",
+    Title: "CTO - Axie",
+    image: "",
+    Status: "",
+  },
+  {
+    Name: "Trung Huynh",
+    Title: "Head of Product - Holdstation",
+    image: "",
+    Status: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Kay",
+    Title: "CEO - Hashkey Eco Labs",
+    Hình: "https://drive.google.com/file/d/1APZmLypvLEPTue3BNSYtDdFMhGb5ErrG/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Leow",
+    Title: "Core Contributor, Partnership - Zetachain",
+    Hình: "https://drive.google.com/file/d/1s5B9fFT7TbeBozR4Q9UsQwMfTZJHOIZC/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Jinnie Lee",
+    Title: "Sales Director, APAC Institutional Business - Fireblocks",
+    Hình: "https://drive.google.com/file/d/1lyYCJeddBcf_CPPLcJA6VnEAQfQWolCL/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Daryl Lim",
+    Title: "General Partner - Trive Digital",
+    Hình: "https://drive.google.com/file/d/19pzLBlTGipbTkcFv4BHZD1hiV-13g2B4/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Larry",
+    Title: "Managing Partner - SNZ",
+    Hình: "",
+    Status: "Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Ethan",
+    Title: "CEO - Hippocrat",
+    Hình: "https://drive.google.com/file/d/11kEnj_E8E3aArS0uqIXnjgAVhyjpEsQo/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Asher Looi",
+    Title: "Co founder & CEO - BitDoctor.AI",
+    Hình: "https://drive.google.com/file/d/19Y-V6J0nPnGM6PXfVmFhiyPp0ge1tJ7T/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Vi Pham",
+    Title: "Partnership Manager - Holdstation",
+    Hình: "https://drive.google.com/file/d/1xTqoL-wr13NiJ3nSgBdyQSUncwXUC_pU/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Tom Ngo",
+    Title: "CEO - Metis",
+    Hình: "",
+    Status: "Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Booga",
+    Title: "Head of Ecosystem - Zerion & ZERO",
+    Hình: "https://drive.google.com/file/d/1XaWKKO_U3NWMQKFOqpgiYgAAwf77ODVL/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Su Nguyen",
+    Title: "Chief Communication Officer - Sightsea Labs",
+    Hình: "https://drive.google.com/file/d/1CzrP56vEw-WFKWPvqeQNObzrN_PQr--w/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Damien Kim",
+    Title: "Head of business operation - Flipster",
+    Hình: "https://drive.google.com/file/d/1fojQ2hTUIPzoDT0t0Cutv-0pMv_-yG27/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Ken Le",
+    Title: "Head of BD - Holdstation",
+    Hình: "https://drive.google.com/file/d/1c5us-PpBz1oQ2fDFwOw3P7_gchL2PFin/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Orest Pokhylevych",
+    Title: "Director of Growth - Cointelegraph",
+    Hình: "https://drive.google.com/file/d/1knCi_RvhcIbJPmHXjcJ6o2FVVSMx8J-a/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Tonny",
+    Title: "Community Lead - HC Capital",
+    Hình: "https://drive.google.com/file/d/1fwm5E9aeZBKEV5aPCr91aDdrCpuDbX-8/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Basilla",
+    Title: "Community Lead - UB Ventures",
+    Hình: "https://drive.google.com/file/d/12cSeaQavklZxonLB-Esayv8-9a5t-9Sy/view?usp=drive_link",
+    Status: "Cần Update lên web",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Leonardo",
+    Title: "CMO - Holdstation",
+    Hình: "",
+    Status: "Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Tran Hoang Giang",
+    Title: "CEO - Aura Network",
+    Hình: "",
+    Status: "Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Rep. IDG",
+    Title: "Panel DePIN for Life",
+    Hình: "",
+    Status: "Thiếu info spk, Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Dung Ngoc Nguyen",
+    Title: "NIC",
+    Hình: "",
+    Status: "Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Ganesg R",
+    Title: "Founder, FireBond",
+    Hình: "",
+    Status: "Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Moderator: Rep. MEXC",
+    Title: "Panel: Future Innovations and Security in Digital Asset",
+    Hình: "",
+    Status: "Thiếu info spk, Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Moderator: Rep. VBU",
+    Title: "Panel The Rise Of Blockchain In Vietnam",
+    Hình: "",
+    Status: "Thiếu info spk, Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Rep. EVG",
+    Title: "Panel Discussion with Web2 & Web3 Ventures",
+    Hình: "",
+    Status: "Thiếu info spk, Thiếu ảnh",
+    PIC: "",
+  },
+  {
+    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
+      "",
+    Name: "Rep. MEXC",
+    Title: "Keynote How MEXC Support Innovation & Tech Impact",
+    Hình: "",
+    Status: "Thiếu info spk, Thiếu ảnh",
+    PIC: "",
+  },
 ];
 
 const getSquareBGByIndex = (index: number) => {
@@ -451,7 +718,7 @@ const getSquareBGByIndex = (index: number) => {
   }
 };
 
-const placeHolderImgIndexes: number[] = [51, 55];
+const placeHolderImgIndexes: number[] = [80, 84, 85, 92, 93];
 
 const Column = ({
   items,
@@ -476,9 +743,9 @@ const Column = ({
                 src={`/images/speakers/${
                   item.index >= 3
                     ? !placeHolderImgIndexes.includes(item.index + 1)
-                      ? item.index + 1
+                      ? `speaker-${item.index + 1}`
                       : "title"
-                    : item.index
+                    : `speaker-${item.index}`
                 }.png`}
                 fill
                 style={{
@@ -639,8 +906,30 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 55,
                   },
-
-
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 69,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 75,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 81,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 87,
+                  },
                 ]}
               />
               <Column
@@ -712,6 +1001,30 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 61,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 70,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 76,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 82,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 88,
                   },
                 ]}
               />
@@ -785,14 +1098,32 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 67,
                   },
-
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 71,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 77,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 83,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 89,
+                  },
                 ]}
               />
-
-
-
-
-
               <Column
                 colIndex={3}
                 className="pt-[5%] fullscreen:pt-0"
@@ -857,11 +1188,41 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 58,
                   },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 64,
+                  // },
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 64,
+                    index: 65,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 72,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 78,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 84,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 90,
                   },
                 ]}
               />
@@ -927,7 +1288,31 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 65,
+                    index: 66,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 73,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 79,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 85,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 91,
                   },
                 ]}
               />
@@ -993,7 +1378,31 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 66,
+                    index: 68,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 74,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 80,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 86,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 92,
                   },
                 ]}
               />
@@ -1288,10 +1697,6 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 61,
                   },
-
-
-
-
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
@@ -1303,6 +1708,78 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 67,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 69,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 71,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 73,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 75,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 77,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 79,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 81,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 83,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 85,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 87,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 89,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 91,
                   },
                 ]}
               />
@@ -1460,18 +1937,95 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 60,
                   },
-
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 64,
-                  },
+                  // {
+                  //   companyName: "SSI Digital",
+                  //   name: "Mr Mai Huy Tuan",
+                  //   title: "CEO",
+                  //   index: 64,
+                  // },
                   {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 66,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 68,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 70,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 72,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 74,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 76,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 78,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 80,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 82,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 84,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 86,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 88,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 90,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 92,
                   },
                 ]}
               />
