@@ -171,7 +171,7 @@ const speakersData = [
   },
   {
     Name: "Don Lam ",
-    Title: "CEO - VinaCapital",
+    Title: " CEO and Founding Partner - VinaCapital",
     image: "",
     Status: "",
   },
@@ -327,7 +327,7 @@ const speakersData = [
   },
   {
     Name: "Dang Do",
-    Title: "CTO - Strant",
+    Title: "CEO - Strant",
     image: "",
     Status: "",
   },
