@@ -658,15 +658,6 @@ const speakersData = [
   {
     "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
       "",
-    Name: "Ganesg R",
-    Title: "Founder, FireBond",
-    Hình: "",
-    Status: "Thiếu ảnh",
-    PIC: "",
-  },
-  {
-    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
-      "",
     Name: "Moderator: Rep. MEXC",
     Title: "Panel: Future Innovations and Security in Digital Asset",
     Hình: "",
@@ -718,7 +709,7 @@ const getSquareBGByIndex = (index: number) => {
   }
 };
 
-const placeHolderImgIndexes: number[] = [80, 84, 85, 92, 93];
+const placeHolderImgIndexes: number[] = [80, 84];
 
 const Column = ({
   items,
@@ -1398,12 +1389,6 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 86,
                   },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 92,
-                  },
                 ]}
               />
             </>
@@ -2020,12 +2005,6 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 90,
-                  },
-                  {
-                    companyName: "SSI Digital",
-                    name: "Mr Mai Huy Tuan",
-                    title: "CEO",
-                    index: 92,
                   },
                 ]}
               />
