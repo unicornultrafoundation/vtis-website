@@ -7,7 +7,7 @@ import {
   listAgendaAI,
   listAgendaAI2,
   listAgendaGeneral,
-  listAgendaGeneral2, listDePIN, listDePIN2,
+  listAgendaGeneral2, listBlockchain, listBlockchain2, listDePIN, listDePIN2,
 } from "@/config/DummyData";
 import ImageBase from "@/components/Images/ImageBase";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -110,6 +110,11 @@ export default function AgendaPage() {
         setDay1(listDePIN);
         setDay2(listDePIN2);
       }
+      else if (filterCategory === "blockChain") {
+        setDay1(listBlockchain);
+        setDay2(listBlockchain2);
+      }
+
       setLoading(false); // End loading
     }, 100);
   }, [filterCategory]);

@@ -90,6 +90,24 @@ import LoiLuu from "@/assets/images/agenda/Loi Luu.png";
 import Cathal from "@/assets/images/agenda/Cathal.png";
 
 
+import Asher from "@/assets/images/agenda/Asher Looi.png";
+import Basilla from "@/assets/images/agenda/Basilla.png";
+import Booga from "@/assets/images/agenda/Booga.png";
+import Damien from "@/assets/images/agenda/Damien Kim.png";
+import Daryl from "@/assets/images/agenda/Daryl Lim.png";
+import Ethan from "@/assets/images/agenda/Ethan Chae.png";
+import HieuDo from "@/assets/images/agenda/Hieu Do.png";
+import Jinnie from "@/assets/images/agenda/Jinnie Lee.png";
+import Kay from "@/assets/images/agenda/Kay.jpg";
+import KenLe from "@/assets/images/agenda/Ken Le.png";
+import Leow from "@/assets/images/agenda/Leow.jpg";
+import Orest from "@/assets/images/agenda/Orest Pokhylevych.png";
+import SuNguyen from "@/assets/images/agenda/Su Nguyen.png";
+import Tonny from "@/assets/images/agenda/Tonny.png";
+import TrungHuynh from "@/assets/images/agenda/Trung Huynh.png";
+import ViPham from "@/assets/images/agenda/Vi Pham.png";
+
+
 export interface Speaker {
   name?: string;
   company?: string;
@@ -116,6 +134,7 @@ export interface SideEvent {
   description: string;
   registerLink: string;
   image?: StaticImageData;
+  location: string;
 
 }
 
@@ -157,7 +176,7 @@ export const listAgendaGeneral: Agenda[] = [
       { name: "Mr. Lan Tran", company: "Chief Information Officier (CIO) @Vietinbank", image: TranCongQuynhLan },
       { name: "Mr. Hung Bui", company: "CEO @VinAI", image: HunngBui },
       // { name: "Ms. Kavitha Prasad", company: "General Manager of AI @AWS", image: KavithaPrasad },
-      { name: "Mr. Dang Do", company: "CTO @Strant", image: DangDo },
+      { name: "Mr. Dang Do", company: "CEO @Strant", image: DangDo },
       { name: "Moderator: Ms. Ha Dao", company: "CEO @AIxBlock", image: HaDao },
     ],
     type: "Panel Discussion",
@@ -216,11 +235,11 @@ export const listAgendaGeneral: Agenda[] = [
     timeEnd: "15:15",
     speaker: [{ name: "Ms. Gracy Chen",company:"CEO, Bitget", image: GracyChen }],
     type: "Keynote",
-    description: "How Bitget Supports Innovation & Tech Impact",
+    description: "Bitget’s Strategic Listing And Rapid Growth",
   },
   {
-    timeStart: "15:15",
-    timeEnd: "15:55",
+    timeStart: "15:20",
+    timeEnd: "16:00",
     speaker: [
       { name: "Mr. Giang Nguyen", company: "Founder @DNSE", image: GiangNguyen },
       { name: "Mr. Nghiem Xuan Huy", company: "Founder @Finhay", image: NghiemXuanHuy },
@@ -311,7 +330,7 @@ export const listAgendaGeneral2: Agenda[] = [
       // { name: "Mr. Avant Le",company:"Country Manager, Bitget", image: AvantLe },
       { name: "Rexy Ali",company:"VP South East Asia", image: EventLogo },
       { name: "Mr. Alex Nguyen",company:"Spokesperson Vietnam, BingX", image: AlexNguyen },
-      { name: "Mr. Harry Chan",company:"Head of BD & Partnership, Kucoin", image: HarryChan },
+      // { name: "Mr. Harry Chan",company:"Head of BD & Partnership, Kucoin", image: HarryChan },
       { name: "Moderator: Rep. MEXC", image: EventLogo },
 
     ],
@@ -325,7 +344,7 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Mr. Takeshi Chino",company:"GM for Japan, Binance", image: TakeshiChino },
     ],
     type: "Keynote",
-    description: "How Binance Supports Innovation & Tech Impact",
+    description: "The past, present and future of digital assets industry in Japan",
   },
   {
     timeStart: "11:25",
@@ -334,7 +353,7 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Mr. Son Ho",company:"Managing Partner, K300 Ventures", image: SonHo },
       { name: "Mr. Nghiem Xuan Bach",company:"Chief Growth Officer, ATX", image: NghiemXuanBach },
       { name: "Mr. Victor Dang Thang",company: " CEO, Maxx Capital", image: VictoryDangThang },
-      { name: "Rep. Holdstation", image: EventLogo },
+      { name: "Mr. Trung Banh",company: " , CoFounder / Chief Product Officer @Holdstation", image: TrungBanh },
       { name: "Moderator: Rep. VBU", image: EventLogo },
     ],
     type: "Panel Discussion",
@@ -353,10 +372,10 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "13:30",
     timeEnd: "13:50",
     speaker: [
-      { name: "Rep. Strant", image: EventLogo },
+      { name: "Rep. MEXC", image: EventLogo },
     ],
     type: "Keynote",
-    description: "How Strant Supports Innovation & Tech Impact",
+    description: "How MEXC Supports Innovation & Tech Impact",
   },
   {
     timeStart: "13:55",
@@ -395,9 +414,9 @@ export const listAgendaGeneral2: Agenda[] = [
   {
     timeStart: "15:40",
     timeEnd: "16:00",
-    speaker: [{ name: "Rep. MEXC", image: EventLogo }],
+    speaker: [{ name: "Mr. Dang Do",company:" CEO @Strant", image: DangDo }],
     type: "Keynote",
-    description: "How MEXC Support Innovation & Tech Impact",
+    description: "Strant's Artificial Intelligence Revolution",
   },
   {
     timeStart: "16:05",
@@ -452,7 +471,7 @@ export const listAgendaAI: Agenda[] = [
     timeEnd: "11:40",
     speaker: [{ name: "Mr. Khang Pham",company:"Senior Advisor to BOD @VNPAY", image: KhangPham }],
     type: "Keynote",
-    description: "Beyond the Algorithm: Establishing Trust in AI through Verification",
+    description: "AI Agents: Moving Bryond Chatbots to RealWorld Integration",
   },
 ];
 
@@ -635,13 +654,123 @@ export const listDePIN: Agenda[] = [
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
-    type: "Closing",
-    description: "",
+    type: "",
+    description: "Closing",
   },
 ];
 export const listDePIN2: Agenda[] = [
   {}
 ];
+
+//Blockchain stage
+
+export const listBlockchain: Agenda[] = [
+  {
+    timeStart: "13:00",
+    timeEnd: "13:15",
+    speaker: [
+      { name: "Mr. Hieu Do",company:"Head of Partnership, Holdstation", image: HieuDo
+      },
+    ],
+    type: "Opening",
+    description: "Welcome & Opening Remarks",
+  },
+  {
+    timeStart: "13:15",
+    timeEnd: "13:45",
+    speaker: [
+      { name: "Mr. Kay",company:"CEO, Hashkey Eco Labs", image: Kay },
+      { name: "Mr. Leow",company:"Core Contributor, Partnership, Zetachain", image: Leow },
+      { name: "Ms. Emily Nguyen",company:"Country Manager, DIN", image: EmilyNguyen },
+      { name: "Mr. Garlan",company:"CMO, WearFit_AI", image: Garlan },
+      { name: "Moderator:Mr. Trung Huynh",company:"Head of Product, Holdstation", image: TrungHuynh },
+    ],
+    type: "Panel Discussion",
+    description: "The Intersection of AI and Blockchain",
+  },
+  {
+    timeStart: "14:45",
+    timeEnd: "14:15",
+    speaker: [
+      { name: "Mr. Jinnie Lee",company:"Sales Director, APAC Institutional Business, Fireblocks", image: Jinnie },
+      { name: "Mr. Daryl Lim",company:"General Partner, Trive Digital", image: Daryl },
+      { name: "Ms. Larry",company:"Managing Partner, SNZ", image: EventLogo },
+      { name: "Moderator:Mr. Hieu Do",company:"Head of Partnership, Holdstation", image: HieuDo },
+    ],
+    type: "Panel Discussion",
+    description: "Venture Capital Perspectives on Web3",
+  },
+  {
+    timeStart: "14:15",
+    timeEnd: "14:45",
+    speaker: [
+      { name: "Mr. Ethan Chae",company:"CEO, Hippocrat", image: Ethan },
+      { name: "Mr. Asher Looi",company:"Co-founder & CEO, BitDoctor.AI", image: Asher },
+      { name: "Moderator:Ms. Vi Pham",company:"Partnership Manager, Holdstation ", image: ViPham },
+    ],
+    type: "Fireside Chat",
+    description: "Decentralized Science (DeSci) Revolution",
+  },
+  {
+    timeStart: "14:45",
+    timeEnd: "15:15",
+    speaker: [
+      { name: "Mr. Tom Ngo", company: "CEO, Metis", image: EventLogo },
+      { name: "Mr. Booga", company: "Head of Ecosystem, Zerion & ZERO", image: Booga },
+      { name: "Su Nguyen",company:"Chief Communication Officer, Sightsea Labs", image: SuNguyen },
+
+    ],
+    type: "Panel Discussion",
+    description: "Unlocking Consumer Adoption in Web3",
+  },
+  {
+    timeStart: "15:15",
+    timeEnd: "15:45",
+    speaker: [
+      { name: "Holdstation ", image: EventLogo },
+    ],
+    type: "",
+    description: "Interactive Segment: Holdstation",
+  },
+  {
+    timeStart: "15:45",
+    timeEnd: "16:00",
+    speaker: [
+      { name: "Rep. MEXC", company: "", image: EventLogo },
+    ],
+    type: "Panel Discussion",
+    description: "MEXC KeyNote Speech: Digital Asset Beyond Speculation",
+  },
+  {
+    timeStart: "16:00",
+    timeEnd: "16:30",
+    speaker: [
+      { name: " Rep. MEXC", company: "", image: EventLogo },
+      { name: "Mr. Damien Kim", company: "Head of business operation, Flipster", image: Damien },
+      { name: "Mr. Ken Le", company: "Head of BD, Holdstation", image: KenLe },
+      { name: "Moderator:Mr. Orest Pokhylevych", company: " Director of Growth, Cointelegraph", image: Orest },
+
+    ],
+    type: "Panel Discussion",
+    description: "From Startup to Unicorn",
+  },
+  {
+    timeStart: "16:40",
+    timeEnd: "17:10",
+    speaker: [
+      { name: "Mr. Tonny", company: "Community Lead, HC Capital", image: Tonny },
+      { name: "Mr. Son Ho", company: " Managing Partner, K300 Ventures", image: SonHo },
+      { name: "Mr. Basilla", company: "Community Lead, UB Ventures", image: Basilla },
+      { name: "Moderator:Mr. Leonardo", company: " CMO, Holdstation", image: EventLogo },
+    ],
+    type: "Closing Panel",
+    description: "Vietnam Community's Development",
+  },
+];
+export const listBlockchain2: Agenda[] = [
+  {}
+];
+
 
 
 //Side Event
@@ -657,7 +786,8 @@ export const listSideEvent: SideEvent[] = [
     event: "Next-Gen Tech: AI Meets Blockchain",
     description: "Join AIxBlock at VTIS 2024 to explore how AI and blockchain are reshaping tech. Connect with top leaders from Google, SAP, Oracle, FPT AI, VNPAY, and more in this groundbreaking discussion.",
     registerLink: "https://lu.ma/ig63h51e",
-    image: AIxBlock
+    image: AIxBlock,
+    location: "Room 309 NCC"
   },
   {
     time: "13:00 - 17:30",
@@ -669,7 +799,8 @@ export const listSideEvent: SideEvent[] = [
     event: "DePIN Alliance: Pioneering DePIN - Powering Impact",
     description: "​DePIN Alliance: Pioneering DePIN - Powering Impact, continuing the DePIN Alliance event series, will gather visionaries and leaders focused on reshaping infrastructure through decentralized technology, hosted by U2U Network as part of the four stages of the Vietnam Tech Impact Summit (VTIS) 2024.",
     registerLink: "https://lu.ma/uuwzdyql",
-    image: U2U
+    image: U2U,
+    location:"Room 309 NCC"
   },
   {
     time: "9:00 - 14:00",
@@ -683,7 +814,49 @@ export const listSideEvent: SideEvent[] = [
         "\n" +
         "​Get ready for an electrifying experience brought to you by Holdstation, FPT, and SSI! Join us at HANOISE, the after-party that blends Hanoi’s vibrant culture with a cutting-edge nightlife vibe.",
     registerLink: "https://lu.ma/hanoise",
-    image: Hanoise
+    image: Hanoise,
+    location: "A PLUS HANOI 78 Yen Phu, Ha Noi"
+  },
+  {
+    time: "9:30 - 11:30",
+    day: "3",
+    month: "December",
+    year: "2024",
+    host: "Maxx Capital",
+    type: "Free",
+    event: "Innovative Applications of Blockchain in Edtech and career opportunities",
+    description: "Join us on Dec 3, 2024, at the National Convention Center, Hanoi, for Innovative Applications of Blockchain in EdTech & Career Opportunities in Blockchain. Part of VTIS, coorganized by Medoo, Tether, and UBA, and sponsored by Web3Hub & Maxx Capital. Don't miss it!",
+    registerLink: "https://lu.ma/msybo2ci?tk=GCHJc0",
+    image: EventLogo,
+    location: "Room 343 NCC"
+  },
+  {
+    time: "18:00 - 21:00",
+    day: "3",
+    month: "December",
+    year: "2024",
+    host: "Maxx Capital",
+    type: "Invite-only",
+    event: "M Party & Network",
+    description: "🎉 Passionate about Web3 and blockchain? Join M Party & Networking, hosted by Maxx Capital & Medoo, with Web3 Hub & U2U Network! Celebrate innovation, connect with investors, developers & enthusiasts, and explore collaboration in the growing Web3 space. 🚀 Don't miss it!",
+    registerLink: "https://lu.ma/bfubanh7",
+    image: Hanoise,
+    location: "A PLUS HANOI 78 Yen Phu, Ha Noi"
+  },
+  {
+    time: "18:00 - 21:00",
+    day: "3",
+    month: "December",
+    year: "2024",
+    host: "GFI",
+    type: "Invite-only",
+    event: "🚀 Thời điểm fomo nhất đã đến: Đâu mới là cơ hội thật sự trong Uptrend?!",
+    description: " Đừng bỏ lỡ cơ hội nâng cao kỹ năng và tối ưu chiến lược đầu tư crypto tại buổi offline GFI! 🔑 Kết nối cộng đồng, chia sẻ kiến thức, khám phá cơ hội mới cùng diễn giả:\n" +
+        "❇️ Mr. Phạm Hưởng  Founder & CEO | GFI\n" +
+        "❇️ Dustin Huỳnh  Head of Research | GFI",
+    registerLink: "https://lu.ma/nqpd6xem",
+    image: Hanoise,
+    location: "SKYLINE COFFEE , 36 Hoang Cau, Ha Noi"
   },
 
 

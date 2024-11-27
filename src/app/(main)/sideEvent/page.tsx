@@ -172,7 +172,7 @@ export default function SideEvent() {
                   </div>
                   <div className='w-full h-full flex-wrap flex flex-col gap-4 tablet:gap-0 justify-between tablet:py-0 tablet:px-0 p-2'>
                     <div className='w-full flex flex-col gap-4 tablet:gap-2'>
-                      <p className='opacity-[0.5] text-xl'>{item.month} {item.day}, {item.year} </p>
+                      <p className='opacity-[0.5] text-xl'>{item.month} {item.day}, {item.year} | {item.location}</p>
                       <p className='tablet:text-[28px] text-2xl'>{item.event}</p>
                       <p
                           className="tablet:text-xl text-base"
