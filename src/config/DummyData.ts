@@ -108,6 +108,11 @@ import TrungHuynh from "@/assets/images/agenda/Trung Huynh.png";
 import ViPham from "@/assets/images/agenda/Vi Pham.png";
 
 
+import SideEvent6 from "@/assets/images/side-event/6.jpg";
+import SideEvent7 from "@/assets/images/side-event/7.jpg";
+import SideEvent8 from "@/assets/images/side-event/8.png";
+
+
 export interface Speaker {
   name?: string;
   company?: string;
@@ -827,7 +832,7 @@ export const listSideEvent: SideEvent[] = [
     event: "Innovative Applications of Blockchain in Edtech and career opportunities",
     description: "Join us on Dec 3, 2024, at the National Convention Center, Hanoi, for Innovative Applications of Blockchain in EdTech & Career Opportunities in Blockchain. Part of VTIS, coorganized by Medoo, Tether, and UBA, and sponsored by Web3Hub & Maxx Capital. Don't miss it!",
     registerLink: "https://lu.ma/msybo2ci?tk=GCHJc0",
-    image: EventLogo,
+    image: SideEvent6,
     location: "Room 343 NCC"
   },
   {
@@ -840,7 +845,7 @@ export const listSideEvent: SideEvent[] = [
     event: "M Party & Network",
     description: "🎉 Passionate about Web3 and blockchain? Join M Party & Networking, hosted by Maxx Capital & Medoo, with Web3 Hub & U2U Network! Celebrate innovation, connect with investors, developers & enthusiasts, and explore collaboration in the growing Web3 space. 🚀 Don't miss it!",
     registerLink: "https://lu.ma/bfubanh7",
-    image: Hanoise,
+    image: SideEvent7,
     location: "A PLUS HANOI 78 Yen Phu, Ha Noi"
   },
   {
@@ -849,13 +854,13 @@ export const listSideEvent: SideEvent[] = [
     month: "December",
     year: "2024",
     host: "GFI",
-    type: "Invite-only",
+    type: "Free",
     event: "🚀 Thời điểm fomo nhất đã đến: Đâu mới là cơ hội thật sự trong Uptrend?!",
     description: " Đừng bỏ lỡ cơ hội nâng cao kỹ năng và tối ưu chiến lược đầu tư crypto tại buổi offline GFI! 🔑 Kết nối cộng đồng, chia sẻ kiến thức, khám phá cơ hội mới cùng diễn giả:\n" +
         "❇️ Mr. Phạm Hưởng  Founder & CEO | GFI\n" +
         "❇️ Dustin Huỳnh  Head of Research | GFI",
     registerLink: "https://lu.ma/nqpd6xem",
-    image: Hanoise,
+    image: SideEvent8,
     location: "SKYLINE COFFEE , 36 Hoang Cau, Ha Noi"
   },
 
