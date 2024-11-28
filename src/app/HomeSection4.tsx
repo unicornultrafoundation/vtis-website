@@ -629,67 +629,52 @@ const speakersData = [
     PIC: "",
   },
   {
-    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
-      "",
-    Name: "Tran Hoang Giang",
-    Title: "CEO - Aura Network",
-    Hình: "",
-    Status: "Thiếu ảnh",
-    PIC: "",
+    Name: "Emily Nguyen ",
+    Title: "Country Manager - DIN",
+    image: "",
+    Status: "",
   },
   {
-    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
-      "",
-    Name: "Rep. IDG",
-    Title: "Panel DePIN for Life",
-    Hình: "",
-    Status: "Thiếu info spk, Thiếu ảnh",
-    PIC: "",
+    Name: "Gaurav Chawla",
+    Title: "VP - JP Morgan Chase",
+    image: "",
+    Status: "",
   },
   {
-    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
-      "",
     Name: "Dung Ngoc Nguyen",
-    Title: "NIC",
-    Hình: "",
-    Status: "Thiếu ảnh",
-    PIC: "",
+    Title: "NIC - NIC",
+    image: "",
+    Status: "",
   },
   {
-    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
-      "",
-    Name: "Moderator: Rep. MEXC",
-    Title: "Panel: Future Innovations and Security in Digital Asset",
-    Hình: "",
-    Status: "Thiếu info spk, Thiếu ảnh",
-    PIC: "",
+    Name: "Alicia Kao",
+    Title: "Manager Director - Kucoin",
+    image: "",
+    Status: "",
   },
   {
-    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
-      "",
-    Name: "Moderator: Rep. VBU",
-    Title: "Panel The Rise Of Blockchain In Vietnam",
-    Hình: "",
-    Status: "Thiếu info spk, Thiếu ảnh",
-    PIC: "",
+    Name: "YY",
+    Title: "Head Of BD - MEXC",
+    image: "",
+    Status: "",
   },
   {
-    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
-      "",
-    Name: "Rep. EVG",
-    Title: "Panel Discussion with Web2 & Web3 Ventures",
-    Hình: "",
-    Status: "Thiếu info spk, Thiếu ảnh",
-    PIC: "",
+    Name: "Nguyen Viet Hoa",
+    Title: "Head of Community Information - VBU",
+    image: "",
+    Status: "",
   },
   {
-    "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
-      "",
-    Name: "Rep. MEXC",
-    Title: "Keynote How MEXC Support Innovation & Tech Impact",
-    Hình: "",
-    Status: "Thiếu info spk, Thiếu ảnh",
-    PIC: "",
+    Name: "Alex",
+    Title: "Head of Partnership - OtterSec",
+    image: "",
+    Status: "",
+  },
+  {
+    Name: "Zane N",
+    Title: "Core Contributor - Ancient8",
+    image: "",
+    Status: "",
   },
 ];
 
@@ -921,6 +906,18 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 87,
                   },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 93,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 99,
+                  },
                 ]}
               />
               <Column
@@ -955,7 +952,7 @@ export default function HomeSection4() {
                     companyName: "SSI Digital",
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
-                    index: 24,
+                    index: 24,  
                   },
                   {
                     companyName: "SSI Digital",
@@ -1016,6 +1013,12 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 88,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 94,
                   },
                 ]}
               />
@@ -1112,6 +1115,12 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 89,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 95,
                   },
                 ]}
               />
@@ -1215,6 +1224,12 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 90,
                   },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 96,
+                  },
                 ]}
               />
               <Column
@@ -1305,6 +1320,12 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 91,
                   },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 97,
+                  },
                 ]}
               />
               <Column
@@ -1388,6 +1409,18 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 86,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 92,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 98,
                   },
                 ]}
               />
