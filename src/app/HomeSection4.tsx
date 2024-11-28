@@ -479,7 +479,7 @@ const speakersData = [
     "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
       "",
     Name: "Kay",
-    Title: "CEO - Hashkey Eco Labs",
+    Title: "CEO - Hashkey",
     Hình: "https://drive.google.com/file/d/1APZmLypvLEPTue3BNSYtDdFMhGb5ErrG/view?usp=drive_link",
     Status: "Cần Update lên web",
     PIC: "",
@@ -587,7 +587,7 @@ const speakersData = [
     "https://drive.google.com/file/d/1dqkE3EDYgnGy_QBdsb_NlwXY7hlEZ_BO/view?usp=drive_link":
       "",
     Name: "Ken Le",
-    Title: "Head of BD - Holdstation",
+    Title: "Head of Growth- Holdstation",
     Hình: "https://drive.google.com/file/d/1c5us-PpBz1oQ2fDFwOw3P7_gchL2PFin/view?usp=drive_link",
     Status: "Cần Update lên web",
     PIC: "",
