@@ -53,7 +53,7 @@ import RyanBui from "@/assets/images/agenda/Ryan Bui.png";
 
 import Garlan from "@/assets/images/agenda/GarlanWearfit.jpg";
 
-import HarryChan from "@/assets/images/agenda/Harry Chan.png";
+// import HarryChan from "@/assets/images/agenda/Harry Chan.png";
 import AlexNguyen from "@/assets/images/agenda/Mr. Alex Nguyen.png";
 // import AvantLe from "@/assets/images/agenda/Mr. Avant Le.png";
 import LeLanChi from "@/assets/images/agenda/Ms. Le Lan Chi.png";
@@ -113,6 +113,8 @@ import Gaurav from "@/assets/images/agenda/Gaurav Chawla.png";
 import NguyenVietHoa from "@/assets/images/agenda/Nguyen Viet Hoa.png";
 import YY from "@/assets/images/agenda/YY.png";
 import Zane from "@/assets/images/agenda/Zane.png";
+import Tracy from "@/assets/images/agenda/Tracy.png";
+import LongNguyen from "@/assets/images/agenda/Long Nguyen.png";
 import Alex from "@/assets/images/agenda/Alex - head partnership OtterSec.png";
 
 
@@ -202,7 +204,7 @@ export const listAgendaGeneral: Agenda[] = [
     timeStart: "11:15",
     timeEnd: "11:55",
     speaker: [
-      { name: "Mr. Malcolm Wright", company: "Deputy Head of Compliance @OKX", image: Malcolm },
+      { name: "Mr. Malcolm Wright", company: " Deputy Chief Compliance Officer @OKX", image: Malcolm },
       { name: "Mr. Robert Mcdonald", company: "Chief Legal of Compliance Officer @Bybit", image: RobertMcDonald },
       { name: "Ms. Joy Lam", company: "Head of Global Regulatory and APAC Legal @Binance", image: JoyLam },
       { name: "Ms. Hang Le", company: "CSO @SSI", image: LeThiLeHang },
@@ -237,10 +239,10 @@ export const listAgendaGeneral: Agenda[] = [
     timeStart: "14:05",
     timeEnd: "14:40",
     speaker: [
-      { name: "Mr. Nguyen Trung Trang", company: "Co-Founder & CPO @SSID", image: NguyenTrungTrang },
       { name: "Ms. Quynh Le", company: "Vietnam Country Manager @Tether", image: QuynhLe },
       { name: "Mr. Trung Banh", company: "Co-Founder / Chief Product Officer @Holdstation", image: TrungBanh },
       { name: "Mr. Le Sy Nguyen", company: "Vietnam Country Head @Bitget", image: LeSyNguyen },
+      { name: "Mr. Long Nguyen", company: "Chief Technology Officer, Aura Network", image: LongNguyen },
       { name: "Moderator: Ms. My Huyen",company: "BDM @Bingx", image: MyHuyen },
     ],
     type: "Panel Discussion",
@@ -299,8 +301,9 @@ export const listAgendaGeneral: Agenda[] = [
     speaker: [
       { name: "Mr. Andre Zhang",company:"VP, JDI", image: Andre },
       { name: "Mr. Mark Rydon", company: "Co-Founder & CSO @Aethir", image: MarkRydon },
+      { name: "Ms. Emily Nguyen", company: "Country Manager, DIN", image: EmilyNguyen },
       // { name: "Mr. Tran Hoang Giang ", company: "CEO, Aura Network", image: EventLogo },
-      { name: "Mr. Harry Chan", company: "Head of BD & Partnership, Kucoin", image: HarryChan },
+      // { name: "Mr. Harry Chan", company: "Head of BD & Partnership, Kucoin", image: HarryChan },
       { name: "Moderator: Ms. Chloe Phung", company: "Co-founder & Co-CEO @U2U", image: ChloePhung },
     ],
     type: "Panel Discussion",
@@ -372,7 +375,7 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Mr. Son Ho",company:"Managing Partner, K300 Ventures", image: SonHo },
       { name: "Mr. Nghiem Xuan Bach",company:"Chief Growth Officer, ATX", image: NghiemXuanBach },
       { name: "Mr. Victor Dang Thang",company: " CEO, Maxx Capital", image: VictoryDangThang },
-      { name: "Mr. Trung Banh",company: " , CoFounder / Chief Product Officer @Holdstation", image: TrungBanh },
+      // { name: "Mr. Trung Banh",company: " , CoFounder / Chief Product Officer @Holdstation", image: TrungBanh },
       { name: "Moderator: Mr. Nguyen Viet Hoa",company:"Head of Community Information, VBU", image: NguyenVietHoa },
     ],
     type: "Panel Discussion",
@@ -391,7 +394,7 @@ export const listAgendaGeneral2: Agenda[] = [
     timeStart: "13:30",
     timeEnd: "13:50",
     speaker: [
-      { name: "YY",company:"Head Of BD, MEXC", image: YY },
+      { name: "Tracy",company:"VP, MEXC", image: Tracy },
     ],
     type: "Keynote",
     description: "Tokens on the Rise: Identifying and Investing in the Most Trending Assets",
@@ -402,6 +405,7 @@ export const listAgendaGeneral2: Agenda[] = [
     speaker: [
       { name: "Mr. Do Bui", company: "Founder Thinkzone", image: DoBui },
       { name: "Mr. Nguyen Phan Dung", company: "Deputy CEO, SSIAM", image: NguyenPhanDung },
+      { name: "Mr. Nguyen Trung Trang", company: "Co-Founder & CPO @SSID", image: NguyenTrungTrang },
       { name: "Moderator: Mr. Loi Luu", company: "Kyber Network", image: LoiLuu },
 
     ],
@@ -884,7 +888,7 @@ export const listSideEvent: SideEvent[] = [
   },
   {
     time: "18:00 - 21:30",
-    day: "3",
+    day: "4",
     month: "December",
     year: "2024",
     host: "Sui Foundation",
