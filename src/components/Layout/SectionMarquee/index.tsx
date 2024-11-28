@@ -12,7 +12,7 @@ export function SectionMarquee() {
           {Array(20)
             .fill("")
             .map((_, index) => (
-              <Link href={`https://app.moongate.id/e/vtis24`} target="_blank" key={index} className="flex items-center gap-10">
+              <Link href="https://lu.ma/lf6fuot2" target="_blank" key={index} className="flex items-center gap-10">
                 <div className="h-full flex items-center">Get Ticket</div>
                 <div className="h-full flex items-center">
                   <ImageBase.Ticket width={40} />

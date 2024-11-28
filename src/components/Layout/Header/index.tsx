@@ -78,7 +78,7 @@ export default function Header() {
               Partner with Us
             </Link>
             <Link
-              href="https://app.moongate.id/e/vtis24"
+              href="https://lu.ma/lf6fuot2"
               target="_blank"
               className="relative group overflow-hidden bg-white hover:bg-[#2FD3DD] transition-all duration-500"
             >
