@@ -922,7 +922,7 @@ export const listSideEvent: SideEvent[] = [
     day: "3",
     month: "December",
     year: "2024",
-    host: "Superteam",
+    host: "Solana Superteam",
     type: "Free",
     event: "Hanoi - Solana Web3 Mixer",
     description: "An incredible gathering for builders to connect and drive the growth of the Solana ecosystem, with special support from Superteam Hanoi.",
