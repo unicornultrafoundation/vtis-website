@@ -35,7 +35,7 @@ import LeSyNguyen from "@/assets/images/agenda/Le Sy Nguyen.png";
 import JoyLam from "@/assets/images/agenda/Joy Lam.png";
 import Malcolm from "@/assets/images/agenda/Malcolm Wright.png";
 import LeBaoNguyen from "@/assets/images/agenda/Le Bao Nguyen.png";
-import NghiemXuanHuy from "@/assets/images/agenda/Nghiem Xuan Huy.png";
+// import NghiemXuanHuy from "@/assets/images/agenda/Nghiem Xuan Huy.png";
 import DoBui from "@/assets/images/agenda/Do Bui.png";
 import DoVietHung from "@/assets/images/agenda/Do Viet Hung .png";
 // import HoangVietAnh from "@/assets/images/agenda/Hoang Viet Anh.png";
@@ -116,6 +116,8 @@ import Zane from "@/assets/images/agenda/Zane.png";
 import Tracy from "@/assets/images/agenda/Tracy.png";
 import LongNguyen from "@/assets/images/agenda/Long Nguyen.png";
 import Alex from "@/assets/images/agenda/Alex - head partnership OtterSec.png";
+import HanhTran from "@/assets/images/agenda/Hanh Tran.png";
+import Una from "@/assets/images/agenda/Una.png";
 
 
 
@@ -123,6 +125,9 @@ import SideEvent6 from "@/assets/images/side-event/6.jpg";
 import SideEvent7 from "@/assets/images/side-event/7.jpg";
 import SideEvent8 from "@/assets/images/side-event/8.png";
 import Sui from "@/assets/images/side-event/sui-night.png";
+import HanoiEdition from "@/assets/images/side-event/HanoiEdition.png";
+import HanoiSolana from "@/assets/images/side-event/Hanoi-Solana.png";
+import HoldstationVIP from "@/assets/images/side-event/HoldstationVIP.png";
 
 
 export interface Speaker {
@@ -208,7 +213,7 @@ export const listAgendaGeneral: Agenda[] = [
       { name: "Mr. Robert Mcdonald", company: "Chief Legal of Compliance Officer @Bybit", image: RobertMcDonald },
       { name: "Ms. Joy Lam", company: "Head of Global Regulatory and APAC Legal @Binance", image: JoyLam },
       { name: "Ms. Hang Le", company: "CSO @SSI", image: LeThiLeHang },
-      { name: "Moderator: Mr. Le Bao Nguyen", company: "Deputy Director @SSI Digital", image: LeBaoNguyen },
+      { name: "Moderator: Mr. Le Bao Nguyen", company: " Deputy Director @SSI Digital - Organizer ", image: LeBaoNguyen },
     ],
     type: "Panel Discussion",
     description: "The Legal Frontier of Digital Assets: Benefits, Challenges, and Global Experiences",
@@ -260,7 +265,7 @@ export const listAgendaGeneral: Agenda[] = [
     timeEnd: "16:00",
     speaker: [
       { name: "Mr. Giang Nguyen", company: "Founder @DNSE", image: GiangNguyen },
-      { name: "Mr. Nghiem Xuan Huy", company: "Founder @Finhay", image: NghiemXuanHuy },
+      // { name: "Mr. Nghiem Xuan Huy", company: "Founder @Finhay", image: NghiemXuanHuy },
       { name: "Ms. Lynn Hoang", company: "Country Manager @Binance", image: LynnHoang },
       { name: "Ms. Le Lan Chi", company: "CEO @Zalopay", image: LeLanChi },
       { name: "Ms. Ryan Sungho Kim", company: "Cofounder & Partner, Hashed", image: RyanSunghoKim },
@@ -722,7 +727,7 @@ export const listBlockchain: Agenda[] = [
     speaker: [
       { name: "Ms. Jinnie Lee",company:"Sales Director, APAC Institutional Business, Fireblocks", image: Jinnie },
       { name: "Mr. Daryl Lim",company:"General Partner, Trive Digital", image: Daryl },
-      { name: "Ms. Larry",company:"Managing Partner, SNZ", image: EventLogo },
+      { name: "Rep. SNZ", image: EventLogo },
       { name: "Moderator:Mr. Hieu Do",company:"Head of Partnership, Holdstation", image: HieuDo },
     ],
     type: "Panel Discussion",
@@ -764,23 +769,23 @@ export const listBlockchain: Agenda[] = [
     timeStart: "15:45",
     timeEnd: "16:00",
     speaker: [
-      { name: "Rep. MEXC", company: "", image: EventLogo },
+      { name: "Una", company: "Country Manager, MEXC", image: Una },
     ],
-    type: "Panel Discussion",
-    description: "MEXC KeyNote Speech: Digital Asset Beyond Speculation",
+    type: "Keynote",
+    description: "Liquidity in Digital Assets",
   },
   {
     timeStart: "16:00",
     timeEnd: "16:30",
     speaker: [
-      { name: " Rep. MEXC", company: "", image: EventLogo },
+      { name: "Hanh Tran", company: " Head of BD, MEXC", image: HanhTran },
       { name: "Mr. Damien Kim", company: "Head of business operation, Flipster", image: Damien },
       { name: "Mr. Ken Le", company: "Head of BD, Holdstation", image: KenLe },
       { name: "Moderator: Mr. Orest Pokhylevych", company: " Director of Growth, Cointelegraph", image: Orest },
 
     ],
     type: "Panel Discussion",
-    description: "From Startup to Unicorn",
+    description: "From Startup to Industry Leader",
   },
   {
     timeStart: "16:40",
@@ -899,5 +904,43 @@ export const listSideEvent: SideEvent[] = [
     image: Sui,
     location: "Sky On 9 Rooftop Bar ,Tay Ho, Ha Noi"
   },
-
+  {
+    time: "14:00 - 16:30",
+    day: "1",
+    month: "December",
+    year: "2024",
+    host: "StakeStone",
+    type: "Free",
+    event: "StakeStoneConnect - Hanoi Edition",
+    description: "#StakeStoneConnect Hà Nội Meetup lần này là sự kiện thú vị kết hợp giữa các phiên thảo luận sâu sắc của diễn giả và các cơ hội giao lưu dành cho tất cả mọi người. Cho dù bạn là người đam mê DeFi, chuyên gia blockchain hay mới đang tò mò về tương lai của DeFi, đây chính là nơi dành cho bạn.",
+    registerLink: "https://lu.ma/5ez1n3m8",
+    image: HanoiEdition,
+    location: "The Vuon Luxury Garden Office D2 Giang Vo, Ha Noi"
+  },
+  {
+    time: "19:30 - 22:00",
+    day: "3",
+    month: "December",
+    year: "2024",
+    host: "Superteam",
+    type: "Free",
+    event: "Hanoi - Solana Web3 Mixer",
+    description: "An incredible gathering for builders to connect and drive the growth of the Solana ecosystem, with special support from Superteam Hanoi.",
+    registerLink: "https://lu.ma/0mu0cvvc",
+    image: HanoiSolana,
+    location: "Trang Tien, Hoan Kiem"
+  },
+  {
+    time: "19:30 - 22:00",
+    day: "4",
+    month: "December",
+    year: "2024",
+    host: "Holdstation",
+    type: "Invite-only",
+    event: "Holdstation VIP Dinner Night",
+    description: "Holdstation invites a select group of 30 visionaries to an exclusive dinner following the VTIS Conference. This is your opportunity to gain unparalleled insights into Vietnam’s rapidly evolving blockchain landscape and its regulatory framework, shared directly by industry insiders and experts.",
+    registerLink: "https://lu.ma/HoldstationVIPDinner",
+    image: HoldstationVIP,
+    location: "Invite Only"
+  },
 ]
