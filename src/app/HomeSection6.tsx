@@ -101,7 +101,7 @@ const HomeSection6 = () => {
           />
           <TierParners
             tier="Gold"
-            partners={Array(13)
+            partners={Array(18)
               .fill("")
               .map((_, i) => {
                 return {
@@ -112,7 +112,7 @@ const HomeSection6 = () => {
           />
           <TierParners
             tier="Silver"
-            partners={Array(4)
+            partners={Array(8)
               .fill("")
               .map((_, i) => {
                 return {
@@ -142,7 +142,7 @@ const HomeSection6 = () => {
         </div>
         <div className="w-full flex flex-wrap gap-[5px] mb-20 fullscreen:mb-32">
           <TierParners
-            partners={Array(66)
+            partners={Array(67)
               .fill("")
               .map((_, i) => {
                 return {
