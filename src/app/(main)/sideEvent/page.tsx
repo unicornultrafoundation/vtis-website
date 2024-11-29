@@ -149,7 +149,7 @@ export default function SideEvent() {
               <div key={index} className='w-full h-full text-white flex items-center justify-center font-neueMed tablet:gap-4'>
                 <div className="relative">
                   <div
-                      className="px-2 pb-2 pt-4 w-full max-w-[160px] hidden tablet:flex tablet:flex-col gap-2 justify-center items-center border rounded-2xl border-[rgba(255,255,255,0.10)]">
+                      className="px-2 pb-2 pt-4 w-full max-w-[170px] hidden tablet:flex tablet:flex-col gap-2 justify-center items-center border rounded-2xl border-[rgba(255,255,255,0.10)]">
                     <p className="opacity-[0.5] text-base">{item.month} </p>
                     <p className="font-neueMed text-[48px] text-[#FFF]">{item.day}</p>
                     <p className="px-[26px] py-2 bg-[rgba(255,255,255,0.10)] rounded-lg">{item.time}</p>
