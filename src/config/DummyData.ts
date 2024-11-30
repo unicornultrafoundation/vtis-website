@@ -118,6 +118,8 @@ import LongNguyen from "@/assets/images/agenda/Long Nguyen.png";
 import Alex from "@/assets/images/agenda/Alex - head partnership OtterSec.png";
 import HanhTran from "@/assets/images/agenda/Hanh Tran.png";
 import Una from "@/assets/images/agenda/Una.png";
+import AlexisLow from "@/assets/images/agenda/_Alexis Low.png";
+import Rexy from "@/assets/images/agenda/Rexy Ali.png";
 
 
 
@@ -125,6 +127,10 @@ import SideEvent6 from "@/assets/images/side-event/6.jpg";
 import SideEvent7 from "@/assets/images/side-event/7.jpg";
 import SideEvent8 from "@/assets/images/side-event/8.png";
 import Sui from "@/assets/images/side-event/sui-night.png";
+import Binance from "@/assets/images/side-event/binance.png";
+import BitgetWeb3 from "@/assets/images/side-event/bitget-web3.png";
+import BitgetDinner from "@/assets/images/side-event/bitget-dinner.png";
+import Kucoin from "@/assets/images/side-event/kucoin-holdstation.png";
 import HanoiEdition from "@/assets/images/side-event/HanoiEdition.png";
 import HanoiSolana from "@/assets/images/side-event/Hanoi-Solana.png";
 import HoldstationVIP from "@/assets/images/side-event/HoldstationVIP.png";
@@ -354,7 +360,7 @@ export const listAgendaGeneral2: Agenda[] = [
     timeEnd: "10:50",
     speaker: [
       // { name: "Mr. Avant Le",company:"Country Manager, Bitget", image: AvantLe },
-      { name: "Rexy Ali",company:"VP South East Asia, Bitget", image: EventLogo },
+      { name: "Rexy Ali",company:"VP South East Asia, Bitget", image: Rexy },
       { name: "Ms. Jinnie Lee",company:"Sales Director, Fireblocks", image: Jinnie },
       { name: "Mr. Alex Nguyen",company:"Spokesperson Vietnam, BingX", image: AlexNguyen },
       // { name: "Mr. Harry Chan",company:"Head of BD & Partnership, Kucoin", image: HarryChan },
@@ -411,6 +417,8 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Mr. Do Bui", company: "Founder Thinkzone", image: DoBui },
       { name: "Mr. Nguyen Phan Dung", company: "Deputy CEO, SSIAM", image: NguyenPhanDung },
       { name: "Mr. Nguyen Trung Trang", company: "Co-Founder & CPO @SSID", image: NguyenTrungTrang },
+      { name: "Mr. Alexis Low ", company: "Ecosystem Lead, Lisk", image: AlexisLow },
+      { name: "Cathy Zhu", company: "Venture Partner, RockTree Capital", image: CathyZhu },
       { name: "Moderator: Mr. Loi Luu", company: "Kyber Network", image: LoiLuu },
 
     ],
@@ -429,7 +437,7 @@ export const listAgendaGeneral2: Agenda[] = [
     timeEnd: "15:40",
     speaker: [
       { name: "Mr. Victor J", company: "Founder @Manta Network", image: VictoryManta },
-      { name: "Mr. Eric Alexander", company: "Founding member, Access Singapore", image:Eric },
+      { name: "Mr. Eric Alexander", company: "Founding member, Native Capital", image:Eric },
       { name: "Ms. Quinn Quinn", company: "Founder, Suci Blockchain Hub", image: Quinn },
       { name: "Moderator: Alex", company: "Head of Partnership, OtterSec", image: Alex },
     ],
@@ -452,7 +460,7 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Moderator: Mr. Sasha Asheghi", company: "Founder, Arcanum Ventures", image: SashaAsheghi },
     ],
     type: "Panel Discussion",
-    description: "Gaming's Contribution to Life and Economy",
+    description: "Importance Of Sandbox In Blockchain Zone",
   },
   {
     timeStart: "16:45",
@@ -542,8 +550,8 @@ export const listAgendaAI2: Agenda[] = [
 //DePIN
 export const listDePIN: Agenda[] = [
   {
-    timeStart: "13:00",
-    timeEnd: "13:30",
+    timeStart: "12:30",
+    timeEnd: "13:00",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -551,8 +559,8 @@ export const listDePIN: Agenda[] = [
     description: "Check in guest ",
   },
   {
-    timeStart: "13:30",
-    timeEnd: "13:35",
+    timeStart: "13:00",
+    timeEnd: "13:05",
     speaker: [
       { name: "Rep. U2U", image: EventLogo },
     ],
@@ -560,8 +568,8 @@ export const listDePIN: Agenda[] = [
     description: "Opening speech ",
   },
   {
-    timeStart: "13:35",
-    timeEnd: "13:50",
+    timeStart: "13:05",
+    timeEnd: "13:35",
     speaker: [
       { name: "Ms. Chloe Phung", company: "Co-founder & Co-CEO @U2U", image: ChloePhung },
     ],
@@ -569,26 +577,36 @@ export const listDePIN: Agenda[] = [
     description: "Welcoming guest & U2U keynote , What Lies Ahead for DePIN?",
   },
   {
-    timeStart: "13:50",
-    timeEnd: "14:05",
+    timeStart: "13:35",
+    timeEnd: "13:45",
+    speaker: [
+      { name: "Chloe Phung", company: "Co-founder & Co-CEO, U2U", image: ChloePhung },
+      { name: "Adre Zhang", company: "VP of JDI Capital", image: Andre },
+    ],
+    type: "Ceremony",
+    description: "Ceremony Signing for Hardware Manufacturing & Distribution",
+  },
+  {
+    timeStart: "13:45",
+    timeEnd: "14:00",
+    speaker: [
+      { name: "Mr. Mark Rydon", company: "CoFounder & Chief Strategy Officer @Aethir", image: MarkRydon },
+    ],
+    type: "Keynote",
+    description: "AI & Gaming Infrastructure of the Future",
+  },  {
+    timeStart: "14:00",
+    timeEnd: "14:15",
     speaker: [
       { name: "Ms. Emily Nguyen", company: "Country Manager @DIN", image: EmilyNguyen },
     ],
     type: "Keynote",
     description: "Data Intelligence Network for AI",
   },
+
   {
-    timeStart: "14:05",
-    timeEnd: "14:20",
-    speaker: [
-      { name: "Mr. Mark Rydon", company: "Co-Founder & CSO @Aethir", image: MarkRydon },
-    ],
-    type: "Keynote",
-    description: "AI & Gaming Infrastructure of the Future",
-  },
-  {
-    timeStart: "14:20",
-    timeEnd: "14:55",
+    timeStart: "14:15",
+    timeEnd: "14:50",
     speaker: [
       { name: "Mr. Andre Zhang", company: "VP of Cstar", image: Andre },
       { name: "Ms. Linh Pham", company: "Regional Head of Growth (SEA), CoinEx", image: LinhPham },
@@ -600,8 +618,8 @@ export const listDePIN: Agenda[] = [
     description: "Decentralization: Why It Matters and How DePIN Leads the Way",
   },
   {
-    timeStart: "14:55",
-    timeEnd: "15:45",
+    timeStart: "14:50",
+    timeEnd: "15:40",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -609,17 +627,17 @@ export const listDePIN: Agenda[] = [
     description: "Startup Showcase",
   },
   {
-    timeStart: "15:45",
-    timeEnd: "16:00",
+    timeStart: "15:40",
+    timeEnd: "15:55",
     speaker: [
       { name: "Mr. Andre Zhang", company: "VP of Cstar", image: Andre },
     ],
     type: "Keynote",
-    description: "",
+    description: "Keynote Cstar",
   },
   {
-    timeStart: "16:00",
-    timeEnd: "16:10",
+    timeStart: "15:55",
+    timeEnd: "16:05",
     speaker: [
       { name: "Mr. Ryan Bui", company: "Ecosystem Director @U2U", image: RyanBui },
     ],
@@ -627,8 +645,8 @@ export const listDePIN: Agenda[] = [
     description: "How U2U Empowers DePIN Startups for Success",
   },
   {
-    timeStart: "16:10",
-    timeEnd: "16:45",
+    timeStart: "16:05",
+    timeEnd: "16:40",
     speaker: [
       { name: "Ms. Cathy Zhu", company: "Venture Partner @RockTree Capital", image: CathyZhu },
       { name: "Mr. Peter Hoang Nguyen", company: "CEO & Founder @Medoo", image: Peter },
@@ -640,14 +658,14 @@ export const listDePIN: Agenda[] = [
     description: "When AI meets RWA and DePIN: What's next?",
   },
   {
-    timeStart: "16:45",
-    timeEnd: "16:55",
+    timeStart: "16:40",
+    timeEnd: "16:50",
     type: "",
     description: "Break time",
   },
   {
-    timeStart: "16:55",
-    timeEnd: "17:05",
+    timeStart: "16:50",
+    timeEnd: "17:00",
     speaker: [
       { name: "Mr. Garlan", company: "CMO @WearFit AI", image: Garlan },
     ],
@@ -655,8 +673,8 @@ export const listDePIN: Agenda[] = [
     description: "Revolutionize wearables and the mass adoption for blockchain",
   },
   {
-    timeStart: "17:05",
-    timeEnd: "17:20",
+    timeStart: "17:00",
+    timeEnd: "17:15",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -664,8 +682,8 @@ export const listDePIN: Agenda[] = [
     description: "QnA questions & giveway",
   },
   {
-    timeStart: "17:20",
-    timeEnd: "17:30",
+    timeStart: "17:15",
+    timeEnd: "17:25",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -673,8 +691,8 @@ export const listDePIN: Agenda[] = [
     description: "Thank you note ",
   },
   {
-    timeStart: "17:30",
-    timeEnd: "17:40",
+    timeStart: "17:25",
+    timeEnd: "17:35",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -682,8 +700,8 @@ export const listDePIN: Agenda[] = [
     description: "Announce winners & Certificate (Top 5)",
   },
   {
-    timeStart: "17:40",
-    timeEnd: "17:45",
+    timeStart: "17:35",
+    timeEnd: "17:40",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -809,6 +827,19 @@ export const listBlockchain2: Agenda[] = [
 //Side Event
 
 export const listSideEvent: SideEvent[] = [
+  {
+    time: "13:30 - 17:00",
+    day: "4",
+    month: "December",
+    year: "2024",
+    host: "Binance",
+    type: "Free",
+    event: "Hanoi Innovation Forum:  Vietnam 2030: Pioneering Innovation Through Emerging Technologies",
+    description: "Join us for the Hanoi Innovation Forum: \"\"Vietnam 2030: Pioneering Innovation Through Emerging Technologies.\"\" Held in Hanoi, Dec 3–4, 2024, alongside the Vietnam Tech Impact Summit by FPT & SSI, this event unites thought leaders, innovators, and policymakers to discuss Vietnam’s 2030 vision and its leadership in emerging technologies like AI, blockchain, and IoT.",
+    registerLink: "https://lu.ma/n8iqha6a",
+    image: Binance,
+    location: "Room 343,NCC"
+  },
   {
     time: "9:00 - 12:00",
     day: "3-4",
@@ -942,5 +973,53 @@ export const listSideEvent: SideEvent[] = [
     registerLink: "https://lu.ma/HoldstationVIPDinner",
     image: HoldstationVIP,
     location: "Invite Only"
+  },
+
+  {
+    time: "16:30 - 18:30",
+    day: "3",
+    month: "December",
+    year: "2024",
+    host: "Bitget",
+    type: "Invite-only",
+    event: "Bitget Vietnam Press Conference",
+    description: "Bitget: Powering Vietnam Web3 Future \n" +
+        "\n" +
+        "​Bitget will host a press conference in Hanoi, Vietnam to share Bitget’s latest advancements in blockchain and Web3 technologies and how we're powering the future of Vietnam's Web3 ecosystem.\n" +
+        "\n" +
+        "​The press conference will be led by Gracy Chen, the CEO of Bitget who has been pivotal in Bitget's mission to bring innovative blockchain and Web3 solutions on a global scale. On her first visit to Vietnam, she will lead insightful discussions and unveil Bitget’s exciting new chapter in Web3 innovation for the region.",
+    registerLink: "https://lu.ma/ykel0ube",
+    image: BitgetWeb3,
+    location: "JW Marriott Hotel, 8 Do Duc Duc, Ha Noi"
+  },  {
+    time: "19:00 - 21:30",
+    day: "3",
+    month: "December",
+    year: "2024",
+    host: "Bitget ",
+    type: "Invite-only",
+    event: "Bitget Vietnam VIP Dinner",
+    description: "Celebrate a game-changing milestone with Bitget and Web3 enthusiasts in Vietnam! Join us to honor the leaders shaping Web3's future and explore new opportunities in the blockchain ecosystem.\n" +
+        "\n" +
+        "✨ Why Attend:\n" +
+        "\n" +
+        "Network with the Bitget team and investors.\n" +
+        "Learn how our platform drives value in Web3.\n" +
+        "Enjoy great food, fun, and innovation!",
+    registerLink: "https://lu.ma/828a5zcu",
+    image: BitgetDinner,
+    location: "JW Marriott Hotel, 8 Do Duc Duc, Ha Noi"
+  },  {
+    time: "13:00 - 18:00",
+    day: "3-4",
+    month: "December",
+    year: "2024",
+    host: "KuCoin & Holdstation",
+    type: "Free",
+    event: "Blockchain Innovation Substage by KuCoin and Holdstation",
+    description: "The Kucoin & Holdstation Substage at VTIS 2024 will showcase the powerful integration of AI and blockchain, offering exclusive alpha on the future of digital payments, decentralized finance, and Web3. Industry leaders will reveal cutting-edge insights that will shape the next wave of innovation.",
+    registerLink: "https://lu.ma/VTISBlockchainSubstage",
+    image: Kucoin,
+    location: "Blockchain Substage NCC"
   },
 ]
