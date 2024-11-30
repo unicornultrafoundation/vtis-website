@@ -689,6 +689,18 @@ const speakersData = [
     image: "",
     Status: "",
   },
+  {
+    Name: "Rexy Ali",
+    Title: "VP South East Asia - Bitget",
+    image: "",
+    Status: "",
+  },
+  {
+    Name: "Alexis Low",
+    Title: "Ecosystem Lead - Lisk",
+    image: "",
+    Status: "",
+  },
 ];
 
 const getSquareBGByIndex = (index: number) => {
@@ -1261,7 +1273,6 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 96,
                   },
-
                 ]}
               />
               <Column
@@ -1358,6 +1369,12 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 97,
                   },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 102,
+                  },
                 ]}
               />
               <Column
@@ -1453,6 +1470,12 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 98,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 103,
                   },
                 ]}
               />
@@ -1864,7 +1887,12 @@ export default function HomeSection4() {
                     title: "CEO",
                     index: 99,
                   },
-
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 103,
+                  },
                 ]}
               />
               <Column
@@ -2122,6 +2150,12 @@ export default function HomeSection4() {
                     name: "Mr Mai Huy Tuan",
                     title: "CEO",
                     index: 98,
+                  },
+                  {
+                    companyName: "SSI Digital",
+                    name: "Mr Mai Huy Tuan",
+                    title: "CEO",
+                    index: 102,
                   },
                 ]}
               />
