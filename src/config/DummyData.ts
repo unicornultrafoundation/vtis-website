@@ -128,7 +128,7 @@ import SideEvent7 from "@/assets/images/side-event/7.jpg";
 import SideEvent8 from "@/assets/images/side-event/8.png";
 import Sui from "@/assets/images/side-event/sui-night.png";
 import Binance from "@/assets/images/side-event/binance.png";
-import BitgetWeb3 from "@/assets/images/side-event/bitget-web3.png";
+import BitgetWeb3 from "@/assets/images/side-event/Bitget-web3.png";
 import BitgetDinner from "@/assets/images/side-event/bitget-dinner.png";
 import Kucoin from "@/assets/images/side-event/kucoin-holdstation.png";
 import HanoiEdition from "@/assets/images/side-event/HanoiEdition.png";
