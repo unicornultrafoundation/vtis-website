@@ -123,6 +123,7 @@ import Rexy from "@/assets/images/agenda/Rexy Ali.png";
 import HoKyMinh from "@/assets/images/agenda/Ho Ky Minh.png";
 import ChuTienDat from "@/assets/images/agenda/Chu Tien Dat.png";
 import Quira from "@/assets/images/agenda/Quira.png";
+import Leonardor from "@/assets/images/agenda/Leonardo.png";
 
 
 
@@ -137,6 +138,8 @@ import Kucoin from "@/assets/images/side-event/kucoin-holdstation.png";
 import HanoiEdition from "@/assets/images/side-event/HanoiEdition.png";
 import HanoiSolana from "@/assets/images/side-event/Hanoi-Solana.png";
 import HoldstationVIP from "@/assets/images/side-event/HoldstationVIP.png";
+import Meetup from "@/assets/images/side-event/meetup.png";
+import TheVapeVabs from "@/assets/images/side-event/depin.png";
 
 
 export interface Speaker {
@@ -831,7 +834,7 @@ export const listBlockchain: Agenda[] = [
       { name: "Mr. Tonny", company: "Community Lead, HC Capital", image: Tonny },
       { name: "Mr. Son Ho", company: " Managing Partner, K300 Ventures", image: SonHo },
       { name: "Mr. Basilla", company: "Community Lead, UB Ventures", image: Basilla },
-      { name: "Moderator: Leonardo", company: " CMO, Holdstation", image: EventLogo },
+      { name: "Moderator: Leonardo", company: " CMO, Holdstation", image: Leonardor },
     ],
     type: "Closing Panel",
     description: "Vietnam Community's Development",
@@ -1010,7 +1013,8 @@ export const listSideEvent: SideEvent[] = [
     registerLink: "https://lu.ma/ykel0ube",
     image: BitgetWeb3,
     location: "JW Marriott Hotel, 8 Do Duc Duc, Ha Noi"
-  },  {
+  },
+  {
     time: "19:00 - 21:30",
     day: "3",
     month: "December",
@@ -1028,7 +1032,8 @@ export const listSideEvent: SideEvent[] = [
     registerLink: "https://lu.ma/828a5zcu",
     image: BitgetDinner,
     location: "JW Marriott Hotel, 8 Do Duc Duc, Ha Noi"
-  },  {
+  },
+  {
     time: "13:00 - 18:00",
     day: "3-4",
     month: "December",
@@ -1040,5 +1045,38 @@ export const listSideEvent: SideEvent[] = [
     registerLink: "https://lu.ma/VTISBlockchainSubstage",
     image: Kucoin,
     location: "Blockchain Substage NCC"
+  },
+  {
+    time: "10:00 - 16:00",
+    day: "3",
+    month: "December",
+    year: "2024",
+    host: "The Vape Vabs ",
+    type: "Invite-only",
+    event: "DePIN: From History To History - A Lunchtime Revolution",
+    description: "How will decentralized tech reshape everything from vaping to global networks?\n" +
+        "\n" +
+        "🔥 Dive into blockchain tech, vape culture, and epic networking with industry leaders. 🚀\n" +
+        "\n" +
+        "Discover how DePIN is disrupting industries and sparking real change. This isn’t just an event—it’s the start of something HUGE. 🙌 Insights, vibes, and connections await!",
+    registerLink: "https://lu.ma/4fyh986p",
+    image:  TheVapeVabs,
+    location: "Eco Cafe NCC, Hanoi"
+  },
+  {
+    time: "18:00 - 22:00",
+    day: "3",
+    month: "December",
+    year: "2024",
+    host: "Suci Blockchain Hub & Lisk",
+    type: "Free",
+    event: "Builders & Founders Meet-up",
+    description: "Join us on Dec 3rd for an inspiring evening with Web3 visionaries, builders, and founders! \n" +
+        "🌐 Enjoy great food, meaningful conversations, and shared inspiration in a relaxed setting. Whether you're a developer, founder, or Web3 enthusiast, this is your chance to connect and unwind.\n" +
+        "\n" +
+        "Spaces are limited—RSVP now!",
+    registerLink: "https://lu.ma/9v6yrk5z",
+    image: Meetup,
+    location: "Web3 Tower - 15 Ng.4 P.Duy Tan, Cau Giay, Ha Noi"
   },
 ]
