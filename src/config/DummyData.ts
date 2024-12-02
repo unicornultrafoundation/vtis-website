@@ -571,8 +571,8 @@ export const listAgendaAI2: Agenda[] = [
 //DePIN
 export const listDePIN: Agenda[] = [
   {
-    timeStart: "12:30",
-    timeEnd: "13:00",
+    timeStart: "13:00",
+    timeEnd: "13:30",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -580,8 +580,8 @@ export const listDePIN: Agenda[] = [
     description: "Check in guest ",
   },
   {
-    timeStart: "13:00",
-    timeEnd: "13:05",
+    timeStart: "13:30",
+    timeEnd: "13:35",
     speaker: [
       { name: "Rep. U2U", image: EventLogo },
     ],
@@ -589,35 +589,35 @@ export const listDePIN: Agenda[] = [
     description: "Opening speech ",
   },
   {
-    timeStart: "13:05",
-    timeEnd: "13:35",
+    timeStart: "13:35",
+    timeEnd: "13:55",
     speaker: [
       { name: "Ms. Chloe Phung", company: "Co-founder & Co-CEO @U2U", image: ChloePhung },
     ],
     type: "Keynote",
     description: "Welcoming guest & U2U keynote , What Lies Ahead for DePIN?",
   },
+  // {
+  //   timeStart: "13:35",
+  //   timeEnd: "13:45",
+  //   speaker: [
+  //     { name: "Chloe Phung", company: "Co-founder & Co-CEO, U2U", image: ChloePhung },
+  //     { name: "Adre Zhang", company: "VP of JDI Capital", image: Andre },
+  //   ],
+  //   type: "Ceremony",
+  //   description: "Ceremony of Strategic Cooperation in Hardware Manufacturing and Distribution",
+  // },
   {
-    timeStart: "13:35",
-    timeEnd: "13:45",
-    speaker: [
-      { name: "Chloe Phung", company: "Co-founder & Co-CEO, U2U", image: ChloePhung },
-      { name: "Adre Zhang", company: "VP of JDI Capital", image: Andre },
-    ],
-    type: "Ceremony",
-    description: "Ceremony of Strategic Cooperation in Hardware Manufacturing and Distribution",
-  },
-  {
-    timeStart: "13:45",
-    timeEnd: "14:00",
+    timeStart: "13:55",
+    timeEnd: "14:10",
     speaker: [
       { name: "Mr. Mark Rydon", company: "CoFounder & Chief Strategy Officer @Aethir", image: MarkRydon },
     ],
     type: "Keynote",
     description: "AI & Gaming Infrastructure of the Future",
   },  {
-    timeStart: "14:00",
-    timeEnd: "14:15",
+    timeStart: "14:10",
+    timeEnd: "14:25",
     speaker: [
       { name: "Ms. Emily Nguyen", company: "Country Manager @DIN", image: EmilyNguyen },
     ],
@@ -626,8 +626,8 @@ export const listDePIN: Agenda[] = [
   },
 
   {
-    timeStart: "14:15",
-    timeEnd: "14:50",
+    timeStart: "14:25",
+    timeEnd: "15:00",
     speaker: [
       { name: "Mr. Andre Zhang", company: "VP of Cstar", image: Andre },
       { name: "Ms. Linh Pham", company: "Regional Head of Growth (SEA), CoinEx", image: LinhPham },
@@ -639,8 +639,8 @@ export const listDePIN: Agenda[] = [
     description: "Decentralization: Why It Matters and How DePIN Leads the Way",
   },
   {
-    timeStart: "14:50",
-    timeEnd: "15:40",
+    timeStart: "15:00",
+    timeEnd: "15:50",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -648,23 +648,23 @@ export const listDePIN: Agenda[] = [
     description: "Startup Showcase",
   },
   {
-    timeStart: "15:40",
-    timeEnd: "15:55",
+    timeStart: "15:50",
+    timeEnd: "16:05",
     speaker: [
       { name: "Mr. Andre Zhang", company: "VP of Cstar", image: Andre },
     ],
     type: "Keynote",
     description: "Cstar: Crypto Consumer Revolution",
   },
-  {
-    timeStart: "15:55",
-    timeEnd: "16:05",
-    speaker: [
-      { name: "Mr. Ryan Bui", company: "Ecosystem Director @U2U", image: RyanBui },
-    ],
-    type: "Keynote",
-    description: "How U2U Empowers DePIN Startups for Success",
-  },
+  // {
+  //   timeStart: "15:55",
+  //   timeEnd: "16:05",
+  //   speaker: [
+  //     { name: "Mr. Ryan Bui", company: "Ecosystem Director @U2U", image: RyanBui },
+  //   ],
+  //   type: "Keynote",
+  //   description: "How U2U Empowers DePIN Startups for Success",
+  // },
   {
     timeStart: "16:05",
     timeEnd: "16:40",
@@ -695,7 +695,16 @@ export const listDePIN: Agenda[] = [
   },
   {
     timeStart: "17:00",
-    timeEnd: "17:15",
+    timeEnd: "17:05",
+    speaker: [
+      { name: "", image: EventLogo },
+    ],
+    type: "Keynote",
+    description: "",
+  },
+  {
+    timeStart: "17:05",
+    timeEnd: "17:20",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -703,8 +712,8 @@ export const listDePIN: Agenda[] = [
     description: "QnA questions & giveway",
   },
   {
-    timeStart: "17:15",
-    timeEnd: "17:25",
+    timeStart: "17:20",
+    timeEnd: "17:30",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -712,8 +721,8 @@ export const listDePIN: Agenda[] = [
     description: "Thank you note ",
   },
   {
-    timeStart: "17:25",
-    timeEnd: "17:35",
+    timeStart: "17:30",
+    timeEnd: "17:40",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
@@ -721,8 +730,8 @@ export const listDePIN: Agenda[] = [
     description: "Announce winners & Certificate (Top 5)",
   },
   {
-    timeStart: "17:35",
-    timeEnd: "17:40",
+    timeStart: "17:40",
+    timeEnd: "17:45",
     speaker: [
       { name: "Organizer", image: EventLogo },
     ],
