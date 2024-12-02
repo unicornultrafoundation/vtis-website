@@ -49,7 +49,7 @@ import KietLe from "@/assets/images/agenda/Kiet Le.jpg";
 import MoniqueBekker from "@/assets/images/agenda/Monique Bekker.png";
 import Tony from "@/assets/images/agenda/Tony.png";
 
-import RyanBui from "@/assets/images/agenda/Ryan Bui.png";
+// import RyanBui from "@/assets/images/agenda/Ryan Bui.png";
 
 import Garlan from "@/assets/images/agenda/GarlanWearfit.jpg";
 
