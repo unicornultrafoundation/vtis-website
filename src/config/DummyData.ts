@@ -122,8 +122,9 @@ import AlexisLow from "@/assets/images/agenda/_Alexis Low.png";
 import Rexy from "@/assets/images/agenda/Rexy Ali.png";
 import HoKyMinh from "@/assets/images/agenda/Ho Ky Minh.png";
 import ChuTienDat from "@/assets/images/agenda/Chu Tien Dat.png";
-import Quira from "@/assets/images/agenda/Quira.png";
+// import Quira from "@/assets/images/agenda/Quira.png";
 import Leonardor from "@/assets/images/agenda/Leonardo.png";
+import MaiHuyTuan from "@/assets/images/agenda/Mai Huy Tuan.png";
 
 
 
@@ -255,18 +256,16 @@ export const listAgendaGeneral: Agenda[] = [
     type: "Keynote",
     description: "Technology Investment From Vinacapital's View",
   },
+  {
+    timeStart: "13:40",
+    timeEnd: "14:00",
+    speaker: [
+      { name: "Mai Huy Tuan", company: " CEO, SSI Digital", image: MaiHuyTuan },
+    ],
 
-
-  // {
-  //   timeStart: "13:30",
-  //   timeEnd: "14:00",
-  //   speaker: [
-  //     { name: "Ms. Alicia Kao", company: " Manager Director of KuCoin, Kucoin", image: Alicia },
-  //   ],
-  //
-  //   type: "Keynote",
-  //   description: "Shape Your Crypto Mind with KuCoin - User Education Makes Mastery",
-  // },
+    type: "Keynote",
+    description: "SSID Mission And Vision For VTIS And Beyond",
+  },
   {
     timeStart: "14:00",
     timeEnd: "14:40",
@@ -491,7 +490,7 @@ export const listAgendaGeneral2: Agenda[] = [
       { name: "Mr. Mr. Chu Tien Dat", company: "Vice President, Viresa", image: ChuTienDat },
       { name: "Mr. Andy", company: "CTO Axie", image: Andy },
       { name: "Mr. Zane N", company: "Core Contributor, Ancient8", image: Zane },
-      { name: "Moderator: Quira", company: "Project Manager, Flazers", image: Quira },
+      { name: "Moderator: Lily Phan", company:  "Organizer, VTIS", image: EventLogo },
     ],
     type: "Panel Discussion",
     description: "Gaming's Contribution to Life and Economy",
@@ -812,7 +811,7 @@ export const listBlockchain: Agenda[] = [
       { name: "Una", company: "Country Manager, MEXC", image: Una },
     ],
     type: "Keynote",
-    description: "Liquidity in Digital Assets",
+    description: "The Engine of Opportunity",
   },
   {
     timeStart: "16:00",
