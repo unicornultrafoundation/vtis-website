@@ -294,7 +294,7 @@ export const listAgendaGeneral: Agenda[] = [
       // { name: "Mr. Nghiem Xuan Huy", company: "Founder @Finhay", image: NghiemXuanHuy },
       { name: "Ms. Lynn Hoang", company: "Country Manager @Binance", image: LynnHoang },
       { name: "Ms. Le Lan Chi", company: "CEO @Zalopay", image: LeLanChi },
-      { name: "Ms. Ryan Sungho Kim", company: "Cofounder & Partner, Hashed", image: RyanSunghoKim },
+      { name: "Mr. Ryan Sungho Kim", company: "Cofounder & Partner, Hashed", image: RyanSunghoKim },
       { name: "Moderator: Ms. Hang Le", company: "CSO @SSI", image: LeThiLeHang },
     ],
     type: "Panel Discussion",
